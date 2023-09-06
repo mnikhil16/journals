@@ -20,7 +20,7 @@ public class SalesInvoice {
     @Column(name = "sales_date")
     Date salesDate;
 
-    @Column(name = "sales_invoice_no")
+    @Column(name = "sales_invoice_number")
     String salesInvoiceNumber;
 
     public SalesInvoice(){}

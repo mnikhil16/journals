@@ -37,6 +37,10 @@ public class JournalEntry {
     @JoinColumn(name = "transaction_type_id")
     TransactionType transactionType;
 
+    @OneToOne
+    @JoinColumn(name = "sales_invoice_id")
+    SalesInvoice salesInvoice;
+
     public JournalEntry(){}
 
     public JournalEntry(Integer journalId, Date journalDate, String description, String particulars, Character entryType, Double amount, String accountType, String transactionId, TransactionType transactionType) {
