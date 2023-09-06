@@ -1,45 +1,30 @@
-package com.erp.journals.entity;
-
-import jakarta.persistence.*;
+package com.erp.journals.dto;
 
 import java.util.Date;
 
-@Entity
-@Table(name = "journal_entry")
-public class JournalEntry {
+public class JournalEntryDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer journalId;
 
-    @JoinColumn(name = "journal_date")
     Date journalDate;
 
-    @JoinColumn(name = "description")
     String description;
 
-    @JoinColumn(name = "particulars")
     String particulars;
 
-    @JoinColumn(name = "entry_type")
     Character entryType;
 
-    @JoinColumn(name = "amount")
     Double amount;
 
-    @JoinColumn(name = "account_type")
     String accountType;
 
-    @JoinColumn(name = "transaction_id")
     String transactionId;
 
-    @ManyToOne
-    @JoinColumn(name = "transaction_type_id")
-    TransactionType transactionType;
+    Integer transactionTypeId;
 
-    public JournalEntry(){}
+    public JournalEntryDTO(){}
 
-    public JournalEntry(Integer journalId, Date journalDate, String description, String particulars, Character entryType, Double amount, String accountType, String transactionId, TransactionType transactionType) {
+    public JournalEntryDTO(Integer journalId, Date journalDate, String description, String particulars, Character entryType, Double amount, String accountType, String transactionId, Integer transactionTypeId) {
         this.journalId = journalId;
         this.journalDate = journalDate;
         this.description = description;
@@ -48,7 +33,7 @@ public class JournalEntry {
         this.amount = amount;
         this.accountType = accountType;
         this.transactionId = transactionId;
-        this.transactionType = transactionType;
+        this.transactionTypeId = transactionTypeId;
     }
 
     public Integer getJournalId() {
@@ -115,11 +100,11 @@ public class JournalEntry {
         this.transactionId = transactionId;
     }
 
-    public TransactionType getTransactionType() {
-        return transactionType;
+    public Integer getTransactionTypeId() {
+        return transactionTypeId;
     }
 
-    public void setTransactionType(TransactionType transactionType) {
-        this.transactionType = transactionType;
+    public void setTransactionTypeId(Integer transactionTypeId) {
+        this.transactionTypeId = transactionTypeId;
     }
 }
