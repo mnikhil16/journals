@@ -33,17 +33,16 @@ public class JournalEntry {
     @JoinColumn(name = "transaction_id")
     String transactionId;
 
-    @ManyToOne
     @JoinColumn(name = "transaction_type_id")
-    TransactionType transactionType;
+    Integer transactionTypeId;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "sales_invoice_id")
     SalesInvoice salesInvoice;
 
     public JournalEntry(){}
 
-    public JournalEntry(Integer journalId, Date journalDate, String description, String particulars, Character entryType, Double amount, String accountType, String transactionId, TransactionType transactionType) {
+    public JournalEntry(Integer journalId, Date journalDate, String description, String particulars, Character entryType, Double amount, String accountType, String transactionId, Integer transactionTypeId, SalesInvoice salesInvoice) {
         this.journalId = journalId;
         this.journalDate = journalDate;
         this.description = description;
@@ -52,7 +51,8 @@ public class JournalEntry {
         this.amount = amount;
         this.accountType = accountType;
         this.transactionId = transactionId;
-        this.transactionType = transactionType;
+        this.transactionTypeId = transactionTypeId;
+        this.salesInvoice = salesInvoice;
     }
 
     public Integer getJournalId() {
@@ -119,11 +119,19 @@ public class JournalEntry {
         this.transactionId = transactionId;
     }
 
-    public TransactionType getTransactionType() {
-        return transactionType;
+    public Integer getTransactionTypeId() {
+        return transactionTypeId;
     }
 
-    public void setTransactionType(TransactionType transactionType) {
-        this.transactionType = transactionType;
+    public void setTransactionTypeId(Integer transactionTypeId) {
+        this.transactionTypeId = transactionTypeId;
+    }
+
+    public SalesInvoice getSalesInvoice() {
+        return salesInvoice;
+    }
+
+    public void setSalesInvoice(SalesInvoice salesInvoice) {
+        this.salesInvoice = salesInvoice;
     }
 }

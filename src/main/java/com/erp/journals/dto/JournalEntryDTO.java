@@ -1,5 +1,8 @@
 package com.erp.journals.dto;
 
+import com.erp.journals.entity.SalesInvoice;
+import com.erp.journals.entity.TransactionType;
+
 import java.util.Date;
 
 public class JournalEntryDTO {
@@ -22,9 +25,11 @@ public class JournalEntryDTO {
 
     Integer transactionTypeId;
 
+    SalesInvoiceDTO salesInvoiceDTO;
+
     public JournalEntryDTO(){}
 
-    public JournalEntryDTO(Integer journalId, Date journalDate, String description, String particulars, Character entryType, Double amount, String accountType, String transactionId, Integer transactionTypeId) {
+    public JournalEntryDTO(Integer journalId, Date journalDate, String description, String particulars, Character entryType, Double amount, String accountType, String transactionId, Integer transactionTypeId, SalesInvoiceDTO salesInvoiceDTO) {
         this.journalId = journalId;
         this.journalDate = journalDate;
         this.description = description;
@@ -34,6 +39,7 @@ public class JournalEntryDTO {
         this.accountType = accountType;
         this.transactionId = transactionId;
         this.transactionTypeId = transactionTypeId;
+        this.salesInvoiceDTO = salesInvoiceDTO;
     }
 
     public Integer getJournalId() {
@@ -106,5 +112,13 @@ public class JournalEntryDTO {
 
     public void setTransactionTypeId(Integer transactionTypeId) {
         this.transactionTypeId = transactionTypeId;
+    }
+
+    public SalesInvoiceDTO getSalesInvoiceDTO() {
+        return salesInvoiceDTO;
+    }
+
+    public void setSalesInvoiceDTO(SalesInvoiceDTO salesInvoiceDTO) {
+        this.salesInvoiceDTO = salesInvoiceDTO;
     }
 }

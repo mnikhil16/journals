@@ -1,20 +1,22 @@
 package com.erp.journals.service;
 
+import com.erp.journals.controller.AddResponse;
 import com.erp.journals.dto.JournalEntryDTO;
 import com.erp.journals.dto.SalesInvoiceDTO;
 import com.erp.journals.entity.JournalEntry;
 import com.erp.journals.entity.SalesInvoice;
-import com.erp.journals.entity.TransactionType;
 import com.erp.journals.mapper.JournalEntryMapper;
 import com.erp.journals.mapper.SalesInvoiceMapper;
 import com.erp.journals.repository.JournalEntryRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class JournalEntryService {
     @Autowired
     JournalEntryRepository journalEntryRepository;
@@ -45,8 +47,9 @@ public class JournalEntryService {
         journalEntry1.setEntryType('d');
         journalEntry1.setAmount(salesInvoice.getAmount());
         journalEntry1.setAccountType("real account");
-        journalEntryList.add(journalEntry1);
+        journalEntry1.setSalesInvoice(salesInvoice);
         journalEntryRepository.save(journalEntry1);
+        journalEntryList.add(journalEntry1);
 
         JournalEntry journalEntry2 = new JournalEntry();
         journalEntry2.setJournalDate(salesInvoice.getSalesDate());
@@ -55,12 +58,37 @@ public class JournalEntryService {
         journalEntry2.setEntryType('c');
         journalEntry2.setAmount(salesInvoice.getAmount());
         journalEntry2.setAccountType("nominal account");
-        journalEntryList.add(journalEntry2);
+        journalEntry2.setSalesInvoice(salesInvoice);
         journalEntryRepository.save(journalEntry2);
+        journalEntryList.add(journalEntry2);
 
         List<JournalEntryDTO> journalEntryDTOList = JournalEntryMapper.instance.modelToDtoList(journalEntryList);
 
         return journalEntryDTOList;
     }
 
+    public List<JournalEntryDTO> updateJournalEntry(SalesInvoiceDTO salesInvoiceDTO){
+        SalesInvoice salesInvoice = SalesInvoiceMapper.instance.dtoToModel(salesInvoiceDTO);
+        List<JournalEntry> journalEntryList = journalEntryRepository.findBySalesInvoiceSalesInvoiceId(salesInvoice.getSalesInvoiceId());
+        for (JournalEntry journalEntry : journalEntryList) {
+            journalEntry.setJournalDate(salesInvoice.getSalesDate());
+            journalEntry.setDescription("sold goods to " + salesInvoice.getCustomerName() + " for rs " + salesInvoice.getAmount());
+
+            journalEntryRepository.save(journalEntry);
+        }
+        List<JournalEntryDTO> journalEntryDTOList = JournalEntryMapper.instance.modelToDtoList(journalEntryList);
+        return journalEntryDTOList;
+    }
+
+    public AddResponse deleteJournalEntry(SalesInvoiceDTO salesInvoiceDTO){
+        SalesInvoice salesInvoice = SalesInvoiceMapper.instance.dtoToModel(salesInvoiceDTO);
+        List<JournalEntry> journalEntryList = journalEntryRepository.findBySalesInvoiceSalesInvoiceId(salesInvoice.getSalesInvoiceId());
+        for(JournalEntry journalEntry : journalEntryList){
+            journalEntryRepository.deleteById(journalEntry.getJournalId());
+        }
+        AddResponse response = new AddResponse();
+        response.setMsg("Deleted Journal entries that are linked to salesInvoice" + salesInvoice.getSalesInvoiceId());
+        response.setId(salesInvoice.getSalesInvoiceId());
+        return response;
+    }
 }

@@ -23,14 +23,18 @@ public class SalesInvoice {
     @Column(name = "sales_invoice_number")
     String salesInvoiceNumber;
 
+    @Column(name = "transaction_type_id")
+    Integer transactionTypeId;
+
     public SalesInvoice(){}
 
-    public SalesInvoice(Integer salesInvoiceId, String customerName, Double amount, Date salesDate, String salesInvoiceNumber) {
+    public SalesInvoice(Integer salesInvoiceId, String customerName, Double amount, Date salesDate, String salesInvoiceNumber, Integer transactionTypeId) {
         this.salesInvoiceId = salesInvoiceId;
         this.customerName = customerName;
         this.amount = amount;
         this.salesDate = salesDate;
         this.salesInvoiceNumber = salesInvoiceNumber;
+        this.transactionTypeId = transactionTypeId;
     }
 
     public Integer getSalesInvoiceId() {
@@ -71,5 +75,13 @@ public class SalesInvoice {
 
     public void setSalesInvoiceNumber(String salesInvoiceNumber) {
         this.salesInvoiceNumber = salesInvoiceNumber;
+    }
+
+    public Integer getTransactionTypeId() {
+        return transactionTypeId;
+    }
+
+    public void setTransactionTypeId(Integer transactionTypeId) {
+        this.transactionTypeId = transactionTypeId;
     }
 }

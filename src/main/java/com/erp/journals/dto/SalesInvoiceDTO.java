@@ -14,14 +14,17 @@ public class SalesInvoiceDTO {
 
     String salesInvoiceNumber;
 
+    Integer transaction_type_id;
+
     public SalesInvoiceDTO(){}
 
-    public SalesInvoiceDTO(Integer salesInvoiceId, String customerName, Double amount, Date salesDate, String salesInvoiceNumber) {
+    public SalesInvoiceDTO(Integer salesInvoiceId, String customerName, Double amount, Date salesDate, String salesInvoiceNumber, Integer transaction_type_id) {
         this.salesInvoiceId = salesInvoiceId;
         this.customerName = customerName;
         this.amount = amount;
         this.salesDate = salesDate;
         this.salesInvoiceNumber = salesInvoiceNumber;
+        this.transaction_type_id = transaction_type_id;
     }
 
     public Integer getSalesInvoiceId() {
@@ -62,5 +65,13 @@ public class SalesInvoiceDTO {
 
     public void setSalesInvoiceNumber(String salesInvoiceNumber) {
         this.salesInvoiceNumber = salesInvoiceNumber;
+    }
+
+    public Integer getTransaction_type_id() {
+        return transaction_type_id;
+    }
+
+    public void setTransaction_type_id(Integer transaction_type_id) {
+        this.transaction_type_id = transaction_type_id;
     }
 }

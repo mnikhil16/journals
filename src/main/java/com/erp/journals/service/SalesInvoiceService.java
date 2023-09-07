@@ -4,15 +4,16 @@ import com.erp.journals.controller.AddResponse;
 import com.erp.journals.dto.SalesInvoiceDTO;
 import com.erp.journals.entity.SalesInvoice;
 import com.erp.journals.mapper.SalesInvoiceMapper;
-import com.erp.journals.repository.JournalEntryRepository;
 import com.erp.journals.repository.SalesInvoiceRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 
+@Service
 public class SalesInvoiceService {
     @Autowired
     SalesInvoiceRepository salesInvoiceRepository;
@@ -52,12 +53,13 @@ public class SalesInvoiceService {
      * @param salesInvoiceDTO The SalesInvoiceDTO object representing the salesInvoice to be created.
      * @return The newly created SalesInvoice object with a generated ID.
      */
-    public SalesInvoiceDTO createSalesInvoice(SalesInvoiceDTO salesInvoiceDTO){
+    public SalesInvoiceDTO createSalesInvoice(SalesInvoiceDTO salesInvoiceDTO) {
         logger.trace("Create Sales Invoice service is invoked.");
         SalesInvoice salesInvoiceEntity = SalesInvoiceMapper.instance.dtoToModel(salesInvoiceDTO);
-        salesInvoiceRepository.save(salesInvoiceEntity);
+        salesInvoiceEntity = salesInvoiceRepository.save(salesInvoiceEntity);
+        SalesInvoiceDTO salesInvoiceDTO1 = SalesInvoiceMapper.instance.modelToDto(salesInvoiceEntity);
+        journalEntryService.createJournalEntry(salesInvoiceDTO1);
         SalesInvoiceDTO createdSalesInvoiceDTO = SalesInvoiceMapper.instance.modelToDto(salesInvoiceEntity);
-        journalEntryService.createJournalEntry(salesInvoiceDTO);
         return createdSalesInvoiceDTO;
     }
 
@@ -70,7 +72,9 @@ public class SalesInvoiceService {
     public SalesInvoiceDTO updateSalesInvoice(SalesInvoiceDTO salesInvoiceDTO){
         logger.trace("Update Sales Invoice service is invoked.");
         SalesInvoice salesInvoiceEntity = SalesInvoiceMapper.instance.dtoToModel(salesInvoiceDTO);
-        salesInvoiceRepository.save(salesInvoiceEntity);
+        SalesInvoice salesInvoice = salesInvoiceRepository.save(salesInvoiceEntity);
+        SalesInvoiceDTO salesInvoiceDTO1 = SalesInvoiceMapper.instance.modelToDto(salesInvoice);
+        journalEntryService.updateJournalEntry(salesInvoiceDTO1);
         SalesInvoiceDTO updatedSalesInvoiceDTO = SalesInvoiceMapper.instance.modelToDto(salesInvoiceEntity);
         return updatedSalesInvoiceDTO;
     }
@@ -83,6 +87,9 @@ public class SalesInvoiceService {
      */
     public AddResponse deleteSalesInvoiceById(int salesInvoiceId){
         logger.trace("Delete Sales Invoice service is invoked.");
+        SalesInvoice salesInvoiceEntity = salesInvoiceRepository.findById(salesInvoiceId).get();
+        SalesInvoiceDTO salesInvoiceDTO = SalesInvoiceMapper.instance.modelToDto(salesInvoiceEntity);
+        journalEntryService.deleteJournalEntry(salesInvoiceDTO);
         salesInvoiceRepository.deleteById(salesInvoiceId);
         AddResponse response = new AddResponse();
         response.setMsg("SalesInvoice deleted");
