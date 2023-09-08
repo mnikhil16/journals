@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -85,15 +86,16 @@ public class SalesInvoiceService {
      * @param salesInvoiceId The ID of the salesInvoice to delete.
      * @return An AddResponse indicating the deletion result.
      */
-    public AddResponse deleteSalesInvoiceById(int salesInvoiceId){
+    public AddResponse[] deleteSalesInvoiceById(int salesInvoiceId){
         logger.trace("Delete Sales Invoice service is invoked.");
         SalesInvoice salesInvoiceEntity = salesInvoiceRepository.findById(salesInvoiceId).get();
         SalesInvoiceDTO salesInvoiceDTO = SalesInvoiceMapper.instance.modelToDto(salesInvoiceEntity);
-        journalEntryService.deleteJournalEntry(salesInvoiceDTO);
+        AddResponse addResponseJournalEntry = journalEntryService.deleteJournalEntry(salesInvoiceDTO);
         salesInvoiceRepository.deleteById(salesInvoiceId);
-        AddResponse response = new AddResponse();
-        response.setMsg("SalesInvoice deleted");
-        response.setId(salesInvoiceId);
-        return response;
+        AddResponse addResponseSalesInvoice = new AddResponse();
+        addResponseSalesInvoice.setMsg("SalesInvoice deleted");
+        addResponseSalesInvoice.setId(salesInvoiceId);
+        AddResponse[] addResponses = new AddResponse[]{new AddResponse(), new AddResponse()};
+        return addResponses;
     }
 }

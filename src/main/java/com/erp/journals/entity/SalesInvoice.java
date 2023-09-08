@@ -2,7 +2,7 @@ package com.erp.journals.entity;
 
 import jakarta.persistence.*;
 
-import java.util.Date;
+import java.sql.Date;
 
 @Entity
 @Table(name = "sales_invoice")

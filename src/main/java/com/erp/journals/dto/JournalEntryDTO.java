@@ -1,9 +1,6 @@
 package com.erp.journals.dto;
 
-import com.erp.journals.entity.SalesInvoice;
-import com.erp.journals.entity.TransactionType;
-
-import java.util.Date;
+import java.sql.Date;
 
 public class JournalEntryDTO {
 

@@ -78,7 +78,7 @@ public class SalesInvoiceController {
      * @return AddResponse with salesInvoiceId which is deleted.
      */
     @DeleteMapping("/deleteSalesInvoiceById/{salesInvoiceId}")
-    public AddResponse deleteSalesInvoiceById(@PathVariable(value = "salesInvoiceId") int salesInvoiceId){
+    public AddResponse[] deleteSalesInvoiceById(@PathVariable(value = "salesInvoiceId") int salesInvoiceId){
         return salesInvoiceService.deleteSalesInvoiceById(salesInvoiceId);
     }
 }

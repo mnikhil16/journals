@@ -48,6 +48,7 @@ public class JournalEntryService {
         journalEntry1.setAmount(salesInvoice.getAmount());
         journalEntry1.setAccountType("real account");
         journalEntry1.setSalesInvoice(salesInvoice);
+        journalEntry1.setTransactionTypeId(salesInvoice.getTransactionTypeId());
         journalEntryRepository.save(journalEntry1);
         journalEntryList.add(journalEntry1);
 
@@ -59,6 +60,7 @@ public class JournalEntryService {
         journalEntry2.setAmount(salesInvoice.getAmount());
         journalEntry2.setAccountType("nominal account");
         journalEntry2.setSalesInvoice(salesInvoice);
+        journalEntry2.setTransactionTypeId(salesInvoice.getTransactionTypeId());
         journalEntryRepository.save(journalEntry2);
         journalEntryList.add(journalEntry2);
 
@@ -73,7 +75,7 @@ public class JournalEntryService {
         for (JournalEntry journalEntry : journalEntryList) {
             journalEntry.setJournalDate(salesInvoice.getSalesDate());
             journalEntry.setDescription("sold goods to " + salesInvoice.getCustomerName() + " for rs " + salesInvoice.getAmount());
-
+            journalEntry.setTransactionTypeId(salesInvoice.getTransactionTypeId());
             journalEntryRepository.save(journalEntry);
         }
         List<JournalEntryDTO> journalEntryDTOList = JournalEntryMapper.instance.modelToDtoList(journalEntryList);
@@ -87,7 +89,7 @@ public class JournalEntryService {
             journalEntryRepository.deleteById(journalEntry.getJournalId());
         }
         AddResponse response = new AddResponse();
-        response.setMsg("Deleted Journal entries that are linked to salesInvoice" + salesInvoice.getSalesInvoiceId());
+        response.setMsg("Deleted Journal entries that are linked to salesInvoice with salesInvoiceId:" + salesInvoice.getSalesInvoiceId());
         response.setId(salesInvoice.getSalesInvoiceId());
         return response;
     }
