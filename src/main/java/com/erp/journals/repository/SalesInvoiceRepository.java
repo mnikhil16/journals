@@ -12,5 +12,5 @@ import java.util.List;
 
 @Repository
 public interface SalesInvoiceRepository extends JpaRepository<SalesInvoice,Integer> {
-    List<SalesInvoice> findSalesInvoiceBySalesDate(LocalDate salesDate);
+    List<SalesInvoice> findSalesInvoiceBySalesDate(Date salesDate);
 }

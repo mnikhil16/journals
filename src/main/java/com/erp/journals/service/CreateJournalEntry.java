@@ -7,11 +7,10 @@ import com.erp.journals.repository.SalesInvoiceRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.core.Local;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
+
 import java.util.Date;
 import java.util.List;
 
@@ -26,10 +25,9 @@ public class CreateJournalEntry {
     @Autowired
     SalesInvoiceRepository salesInvoiceRepository;
 
-    @Scheduled(cron = "0 19 19 * * ?")
+    @Scheduled(cron = "0 59 23 * * ?")
     public void createJournalEntriesForToday() {
-        LocalDate today = LocalDate.now();
-        logger.trace(today.toString());
+        Date today = new Date();
         List<SalesInvoice> salesInvoices = salesInvoiceRepository.findSalesInvoiceBySalesDate(today);
         List<SalesInvoiceDTO> salesInvoiceDTOs = SalesInvoiceMapper.instance.modelToDtoList(salesInvoices);
         for (SalesInvoiceDTO salesInvoiceDTO : salesInvoiceDTOs) {

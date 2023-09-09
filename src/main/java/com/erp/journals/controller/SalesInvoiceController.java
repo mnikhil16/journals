@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Date;
 import java.util.List;
 @RestController
 public class SalesInvoiceController {
@@ -36,7 +37,7 @@ public class SalesInvoiceController {
             SalesInvoiceDTO salesInvoiceDTO = salesInvoiceService.getSalesInvoiceById(salesInvoiceId);
             return new ResponseEntity<>(salesInvoiceDTO, HttpStatus.OK);
         }
-        catch(Exception e){
+        catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
