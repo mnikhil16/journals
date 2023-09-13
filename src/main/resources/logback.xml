@@ -38,9 +38,33 @@
         <appender-ref ref="FILE-AUDIT" />
         <appender-ref ref="STDOUT" />
     </logger>
+    <!--         <logger name="org.hibernate.type" level="ALL" /> -->
 
+    <logger name="org.hibernate" level="error"/>
+
+    <!--  <logger name="org.hibernate.SQL" level="trace" additivity="false"> -->
+
+    <!--   <appender-ref ref="FILE-AUDIT"></appender-ref> -->
+
+
+
+    <!-- </logger>  -->
+
+
+
+    <!--   <logger name="org.hibernate.type.descriptor.sql" level="debug" additivity="false">
+
+      <appender-ref ref="FILE-AUDIT"></appender-ref>
+
+      </logger> -->
+
+    <!--  <logger name="org.springframework.data.repository" level="debug" /> -->
+
+    <!-- <logger name="org.hibernate" level="ALL" /> -->
+    <logger name="org.springframework" level="ALL" />
+    <!--    <logger name="com.zaxxer.hikari" level="error" />-->
     <root level="error">
-        <appender-ref ref="FILE-ERROR" />
+        <appender-ref ref="STDOUT" />
     </root>
 
 </configuration>
