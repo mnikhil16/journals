@@ -3,15 +3,9 @@ package com.erp.journals.entity;
 import javax.persistence.Entity;
 
 import lombok.Data;
-import org.hibernate.annotations.Type;
-import org.hibernate.annotations.TypeDef;
-import org.hibernate.annotations.TypeDefs;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
 
 /** The persistent class for the customers database table. */
 @Data
@@ -29,7 +23,5 @@ public class Customer implements Serializable {
 
     @Column(name = "first_name")
     private String firstName;
-
-
 
 }

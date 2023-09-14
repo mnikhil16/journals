@@ -1,0 +1,67 @@
+2023-09-13 21:37:36,873 INFO  StartupInfoLogger:51 - [] Starting JournalsApplication using Java 17.0.8 with PID 14504 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 21:37:36,876 DEBUG StartupInfoLogger:52 - [] Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-13 21:37:36,878 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2023-09-13 21:43:19,253 INFO  StartupInfoLogger:51 - [] Starting JournalsApplication using Java 17.0.8 with PID 18844 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 21:43:19,255 DEBUG StartupInfoLogger:52 - [] Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-13 21:43:19,256 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2023-09-13 21:44:54,789 INFO  StartupInfoLogger:51 - [] Starting JournalsApplication using Java 17.0.8 with PID 3356 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 21:44:54,794 DEBUG StartupInfoLogger:52 - [] Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-13 21:44:54,797 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2023-09-13 22:31:49,598 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 11192 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:31:49,603 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:31:49,614 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:33:39,102 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 11356 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:33:39,105 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:33:39,119 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:34:06,510 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 28.477 seconds (JVM running for 29.769)
+2023-09-13 22:34:53,988 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 9740 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:34:53,992 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:34:54,013 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:35:14,117 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 4192 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:35:14,120 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:35:14,123 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:35:43,120 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 30.051 seconds (JVM running for 31.525)
+2023-09-13 22:36:00,034 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-13 22:39:11,434 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 18080 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:39:11,444 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:39:11,459 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:39:40,660 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 30.101 seconds (JVM running for 31.264)
+2023-09-13 22:40:00,015 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-13 22:44:20,086 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 14916 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:44:20,095 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:44:20,112 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:46:38,508 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 18888 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:46:38,512 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:46:38,528 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:47:15,529 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 10852 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:47:15,533 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:47:15,547 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:49:16,320 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 17248 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:49:16,323 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:49:16,333 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:53:20,153 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 6072 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:53:20,157 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:53:20,171 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:53:48,138 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 28.868 seconds (JVM running for 29.834)
+2023-09-13 22:54:00,018 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-13 22:57:44,621 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 3384 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 22:57:44,626 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 22:57:44,636 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 22:58:15,490 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 31.673 seconds (JVM running for 32.707)
+2023-09-13 22:59:00,019 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-13 22:59:19,316 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
+2023-09-13 23:02:22,549 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15872 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 23:02:22,552 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 23:02:22,560 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 23:02:39,516 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 12572 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 23:02:39,518 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 23:02:39,524 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 23:03:07,579 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 29.087 seconds (JVM running for 30.52)
+2023-09-13 23:03:40,013 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-09-13 23:03:45,429 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
+2023-09-13 23:16:15,774 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 8420 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-13 23:16:15,778 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-13 23:16:15,784 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-13 23:16:44,805 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 30.125 seconds (JVM running for 31.588)
+2023-09-13 23:17:00,020 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-04-10APRIL-2022
+2023-09-13 23:17:03,750 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022

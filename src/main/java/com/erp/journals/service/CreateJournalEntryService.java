@@ -34,7 +34,7 @@ public class CreateJournalEntryService {
     @Autowired
     SaleRepository saleRepository;
 
-//    @Scheduled(cron = "0 43 19 * * ?")
+    @Scheduled(cron = "0 01 20 * * ?")
     public void executeAndSaveJournalEntries() {
         LocalDate startDate = LocalDate.of(2020, 12, 19);
         LocalDate endDate = LocalDate.of(2023, 9, 10);
@@ -93,15 +93,15 @@ public class CreateJournalEntryService {
 
             for (Sale sale : sales) {
                 Row row1 = sheet.createRow(rowNum++);
-                row1.createCell(0).setCellValue(sale.getInvoiceDate());
-//                row1.createCell(1).setCellValue("sold goods to " + sale.getCustomer().getDisplayName() + " for rs " + sale.getPaidAmount());
+                row1.createCell(0).setCellValue(sale.getInvoiceDate().toString());
+                row1.createCell(1).setCellValue("sold goods to " + sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount());
                 row1.createCell(2).setCellValue("cash a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(sale.getPaidAmount().toString());
                 row1.createCell(5).setCellValue("real account");
 
                 Row row2 = sheet.createRow(rowNum++);
-                row2.createCell(0).setCellValue(sale.getInvoiceDate());
+                row2.createCell(0).setCellValue(sale.getInvoiceDate().toString());
 //                row2.createCell(1).setCellValue("sold goods to " + sale.getCustomer().getDisplayName() + " for rs " + sale.getPaidAmount());
                 row2.createCell(2).setCellValue("to sales a/c");
                 row2.createCell(3).setCellValue("c");
