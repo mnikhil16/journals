@@ -10,8 +10,4 @@ public interface SaleRepository extends JpaRepository<Sale,Integer> {
     @Query(value = "FROM Sale WHERE EXTRACT(YEAR FROM invoiceDate) = :year AND EXTRACT(MONTH FROM invoiceDate) = :month")
     List<Sale> findSalesByInvoiceDate(int year, int month);
 
-    @Query(value = "FROM Sale WHERE EXTRACT (YEAR FROM invoiceDate) = :year")
-    List<Sale> findSalesByInvoiceDate(int year);
-
-
 }

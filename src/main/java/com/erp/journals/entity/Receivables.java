@@ -1,18 +1,15 @@
 package com.erp.journals.entity;
 
-import javax.persistence.*;
 import lombok.Data;
 
+import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Date;
 import java.time.ZonedDateTime;
 
-/** The persistent class for the sales database table. */
 @Data
 @Entity
-@Table(name = "sales")
-//@NamedQuery(name = "Sale.findAll", query = "SELECT s FROM Sale s")
-public class Sale  implements Serializable {
+@Table(name = "payment")
+public class Receivables implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -20,14 +17,16 @@ public class Sale  implements Serializable {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "invoice_date")
-    private ZonedDateTime invoiceDate;
+    @Column(name = "payment_date")
+    private ZonedDateTime paymentDate;
 
-    @Column(name = "paid_amt")
-    private Integer paidAmount;
+    @Column(name = "amount")
+    private Integer amount;
+
+    @Column(name = "payment_mode")
+    private String paymentMode;
 
     // bidirectional many-to-one association to Customer
     @ManyToOne(fetch = FetchType.EAGER)
     private Customer customer;
-
 }
