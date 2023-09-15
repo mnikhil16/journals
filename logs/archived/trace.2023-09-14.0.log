@@ -1,0 +1,84 @@
+2023-09-14 18:38:26,053 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 13528 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 18:38:26,058 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 18:38:26,063 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 18:38:40,840 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 15.385 seconds (JVM running for 17.136)
+2023-09-14 18:39:06,096 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 18252 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 18:39:06,099 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 18:39:06,110 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 18:39:19,832 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.503 seconds (JVM running for 15.374)
+2023-09-14 18:40:00,032 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-04-01:2022-04-10-2022
+2023-09-14 18:45:55,585 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 14908 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 18:45:55,587 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 18:45:55,597 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 18:46:09,282 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.441 seconds (JVM running for 15.359)
+2023-09-14 18:46:56,310 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15592 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 18:46:56,314 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 18:46:56,326 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 18:47:07,702 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.189 seconds (JVM running for 13.043)
+2023-09-14 18:47:30,019 INFO  CreateJournalEntry:51 - [] Scheduled task executing...2022-04-01:2022-04-01-2022
+2023-09-14 18:47:56,190 INFO  CreateJournalEntry:56 - [] Found 4847 sales invoices for the year 2022
+2023-09-14 18:47:56,787 ERROR CreateJournalEntry:132 - [] Error is java.lang.ClassCastException: class java.sql.Timestamp cannot be cast to class java.sql.Date (java.sql.Timestamp and java.sql.Date are in module java.sql of loader 'platform')
+2023-09-14 19:59:50,313 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 3100 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 19:59:50,315 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 19:59:50,320 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 20:00:13,943 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.383 seconds (JVM running for 25.49)
+2023-09-14 20:04:03,675 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 16764 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 20:04:03,678 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 20:04:03,687 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 20:04:27,544 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.586 seconds (JVM running for 25.48)
+2023-09-14 20:04:30,007 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-04-01
+2023-09-14 20:16:54,902 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 4080 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 20:16:54,906 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 20:16:54,910 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 20:17:19,746 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 25.566 seconds (JVM running for 26.474)
+2023-09-14 20:17:30,005 INFO  CreateJournalEntry:53 - [] Scheduled task executing...2022-04-01
+2023-09-14 20:18:30,850 INFO  CreateJournalEntry:59 - [] Found 586 sales invoices for the year 2022
+2023-09-14 20:18:32,322 TRACE CreateJournalEntry:130 - [] Excel file updated: JournalEntries.xlsx
+2023-09-14 20:23:50,791 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 7760 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 20:23:50,795 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 20:23:50,798 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 20:24:15,000 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.861 seconds (JVM running for 25.787)
+2023-09-14 20:24:20,012 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-04-01
+2023-09-14 20:25:30,275 INFO  CreateJournalEntry:58 - [] Found 586 sales invoices for the year 2022
+2023-09-14 20:25:30,769 TRACE CreateJournalEntry:129 - [] Excel file updated: JournalEntries.xlsx
+2023-09-14 20:49:17,943 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1836 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 20:49:17,946 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 20:49:17,957 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 20:49:40,277 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.047 seconds (JVM running for 23.943)
+2023-09-14 20:50:00,015 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-04-01
+2023-09-14 20:50:06,640 INFO  CreateJournalEntry:58 - [] Found 586 sales invoices for the year 2022
+2023-09-14 20:50:07,414 TRACE CreateJournalEntry:129 - [] Excel file updated: JournalEntries.xlsx
+2023-09-14 20:50:07,415 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-05-01
+2023-09-14 20:50:11,187 INFO  CreateJournalEntry:58 - [] Found 354 sales invoices for the year 2022
+2023-09-14 20:50:11,204 TRACE CreateJournalEntry:129 - [] Excel file updated: JournalEntries.xlsx
+2023-09-14 21:07:50,187 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 16260 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 21:07:50,189 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 21:07:50,193 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 21:08:12,450 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 22.933 seconds (JVM running for 23.729)
+2023-09-14 21:08:20,024 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-04-10APRIL-2022
+2023-09-14 21:08:24,847 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
+2023-09-14 21:08:26,042 TRACE CreateJournalEntry:131 - [] Excel file updated: JournalEntries.xlsx
+2023-09-14 21:08:26,643 TRACE CreateJournalEntry:179 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-14 21:17:27,430 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 7056 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 21:17:27,431 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 21:17:27,435 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 21:17:50,057 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.276 seconds (JVM running for 24.208)
+2023-09-14 21:18:00,036 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-04-10APRIL-2022
+2023-09-14 21:18:03,720 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
+2023-09-14 21:18:05,113 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-14 21:18:05,840 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-14 21:20:36,051 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 4488 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 21:20:36,053 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 21:20:36,057 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 21:21:56,430 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1096 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-14 21:21:56,433 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-14 21:21:56,436 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-14 21:22:18,698 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 22.984 seconds (JVM running for 23.864)
+2023-09-14 21:22:30,011 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
+2023-09-14 21:22:34,192 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
+2023-09-14 21:22:35,599 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-14 21:22:36,317 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-14 21:22:36,318 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-05-01:2022-05-31MAY-2022
+2023-09-14 21:22:41,574 INFO  CreateJournalEntry:62 - [] Found 524 sales invoices for MAY_2022
+2023-09-14 21:22:42,175 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-14 21:22:42,380 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_MAY_2022.pdf

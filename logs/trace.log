@@ -1,84 +1,634 @@
-2023-09-14 18:38:26,053 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 13528 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 18:38:26,058 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 18:38:26,063 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 18:38:40,840 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 15.385 seconds (JVM running for 17.136)
-2023-09-14 18:39:06,096 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 18252 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 18:39:06,099 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 18:39:06,110 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 18:39:19,832 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.503 seconds (JVM running for 15.374)
-2023-09-14 18:40:00,032 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-04-01:2022-04-10-2022
-2023-09-14 18:45:55,585 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 14908 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 18:45:55,587 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 18:45:55,597 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 18:46:09,282 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.441 seconds (JVM running for 15.359)
-2023-09-14 18:46:56,310 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15592 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 18:46:56,314 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 18:46:56,326 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 18:47:07,702 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.189 seconds (JVM running for 13.043)
-2023-09-14 18:47:30,019 INFO  CreateJournalEntry:51 - [] Scheduled task executing...2022-04-01:2022-04-01-2022
-2023-09-14 18:47:56,190 INFO  CreateJournalEntry:56 - [] Found 4847 sales invoices for the year 2022
-2023-09-14 18:47:56,787 ERROR CreateJournalEntry:132 - [] Error is java.lang.ClassCastException: class java.sql.Timestamp cannot be cast to class java.sql.Date (java.sql.Timestamp and java.sql.Date are in module java.sql of loader 'platform')
-2023-09-14 19:59:50,313 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 3100 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 19:59:50,315 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 19:59:50,320 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 20:00:13,943 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.383 seconds (JVM running for 25.49)
-2023-09-14 20:04:03,675 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 16764 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 20:04:03,678 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 20:04:03,687 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 20:04:27,544 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.586 seconds (JVM running for 25.48)
-2023-09-14 20:04:30,007 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-04-01
-2023-09-14 20:16:54,902 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 4080 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 20:16:54,906 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 20:16:54,910 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 20:17:19,746 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 25.566 seconds (JVM running for 26.474)
-2023-09-14 20:17:30,005 INFO  CreateJournalEntry:53 - [] Scheduled task executing...2022-04-01
-2023-09-14 20:18:30,850 INFO  CreateJournalEntry:59 - [] Found 586 sales invoices for the year 2022
-2023-09-14 20:18:32,322 TRACE CreateJournalEntry:130 - [] Excel file updated: JournalEntries.xlsx
-2023-09-14 20:23:50,791 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 7760 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 20:23:50,795 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 20:23:50,798 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 20:24:15,000 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.861 seconds (JVM running for 25.787)
-2023-09-14 20:24:20,012 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-04-01
-2023-09-14 20:25:30,275 INFO  CreateJournalEntry:58 - [] Found 586 sales invoices for the year 2022
-2023-09-14 20:25:30,769 TRACE CreateJournalEntry:129 - [] Excel file updated: JournalEntries.xlsx
-2023-09-14 20:49:17,943 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1836 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 20:49:17,946 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 20:49:17,957 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 20:49:40,277 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.047 seconds (JVM running for 23.943)
-2023-09-14 20:50:00,015 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-04-01
-2023-09-14 20:50:06,640 INFO  CreateJournalEntry:58 - [] Found 586 sales invoices for the year 2022
-2023-09-14 20:50:07,414 TRACE CreateJournalEntry:129 - [] Excel file updated: JournalEntries.xlsx
-2023-09-14 20:50:07,415 INFO  CreateJournalEntry:52 - [] Scheduled task executing...2022-05-01
-2023-09-14 20:50:11,187 INFO  CreateJournalEntry:58 - [] Found 354 sales invoices for the year 2022
-2023-09-14 20:50:11,204 TRACE CreateJournalEntry:129 - [] Excel file updated: JournalEntries.xlsx
-2023-09-14 21:07:50,187 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 16260 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 21:07:50,189 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 21:07:50,193 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 21:08:12,450 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 22.933 seconds (JVM running for 23.729)
-2023-09-14 21:08:20,024 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-04-10APRIL-2022
-2023-09-14 21:08:24,847 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
-2023-09-14 21:08:26,042 TRACE CreateJournalEntry:131 - [] Excel file updated: JournalEntries.xlsx
-2023-09-14 21:08:26,643 TRACE CreateJournalEntry:179 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
-2023-09-14 21:17:27,430 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 7056 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 21:17:27,431 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 21:17:27,435 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 21:17:50,057 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.276 seconds (JVM running for 24.208)
-2023-09-14 21:18:00,036 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-04-10APRIL-2022
-2023-09-14 21:18:03,720 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
-2023-09-14 21:18:05,113 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
-2023-09-14 21:18:05,840 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
-2023-09-14 21:20:36,051 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 4488 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 21:20:36,053 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 21:20:36,057 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 21:21:56,430 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1096 (C:\journals\target\classes started by mnikh in C:\journals)
-2023-09-14 21:21:56,433 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
-2023-09-14 21:21:56,436 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
-2023-09-14 21:22:18,698 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 22.984 seconds (JVM running for 23.864)
-2023-09-14 21:22:30,011 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
-2023-09-14 21:22:34,192 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
-2023-09-14 21:22:35,599 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
-2023-09-14 21:22:36,317 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
-2023-09-14 21:22:36,318 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-05-01:2022-05-31MAY-2022
-2023-09-14 21:22:41,574 INFO  CreateJournalEntry:62 - [] Found 524 sales invoices for MAY_2022
-2023-09-14 21:22:42,175 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
-2023-09-14 21:22:42,380 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-15 13:29:44,681 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 8488 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 13:29:44,684 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 13:29:44,688 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 13:34:17,453 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 14608 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 13:34:17,455 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 13:34:17,459 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:06:44,397 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 13960 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:06:44,399 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:06:44,403 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:10:11,077 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 10084 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:10:11,083 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:10:11,094 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:10:52,072 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1036 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:10:52,076 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:10:52,082 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:11:03,680 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.3 seconds (JVM running for 13.206)
+2023-09-15 14:12:00,026 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
+2023-09-15 14:14:07,338 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 164 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:14:07,341 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:14:07,349 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:14:19,539 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.92 seconds (JVM running for 13.822)
+2023-09-15 14:14:30,011 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
+2023-09-15 14:14:30,259 INFO  JournalEntryService:70 - [] Found 0 sales for APRIL_2022
+2023-09-15 14:14:30,260 INFO  JournalEntryService:73 - [] Found 0 purchases for APRIL_2022
+2023-09-15 14:14:30,261 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-05-01:2022-05-31MAY-2022
+2023-09-15 14:14:30,355 INFO  JournalEntryService:70 - [] Found 0 sales for MAY_2022
+2023-09-15 14:14:30,356 INFO  JournalEntryService:73 - [] Found 0 purchases for MAY_2022
+2023-09-15 14:35:25,807 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 7640 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:35:25,812 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:35:25,820 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:37:08,323 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 9544 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:37:08,326 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:37:08,331 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:37:24,293 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 16.972 seconds (JVM running for 18.23)
+2023-09-15 14:37:30,032 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
+2023-09-15 14:39:01,379 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 13172 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:39:01,382 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:39:01,393 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:40:05,279 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15844 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:40:05,284 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:40:05,297 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:40:21,416 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 17.066 seconds (JVM running for 18.287)
+2023-09-15 14:40:30,030 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
+2023-09-15 14:47:14,485 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 5956 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 14:47:14,490 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 14:47:14,504 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 14:47:33,041 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 19.485 seconds (JVM running for 20.755)
+2023-09-15 14:48:00,034 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
+2023-09-15 14:48:00,907 INFO  JournalEntryService:70 - [] Found 0 sales for APRIL_2022
+2023-09-15 14:48:00,908 INFO  JournalEntryService:72 - [] Found 0 payables for APRIL_2022
+2023-09-15 14:48:00,908 INFO  JournalEntryService:73 - [] Found 0 purchases for APRIL_2022
+2023-09-15 14:48:00,908 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-05-01:2022-05-31MAY-2022
+2023-09-15 14:48:01,627 INFO  JournalEntryService:70 - [] Found 0 sales for MAY_2022
+2023-09-15 14:48:01,628 INFO  JournalEntryService:72 - [] Found 0 payables for MAY_2022
+2023-09-15 14:48:01,628 INFO  JournalEntryService:73 - [] Found 0 purchases for MAY_2022
+2023-09-15 15:33:28,655 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 9772 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 15:33:28,659 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 15:33:28,670 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 15:33:45,480 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 17.804 seconds (JVM running for 19.034)
+2023-09-15 15:34:00,031 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 15:34:00,610 INFO  JournalEntryService:70 - [] Found 0 sales for APRIL_2022
+2023-09-15 15:34:00,611 INFO  JournalEntryService:72 - [] Found 0 payables for APRIL_2022
+2023-09-15 15:34:00,611 INFO  JournalEntryService:73 - [] Found 0 purchases for APRIL_2022
+2023-09-15 15:34:00,611 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 15:34:00,748 INFO  JournalEntryService:70 - [] Found 0 sales for MAY_2022
+2023-09-15 15:34:00,750 INFO  JournalEntryService:72 - [] Found 0 payables for MAY_2022
+2023-09-15 15:34:00,750 INFO  JournalEntryService:73 - [] Found 0 purchases for MAY_2022
+2023-09-15 15:34:00,750 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-15 15:34:01,018 INFO  JournalEntryService:70 - [] Found 0 sales for JUNE_2022
+2023-09-15 15:34:01,019 INFO  JournalEntryService:72 - [] Found 0 payables for JUNE_2022
+2023-09-15 15:34:01,019 INFO  JournalEntryService:73 - [] Found 0 purchases for JUNE_2022
+2023-09-15 15:34:01,019 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-15 15:34:01,154 INFO  JournalEntryService:70 - [] Found 0 sales for JULY_2022
+2023-09-15 15:34:01,154 INFO  JournalEntryService:72 - [] Found 0 payables for JULY_2022
+2023-09-15 15:34:01,154 INFO  JournalEntryService:73 - [] Found 0 purchases for JULY_2022
+2023-09-15 15:34:01,156 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-15 15:34:01,531 INFO  JournalEntryService:70 - [] Found 0 sales for AUGUST_2022
+2023-09-15 15:34:01,532 INFO  JournalEntryService:72 - [] Found 0 payables for AUGUST_2022
+2023-09-15 15:34:01,532 INFO  JournalEntryService:73 - [] Found 0 purchases for AUGUST_2022
+2023-09-15 15:34:01,533 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-15 15:34:02,048 INFO  JournalEntryService:70 - [] Found 0 sales for SEPTEMBER_2022
+2023-09-15 15:34:02,049 INFO  JournalEntryService:72 - [] Found 0 payables for SEPTEMBER_2022
+2023-09-15 15:34:02,049 INFO  JournalEntryService:73 - [] Found 0 purchases for SEPTEMBER_2022
+2023-09-15 15:34:02,050 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-15 15:34:02,351 INFO  JournalEntryService:70 - [] Found 0 sales for OCTOBER_2022
+2023-09-15 15:34:02,351 INFO  JournalEntryService:72 - [] Found 0 payables for OCTOBER_2022
+2023-09-15 15:34:02,351 INFO  JournalEntryService:73 - [] Found 0 purchases for OCTOBER_2022
+2023-09-15 15:34:02,352 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-15 15:34:03,169 INFO  JournalEntryService:70 - [] Found 0 sales for NOVEMBER_2022
+2023-09-15 15:34:03,170 INFO  JournalEntryService:72 - [] Found 0 payables for NOVEMBER_2022
+2023-09-15 15:34:03,170 INFO  JournalEntryService:73 - [] Found 0 purchases for NOVEMBER_2022
+2023-09-15 15:34:03,171 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-15 15:34:03,492 INFO  JournalEntryService:70 - [] Found 0 sales for DECEMBER_2022
+2023-09-15 15:34:03,494 INFO  JournalEntryService:72 - [] Found 0 payables for DECEMBER_2022
+2023-09-15 15:34:03,494 INFO  JournalEntryService:73 - [] Found 0 purchases for DECEMBER_2022
+2023-09-15 15:34:03,495 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-15 15:34:03,683 INFO  JournalEntryService:70 - [] Found 0 sales for JANUARY_2023
+2023-09-15 15:34:03,684 INFO  JournalEntryService:72 - [] Found 0 payables for JANUARY_2023
+2023-09-15 15:34:03,684 INFO  JournalEntryService:73 - [] Found 0 purchases for JANUARY_2023
+2023-09-15 15:34:03,685 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-15 15:34:04,194 INFO  JournalEntryService:70 - [] Found 0 sales for FEBRUARY_2023
+2023-09-15 15:34:04,195 INFO  JournalEntryService:72 - [] Found 0 payables for FEBRUARY_2023
+2023-09-15 15:34:04,195 INFO  JournalEntryService:73 - [] Found 0 purchases for FEBRUARY_2023
+2023-09-15 15:34:04,196 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-15 15:34:04,823 INFO  JournalEntryService:70 - [] Found 0 sales for MARCH_2023
+2023-09-15 15:34:04,823 INFO  JournalEntryService:72 - [] Found 0 payables for MARCH_2023
+2023-09-15 15:34:04,824 INFO  JournalEntryService:73 - [] Found 0 purchases for MARCH_2023
+2023-09-15 15:57:27,017 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 9492 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 15:57:27,021 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 15:57:27,029 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 15:57:49,835 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.058 seconds (JVM running for 26.489)
+2023-09-15 15:58:00,031 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:00:51,210 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 16308 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:00:51,213 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:00:51,219 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:05:53,223 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 13856 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:05:53,229 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:05:53,246 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:06:11,053 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 18.772 seconds (JVM running for 20.095)
+2023-09-15 16:06:20,022 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:06:20,356 INFO  JournalEntryService:70 - [] Found 0 sales for APRIL_2022
+2023-09-15 16:06:20,360 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 16:06:20,452 INFO  JournalEntryService:70 - [] Found 0 sales for MAY_2022
+2023-09-15 16:06:20,454 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-15 16:06:20,556 INFO  JournalEntryService:70 - [] Found 0 sales for JUNE_2022
+2023-09-15 16:06:20,556 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-15 16:06:20,656 INFO  JournalEntryService:70 - [] Found 0 sales for JULY_2022
+2023-09-15 16:06:20,657 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-15 16:06:20,762 INFO  JournalEntryService:70 - [] Found 0 sales for AUGUST_2022
+2023-09-15 16:06:20,763 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-15 16:06:20,821 INFO  JournalEntryService:70 - [] Found 0 sales for SEPTEMBER_2022
+2023-09-15 16:06:20,822 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-15 16:06:20,966 INFO  JournalEntryService:70 - [] Found 0 sales for OCTOBER_2022
+2023-09-15 16:06:20,966 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-15 16:06:21,066 INFO  JournalEntryService:70 - [] Found 0 sales for NOVEMBER_2022
+2023-09-15 16:06:21,067 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-15 16:06:21,169 INFO  JournalEntryService:70 - [] Found 0 sales for DECEMBER_2022
+2023-09-15 16:06:21,170 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-15 16:06:21,577 INFO  JournalEntryService:70 - [] Found 0 sales for JANUARY_2023
+2023-09-15 16:06:21,578 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-15 16:06:21,681 INFO  JournalEntryService:70 - [] Found 0 sales for FEBRUARY_2023
+2023-09-15 16:06:21,682 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-15 16:06:21,783 INFO  JournalEntryService:70 - [] Found 0 sales for MARCH_2023
+2023-09-15 16:08:32,477 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 16520 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:08:32,482 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:08:32,491 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:08:53,860 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 22.472 seconds (JVM running for 24.253)
+2023-09-15 16:09:21,620 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1752 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:09:21,623 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:09:21,629 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:09:40,971 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 20.587 seconds (JVM running for 22.159)
+2023-09-15 16:09:50,031 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:12:25,116 INFO  JournalEntryService:70 - [] Found 0 sales for APRIL_2022
+2023-09-15 16:12:44,079 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 16:15:29,909 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 10648 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:15:29,918 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:15:29,924 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:15:46,099 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 17.182 seconds (JVM running for 18.524)
+2023-09-15 16:16:00,040 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:16:00,350 INFO  JournalEntryService:70 - [] Found 0 sales for APRIL_2022
+2023-09-15 16:16:00,351 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 16:16:00,437 INFO  JournalEntryService:70 - [] Found 0 sales for MAY_2022
+2023-09-15 16:16:00,438 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-15 16:16:00,463 INFO  JournalEntryService:70 - [] Found 0 sales for JUNE_2022
+2023-09-15 16:16:00,463 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-15 16:16:00,484 INFO  JournalEntryService:70 - [] Found 0 sales for JULY_2022
+2023-09-15 16:16:00,485 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-15 16:16:00,514 INFO  JournalEntryService:70 - [] Found 0 sales for AUGUST_2022
+2023-09-15 16:16:00,516 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-15 16:16:00,644 INFO  JournalEntryService:70 - [] Found 0 sales for SEPTEMBER_2022
+2023-09-15 16:16:00,645 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-15 16:16:00,747 INFO  JournalEntryService:70 - [] Found 0 sales for OCTOBER_2022
+2023-09-15 16:16:00,747 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-15 16:16:00,844 INFO  JournalEntryService:70 - [] Found 0 sales for NOVEMBER_2022
+2023-09-15 16:16:00,844 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-15 16:16:00,865 INFO  JournalEntryService:70 - [] Found 0 sales for DECEMBER_2022
+2023-09-15 16:16:00,865 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-15 16:16:00,885 INFO  JournalEntryService:70 - [] Found 0 sales for JANUARY_2023
+2023-09-15 16:16:00,886 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-15 16:16:00,951 INFO  JournalEntryService:70 - [] Found 0 sales for FEBRUARY_2023
+2023-09-15 16:16:00,951 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-15 16:16:01,054 INFO  JournalEntryService:70 - [] Found 0 sales for MARCH_2023
+2023-09-15 16:16:48,810 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 14288 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:16:48,814 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:16:48,819 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:17:07,305 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 19.635 seconds (JVM running for 21.247)
+2023-09-15 16:22:52,455 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:23:35,142 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15496 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:23:35,144 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:23:35,148 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:23:59,141 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 5284 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:23:59,143 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:23:59,148 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:24:14,277 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 15.858 seconds (JVM running for 17.027)
+2023-09-15 16:24:52,675 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 14032 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:24:52,681 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:24:52,686 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:25:09,341 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 17.486 seconds (JVM running for 18.698)
+2023-09-15 16:25:31,178 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 8928 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:25:31,182 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:25:31,190 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:25:47,883 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 17.606 seconds (JVM running for 18.667)
+2023-09-15 16:26:00,044 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:39:00,742 INFO  JournalEntryService:70 - [] Found 0 sales for APRIL_2022
+2023-09-15 16:39:00,743 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 16:39:00,765 INFO  JournalEntryService:70 - [] Found 0 sales for MAY_2022
+2023-09-15 16:39:00,766 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-15 16:39:00,785 INFO  JournalEntryService:70 - [] Found 0 sales for JUNE_2022
+2023-09-15 16:39:00,785 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-15 16:39:00,818 INFO  JournalEntryService:70 - [] Found 0 sales for JULY_2022
+2023-09-15 16:39:00,819 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-15 16:39:33,109 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 17300 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:39:33,112 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:39:33,115 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:39:49,319 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 16.863 seconds (JVM running for 17.938)
+2023-09-15 16:40:20,035 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:41:47,797 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 7744 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:41:47,799 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:41:47,809 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:42:02,040 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.951 seconds (JVM running for 16.024)
+2023-09-15 16:42:20,021 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:44:51,451 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 11688 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:44:51,455 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:44:51,459 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:45:06,270 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 15.54 seconds (JVM running for 16.82)
+2023-09-15 16:45:20,019 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:45:20,334 INFO  JournalEntryService:70 - [] Found 0 sales for APRIL_2022
+2023-09-15 16:45:20,335 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 16:45:20,469 INFO  JournalEntryService:70 - [] Found 0 sales for MAY_2022
+2023-09-15 16:45:20,471 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-15 16:45:20,524 INFO  JournalEntryService:70 - [] Found 0 sales for JUNE_2022
+2023-09-15 16:45:20,525 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-15 16:45:20,557 INFO  JournalEntryService:70 - [] Found 0 sales for JULY_2022
+2023-09-15 16:45:20,559 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-15 16:45:20,649 INFO  JournalEntryService:70 - [] Found 0 sales for AUGUST_2022
+2023-09-15 16:45:20,650 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-15 16:45:20,697 INFO  JournalEntryService:70 - [] Found 0 sales for SEPTEMBER_2022
+2023-09-15 16:45:20,698 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-15 16:45:20,734 INFO  JournalEntryService:70 - [] Found 0 sales for OCTOBER_2022
+2023-09-15 16:45:20,735 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-15 16:45:20,759 INFO  JournalEntryService:70 - [] Found 0 sales for NOVEMBER_2022
+2023-09-15 16:45:20,759 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-15 16:45:20,783 INFO  JournalEntryService:70 - [] Found 0 sales for DECEMBER_2022
+2023-09-15 16:45:20,784 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-15 16:45:20,819 INFO  JournalEntryService:70 - [] Found 0 sales for JANUARY_2023
+2023-09-15 16:45:20,820 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-15 16:45:20,861 INFO  JournalEntryService:70 - [] Found 0 sales for FEBRUARY_2023
+2023-09-15 16:45:20,861 INFO  JournalEntryService:61 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-15 16:45:20,930 INFO  JournalEntryService:70 - [] Found 0 sales for MARCH_2023
+2023-09-15 16:53:40,869 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 12200 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:53:40,871 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:53:40,876 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:53:54,667 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.491 seconds (JVM running for 15.534)
+2023-09-15 16:54:20,015 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:57:02,476 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 5812 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:57:02,477 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:57:02,483 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:57:16,624 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.87 seconds (JVM running for 15.919)
+2023-09-15 16:57:30,033 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 16:58:38,360 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 11276 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 16:58:38,364 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 16:58:38,367 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 16:58:52,079 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.412 seconds (JVM running for 15.496)
+2023-09-15 16:59:00,041 INFO  JournalEntryService:61 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 17:20:16,928 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 4024 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 17:20:16,930 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 17:20:16,934 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 17:20:28,885 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.641 seconds (JVM running for 13.744)
+2023-09-15 17:21:00,036 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
+2023-09-15 17:26:07,483 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15468 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 17:26:07,486 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 17:26:07,494 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 17:26:19,244 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.589 seconds (JVM running for 13.441)
+2023-09-15 17:27:00,036 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2022-05-31APRIL-2022
+2023-09-15 17:27:05,436 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
+2023-09-15 17:27:06,802 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:27:07,589 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-15 17:27:07,591 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-05-01:2022-05-31MAY-2022
+2023-09-15 17:27:14,631 INFO  CreateJournalEntry:62 - [] Found 524 sales invoices for MAY_2022
+2023-09-15 17:27:15,275 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:27:15,573 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-15 17:29:14,640 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 4824 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 17:29:14,642 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 17:29:14,647 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 17:29:30,891 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 6668 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 17:29:30,895 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 17:29:30,901 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 17:29:42,688 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.468 seconds (JVM running for 13.292)
+2023-09-15 17:30:00,025 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 17:30:05,032 INFO  CreateJournalEntry:62 - [] Found 354 sales invoices for APRIL_2022
+2023-09-15 17:30:06,260 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:06,931 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-15 17:30:06,931 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 17:30:13,420 INFO  CreateJournalEntry:62 - [] Found 524 sales invoices for MAY_2022
+2023-09-15 17:30:14,067 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:14,373 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-15 17:30:14,373 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-15 17:30:19,343 INFO  CreateJournalEntry:62 - [] Found 441 sales invoices for JUNE_2022
+2023-09-15 17:30:19,755 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:19,931 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-15 17:30:19,931 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-15 17:30:26,456 INFO  CreateJournalEntry:62 - [] Found 595 sales invoices for JULY_2022
+2023-09-15 17:30:26,880 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:27,092 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-15 17:30:27,093 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-15 17:30:27,511 INFO  CreateJournalEntry:62 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-15 17:30:27,748 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:27,757 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-15 17:30:27,757 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-15 17:30:29,427 INFO  CreateJournalEntry:62 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-15 17:30:29,686 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:29,752 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-15 17:30:29,752 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-15 17:30:34,619 INFO  CreateJournalEntry:62 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-15 17:30:34,926 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:35,057 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-15 17:30:35,057 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-15 17:30:38,241 INFO  CreateJournalEntry:62 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-15 17:30:38,550 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:38,618 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-15 17:30:38,619 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-15 17:30:41,552 INFO  CreateJournalEntry:62 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-15 17:30:41,907 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:41,987 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-15 17:30:41,987 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-15 17:30:44,200 INFO  CreateJournalEntry:62 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-15 17:30:44,564 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:44,680 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-15 17:30:44,680 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-15 17:30:46,240 INFO  CreateJournalEntry:62 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-15 17:30:46,688 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:46,717 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-15 17:30:46,718 INFO  CreateJournalEntry:57 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-15 17:30:48,024 INFO  CreateJournalEntry:62 - [] Found 147 sales invoices for MARCH_2023
+2023-09-15 17:30:48,405 TRACE CreateJournalEntry:132 - [] Excel file updated: JournalEntries.xlsx
+2023-09-15 17:30:48,430 TRACE CreateJournalEntry:181 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-15 18:22:26,405 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 12756 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 18:22:26,408 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 18:22:26,412 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 18:22:39,637 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 13.926 seconds (JVM running for 14.917)
+2023-09-15 18:23:00,029 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 18:25:50,909 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 8888 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 18:25:50,910 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 18:25:50,916 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 18:26:02,987 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.774 seconds (JVM running for 13.602)
+2023-09-15 18:26:20,014 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 18:27:58,158 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 800 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 18:27:58,163 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 18:27:58,170 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 18:28:10,098 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.695 seconds (JVM running for 13.547)
+2023-09-15 18:28:20,028 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 18:29:58,247 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 9092 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 18:29:58,251 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 18:29:58,264 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 18:30:10,850 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 13.479 seconds (JVM running for 14.605)
+2023-09-15 18:30:20,026 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 18:32:23,434 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15044 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 18:32:23,436 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 18:32:23,440 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 18:32:35,082 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.348 seconds (JVM running for 13.183)
+2023-09-15 18:33:00,028 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 18:36:21,688 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1660 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 18:36:21,689 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 18:36:21,693 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 18:40:31,567 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15776 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 18:40:31,570 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 18:40:31,576 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 18:40:43,401 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.5 seconds (JVM running for 13.334)
+2023-09-15 18:41:00,039 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 18:41:05,166 INFO  CreateJournalEntry:79 - [] Found 354 sales invoices for APRIL_2022
+2023-09-15 18:41:05,167 INFO  CreateJournalEntry:80 - [] Found 181 sales invoices for APRIL_2022
+2023-09-15 18:41:05,167 INFO  CreateJournalEntry:82 - [] Found 0 payables for APRIL_2022
+2023-09-15 18:41:05,168 INFO  CreateJournalEntry:83 - [] Found 0 purchases for APRIL_2022
+2023-09-15 18:41:06,642 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:07,791 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_APRIL_2022.pdf
+2023-09-15 18:41:07,932 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:08,035 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_APRIL_2022.pdf
+2023-09-15 18:41:08,036 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 18:41:13,003 INFO  CreateJournalEntry:79 - [] Found 524 sales invoices for MAY_2022
+2023-09-15 18:41:13,004 INFO  CreateJournalEntry:80 - [] Found 24 sales invoices for MAY_2022
+2023-09-15 18:41:13,004 INFO  CreateJournalEntry:82 - [] Found 0 payables for MAY_2022
+2023-09-15 18:41:13,004 INFO  CreateJournalEntry:83 - [] Found 0 purchases for MAY_2022
+2023-09-15 18:41:13,541 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:13,757 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_MAY_2022.pdf
+2023-09-15 18:41:13,834 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:13,846 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_MAY_2022.pdf
+2023-09-15 18:41:13,847 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-15 18:41:17,216 INFO  CreateJournalEntry:79 - [] Found 441 sales invoices for JUNE_2022
+2023-09-15 18:41:17,217 INFO  CreateJournalEntry:80 - [] Found 23 sales invoices for JUNE_2022
+2023-09-15 18:41:17,217 INFO  CreateJournalEntry:82 - [] Found 0 payables for JUNE_2022
+2023-09-15 18:41:17,217 INFO  CreateJournalEntry:83 - [] Found 0 purchases for JUNE_2022
+2023-09-15 18:41:17,677 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:17,846 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_JUNE_2022.pdf
+2023-09-15 18:41:17,926 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:17,940 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_JUNE_2022.pdf
+2023-09-15 18:41:17,940 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-15 18:41:23,070 INFO  CreateJournalEntry:79 - [] Found 595 sales invoices for JULY_2022
+2023-09-15 18:41:23,071 INFO  CreateJournalEntry:80 - [] Found 100 sales invoices for JULY_2022
+2023-09-15 18:41:23,071 INFO  CreateJournalEntry:82 - [] Found 0 payables for JULY_2022
+2023-09-15 18:41:23,071 INFO  CreateJournalEntry:83 - [] Found 0 purchases for JULY_2022
+2023-09-15 18:41:23,397 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:23,571 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_JULY_2022.pdf
+2023-09-15 18:41:23,661 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:23,693 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_JULY_2022.pdf
+2023-09-15 18:41:23,694 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-15 18:41:23,972 INFO  CreateJournalEntry:79 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-15 18:41:23,973 INFO  CreateJournalEntry:80 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-15 18:41:23,973 INFO  CreateJournalEntry:82 - [] Found 0 payables for AUGUST_2022
+2023-09-15 18:41:23,973 INFO  CreateJournalEntry:83 - [] Found 0 purchases for AUGUST_2022
+2023-09-15 18:41:24,209 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:24,220 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_AUGUST_2022.pdf
+2023-09-15 18:41:24,271 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:24,274 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_AUGUST_2022.pdf
+2023-09-15 18:41:24,275 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-15 18:41:25,466 INFO  CreateJournalEntry:79 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-15 18:41:25,467 INFO  CreateJournalEntry:80 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-15 18:41:25,467 INFO  CreateJournalEntry:82 - [] Found 0 payables for SEPTEMBER_2022
+2023-09-15 18:41:25,467 INFO  CreateJournalEntry:83 - [] Found 0 purchases for SEPTEMBER_2022
+2023-09-15 18:41:25,780 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:25,830 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_SEPTEMBER_2022.pdf
+2023-09-15 18:41:25,889 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:25,894 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_SEPTEMBER_2022.pdf
+2023-09-15 18:41:25,895 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-15 18:41:29,726 INFO  CreateJournalEntry:79 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-15 18:41:29,727 INFO  CreateJournalEntry:80 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-15 18:41:29,728 INFO  CreateJournalEntry:82 - [] Found 0 payables for OCTOBER_2022
+2023-09-15 18:41:29,728 INFO  CreateJournalEntry:83 - [] Found 0 purchases for OCTOBER_2022
+2023-09-15 18:41:30,077 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:30,188 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_OCTOBER_2022.pdf
+2023-09-15 18:41:30,274 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:30,314 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_OCTOBER_2022.pdf
+2023-09-15 18:41:30,314 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-15 18:41:32,438 INFO  CreateJournalEntry:79 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-15 18:41:32,438 INFO  CreateJournalEntry:80 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-15 18:41:32,440 INFO  CreateJournalEntry:82 - [] Found 0 payables for NOVEMBER_2022
+2023-09-15 18:41:32,440 INFO  CreateJournalEntry:83 - [] Found 0 purchases for NOVEMBER_2022
+2023-09-15 18:41:32,748 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:32,817 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_NOVEMBER_2022.pdf
+2023-09-15 18:41:32,876 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:32,883 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_NOVEMBER_2022.pdf
+2023-09-15 18:41:32,883 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-15 18:41:34,748 INFO  CreateJournalEntry:79 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-15 18:41:34,749 INFO  CreateJournalEntry:80 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-15 18:41:34,749 INFO  CreateJournalEntry:82 - [] Found 0 payables for DECEMBER_2022
+2023-09-15 18:41:34,749 INFO  CreateJournalEntry:83 - [] Found 0 purchases for DECEMBER_2022
+2023-09-15 18:41:35,146 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:35,223 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_DECEMBER_2022.pdf
+2023-09-15 18:41:35,287 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:35,290 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_DECEMBER_2022.pdf
+2023-09-15 18:41:35,291 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-15 18:41:36,626 INFO  CreateJournalEntry:79 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-15 18:41:36,627 INFO  CreateJournalEntry:80 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-15 18:41:36,627 INFO  CreateJournalEntry:82 - [] Found 0 payables for JANUARY_2023
+2023-09-15 18:41:36,627 INFO  CreateJournalEntry:83 - [] Found 0 purchases for JANUARY_2023
+2023-09-15 18:41:36,982 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:37,034 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_JANUARY_2023.pdf
+2023-09-15 18:41:37,034 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-15 18:41:37,940 INFO  CreateJournalEntry:79 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-15 18:41:37,941 INFO  CreateJournalEntry:80 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-15 18:41:37,941 INFO  CreateJournalEntry:82 - [] Found 0 payables for FEBRUARY_2023
+2023-09-15 18:41:37,942 INFO  CreateJournalEntry:83 - [] Found 0 purchases for FEBRUARY_2023
+2023-09-15 18:41:38,262 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:38,297 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_FEBRUARY_2023.pdf
+2023-09-15 18:41:38,353 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:38,355 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_FEBRUARY_2023.pdf
+2023-09-15 18:41:38,355 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-15 18:41:39,222 INFO  CreateJournalEntry:79 - [] Found 147 sales invoices for MARCH_2023
+2023-09-15 18:41:39,223 INFO  CreateJournalEntry:80 - [] Found 9 sales invoices for MARCH_2023
+2023-09-15 18:41:39,223 INFO  CreateJournalEntry:82 - [] Found 0 payables for MARCH_2023
+2023-09-15 18:41:39,223 INFO  CreateJournalEntry:83 - [] Found 0 purchases for MARCH_2023
+2023-09-15 18:41:39,543 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:41:39,571 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_MARCH_2023.pdf
+2023-09-15 18:41:39,630 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:41:39,634 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_MARCH_2023.pdf
+2023-09-15 18:45:18,947 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15140 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-15 18:45:18,951 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-15 18:45:18,956 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-15 18:45:32,146 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 13.931 seconds (JVM running for 14.778)
+2023-09-15 18:45:50,017 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-15 18:46:09,535 INFO  CreateJournalEntry:79 - [] Found 354 sales invoices for APRIL_2022
+2023-09-15 18:46:09,536 INFO  CreateJournalEntry:80 - [] Found 181 sales invoices for APRIL_2022
+2023-09-15 18:46:09,537 INFO  CreateJournalEntry:82 - [] Found 0 payables for APRIL_2022
+2023-09-15 18:46:09,537 INFO  CreateJournalEntry:83 - [] Found 0 purchases for APRIL_2022
+2023-09-15 18:46:10,949 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:46:11,698 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_APRIL_2022.pdf
+2023-09-15 18:46:11,850 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:46:11,950 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_APRIL_2022.pdf
+2023-09-15 18:46:11,973 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:46:11,977 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_APRIL_2022.pdf
+2023-09-15 18:46:11,992 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:46:11,995 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_APRIL_2022.pdf
+2023-09-15 18:46:11,996 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-15 18:46:33,685 INFO  CreateJournalEntry:79 - [] Found 524 sales invoices for MAY_2022
+2023-09-15 18:46:33,685 INFO  CreateJournalEntry:80 - [] Found 24 sales invoices for MAY_2022
+2023-09-15 18:46:33,686 INFO  CreateJournalEntry:82 - [] Found 0 payables for MAY_2022
+2023-09-15 18:46:33,686 INFO  CreateJournalEntry:83 - [] Found 0 purchases for MAY_2022
+2023-09-15 18:46:34,236 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:46:34,477 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_MAY_2022.pdf
+2023-09-15 18:46:34,548 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:46:34,561 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_MAY_2022.pdf
+2023-09-15 18:46:34,591 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:46:34,593 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_MAY_2022.pdf
+2023-09-15 18:46:34,619 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:46:34,622 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_MAY_2022.pdf
+2023-09-15 18:46:34,623 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-15 18:46:48,845 INFO  CreateJournalEntry:79 - [] Found 441 sales invoices for JUNE_2022
+2023-09-15 18:46:48,846 INFO  CreateJournalEntry:80 - [] Found 23 sales invoices for JUNE_2022
+2023-09-15 18:46:48,847 INFO  CreateJournalEntry:82 - [] Found 0 payables for JUNE_2022
+2023-09-15 18:46:48,847 INFO  CreateJournalEntry:83 - [] Found 0 purchases for JUNE_2022
+2023-09-15 18:46:49,270 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:46:49,431 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_JUNE_2022.pdf
+2023-09-15 18:46:49,491 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:46:49,502 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_JUNE_2022.pdf
+2023-09-15 18:46:49,533 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:46:49,536 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_JUNE_2022.pdf
+2023-09-15 18:46:49,565 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:46:49,567 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_JUNE_2022.pdf
+2023-09-15 18:46:49,568 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-15 18:47:10,139 INFO  CreateJournalEntry:79 - [] Found 595 sales invoices for JULY_2022
+2023-09-15 18:47:10,139 INFO  CreateJournalEntry:80 - [] Found 100 sales invoices for JULY_2022
+2023-09-15 18:47:10,139 INFO  CreateJournalEntry:82 - [] Found 0 payables for JULY_2022
+2023-09-15 18:47:10,139 INFO  CreateJournalEntry:83 - [] Found 0 purchases for JULY_2022
+2023-09-15 18:47:10,519 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:10,709 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_JULY_2022.pdf
+2023-09-15 18:47:10,790 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:10,821 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_JULY_2022.pdf
+2023-09-15 18:47:10,855 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:10,857 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_JULY_2022.pdf
+2023-09-15 18:47:10,886 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:10,888 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_JULY_2022.pdf
+2023-09-15 18:47:10,889 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-15 18:47:11,581 INFO  CreateJournalEntry:79 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-15 18:47:11,581 INFO  CreateJournalEntry:80 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-15 18:47:11,581 INFO  CreateJournalEntry:82 - [] Found 0 payables for AUGUST_2022
+2023-09-15 18:47:11,581 INFO  CreateJournalEntry:83 - [] Found 0 purchases for AUGUST_2022
+2023-09-15 18:47:11,834 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:11,842 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_AUGUST_2022.pdf
+2023-09-15 18:47:11,893 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:11,896 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_AUGUST_2022.pdf
+2023-09-15 18:47:11,923 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:11,925 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_AUGUST_2022.pdf
+2023-09-15 18:47:11,950 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:11,952 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_AUGUST_2022.pdf
+2023-09-15 18:47:11,952 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-15 18:47:16,486 INFO  CreateJournalEntry:79 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-15 18:47:16,487 INFO  CreateJournalEntry:80 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-15 18:47:16,487 INFO  CreateJournalEntry:82 - [] Found 0 payables for SEPTEMBER_2022
+2023-09-15 18:47:16,487 INFO  CreateJournalEntry:83 - [] Found 0 purchases for SEPTEMBER_2022
+2023-09-15 18:47:16,734 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:16,774 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_SEPTEMBER_2022.pdf
+2023-09-15 18:47:16,828 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:16,831 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_SEPTEMBER_2022.pdf
+2023-09-15 18:47:16,851 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:16,853 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_SEPTEMBER_2022.pdf
+2023-09-15 18:47:16,879 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:16,881 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_SEPTEMBER_2022.pdf
+2023-09-15 18:47:16,881 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-15 18:47:25,520 INFO  CreateJournalEntry:79 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-15 18:47:25,521 INFO  CreateJournalEntry:80 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-15 18:47:25,521 INFO  CreateJournalEntry:82 - [] Found 0 payables for OCTOBER_2022
+2023-09-15 18:47:25,521 INFO  CreateJournalEntry:83 - [] Found 0 purchases for OCTOBER_2022
+2023-09-15 18:47:25,818 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:25,958 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_OCTOBER_2022.pdf
+2023-09-15 18:47:26,014 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:26,055 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_OCTOBER_2022.pdf
+2023-09-15 18:47:26,097 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:26,100 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_OCTOBER_2022.pdf
+2023-09-15 18:47:26,121 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:26,123 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_OCTOBER_2022.pdf
+2023-09-15 18:47:26,123 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-15 18:47:33,561 INFO  CreateJournalEntry:79 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-15 18:47:33,561 INFO  CreateJournalEntry:80 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-15 18:47:33,562 INFO  CreateJournalEntry:82 - [] Found 0 payables for NOVEMBER_2022
+2023-09-15 18:47:33,562 INFO  CreateJournalEntry:83 - [] Found 0 purchases for NOVEMBER_2022
+2023-09-15 18:47:33,851 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:33,936 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_NOVEMBER_2022.pdf
+2023-09-15 18:47:33,990 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:33,995 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_NOVEMBER_2022.pdf
+2023-09-15 18:47:34,014 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:34,016 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_NOVEMBER_2022.pdf
+2023-09-15 18:47:34,036 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:34,037 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_NOVEMBER_2022.pdf
+2023-09-15 18:47:34,037 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-15 18:47:45,066 INFO  CreateJournalEntry:79 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-15 18:47:45,066 INFO  CreateJournalEntry:80 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-15 18:47:45,066 INFO  CreateJournalEntry:82 - [] Found 0 payables for DECEMBER_2022
+2023-09-15 18:47:45,068 INFO  CreateJournalEntry:83 - [] Found 0 purchases for DECEMBER_2022
+2023-09-15 18:47:45,464 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:45,553 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_DECEMBER_2022.pdf
+2023-09-15 18:47:45,605 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:45,608 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_DECEMBER_2022.pdf
+2023-09-15 18:47:45,636 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:45,638 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_DECEMBER_2022.pdf
+2023-09-15 18:47:45,656 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:45,658 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_DECEMBER_2022.pdf
+2023-09-15 18:47:45,660 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-15 18:47:49,055 INFO  CreateJournalEntry:79 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-15 18:47:49,057 INFO  CreateJournalEntry:80 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-15 18:47:49,057 INFO  CreateJournalEntry:82 - [] Found 0 payables for JANUARY_2023
+2023-09-15 18:47:49,057 INFO  CreateJournalEntry:83 - [] Found 0 purchases for JANUARY_2023
+2023-09-15 18:47:49,400 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:49,455 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_JANUARY_2023.pdf
+2023-09-15 18:47:49,499 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:49,502 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_JANUARY_2023.pdf
+2023-09-15 18:47:49,523 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:49,525 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_JANUARY_2023.pdf
+2023-09-15 18:47:49,546 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:49,548 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_JANUARY_2023.pdf
+2023-09-15 18:47:49,549 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-15 18:47:54,274 INFO  CreateJournalEntry:79 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-15 18:47:54,274 INFO  CreateJournalEntry:80 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-15 18:47:54,274 INFO  CreateJournalEntry:82 - [] Found 0 payables for FEBRUARY_2023
+2023-09-15 18:47:54,274 INFO  CreateJournalEntry:83 - [] Found 0 purchases for FEBRUARY_2023
+2023-09-15 18:47:54,576 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:54,609 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_FEBRUARY_2023.pdf
+2023-09-15 18:47:54,665 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:54,667 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_FEBRUARY_2023.pdf
+2023-09-15 18:47:54,693 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:54,694 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_FEBRUARY_2023.pdf
+2023-09-15 18:47:54,716 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:54,718 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_FEBRUARY_2023.pdf
+2023-09-15 18:47:54,718 INFO  CreateJournalEntry:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-15 18:47:57,965 INFO  CreateJournalEntry:79 - [] Found 147 sales invoices for MARCH_2023
+2023-09-15 18:47:57,966 INFO  CreateJournalEntry:80 - [] Found 9 sales invoices for MARCH_2023
+2023-09-15 18:47:57,966 INFO  CreateJournalEntry:82 - [] Found 0 payables for MARCH_2023
+2023-09-15 18:47:57,966 INFO  CreateJournalEntry:83 - [] Found 0 purchases for MARCH_2023
+2023-09-15 18:47:58,258 TRACE CreateJournalEntry:172 - [] Excel file updated: JournalEntriesForSale.xlsx
+2023-09-15 18:47:58,296 TRACE CreateJournalEntry:221 - [] PDF file created: journal_entries_for_sale_MARCH_2023.pdf
+2023-09-15 18:47:58,340 TRACE CreateJournalEntry:283 - [] Excel file updated: JournalEntriesForReceivable.xlsx
+2023-09-15 18:47:58,342 TRACE CreateJournalEntry:332 - [] PDF file created: journal_entries_for_receivable_MARCH_2023.pdf
+2023-09-15 18:47:58,360 TRACE CreateJournalEntry:505 - [] Excel file updated: JournalEntriesForPayable.xlsx
+2023-09-15 18:47:58,362 TRACE CreateJournalEntry:554 - [] PDF file created: journal_entries_for_payable_MARCH_2023.pdf
+2023-09-15 18:47:58,382 TRACE CreateJournalEntry:616 - [] Excel file updated: JournalEntriesForPurchase.xlsx
+2023-09-15 18:47:58,383 TRACE CreateJournalEntry:665 - [] PDF file created: journal_entries_for_purchases_MARCH_2023.pdf
