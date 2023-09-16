@@ -51,7 +51,7 @@ public class CreateJournalEntryService {
     @Autowired
     PurchaseInvoiceRepository purchaseInvoiceRepository;
 
-    @Scheduled(cron ="20 48 11 * * ?")
+    @Scheduled(cron ="20 03 12 * * ?")
     public void executeAndSaveJournalEntries() throws IOException {
 
         Date startDate = Date.valueOf("2022-04-01");
@@ -70,29 +70,29 @@ public class CreateJournalEntryService {
 
 
             // Fetch sales data for the current month and year
-//            List<Sale> saleList = saleRepository.findSalesByInvoiceDate(year, month);
-//            List<Receivables> receivablesList = receivableRepository.findReceivablesByInvoiceDate(year, month);
+            List<Sale> saleList = saleRepository.findSalesByInvoiceDate(year, month);
+            List<Receivables> receivablesList = receivableRepository.findReceivablesByInvoiceDate(year, month);
             List<ExpenseAccountDetails> expenseAccountDetailsList = expenseAccountDetailsRepository.findExpenseAccountDetailsByExpenseDate(year, month);
-//            List<Payables> payablesList = payablesRepository.findPayablesByPaymentDate(year, month);
-//            List<PurchaseInvoice> purchaseInvoiceList = purchaseInvoiceRepository.findPurchaseInvoiceByPurchaseDate(year, month);
+            List<Payables> payablesList = payablesRepository.findPayablesByPaymentDate(year, month);
+            List<PurchaseInvoice> purchaseInvoiceList = purchaseInvoiceRepository.findPurchaseInvoiceByPurchaseDate(year, month);
 
-//            logger.info("Found {} sales invoices for {}_{}", saleList.size(), monthName, year);
-//            logger.info("Found {} sales invoices for {}_{}", receivablesList.size(), monthName, year);
+            logger.info("Found {} sales invoices for {}_{}", saleList.size(), monthName, year);
+            logger.info("Found {} sales invoices for {}_{}", receivablesList.size(), monthName, year);
             logger.info("Found {} expenses for {}_{}", expenseAccountDetailsList.size(), monthName, year);
-//            logger.info("Found {} payables for {}_{}", payablesList.size(), monthName, year);
-//            logger.info("Found {} purchases for {}_{}", purchaseInvoiceList.size(), monthName, year);
+            logger.info("Found {} payables for {}_{}", payablesList.size(), monthName, year);
+            logger.info("Found {} purchases for {}_{}", purchaseInvoiceList.size(), monthName, year);
 
 
 
-//            if(!saleList.isEmpty()) {
-//                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntriesForSale.xlsx");
-//                createPdfsForJournalEntriesSale(month, year, saleList);
-//            }
+            if(!saleList.isEmpty()) {
+                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntriesForSale.xlsx");
+                createPdfsForJournalEntriesSale(month, year, saleList);
+            }
 
-//            if(!receivablesList.isEmpty()) {
-//                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntriesForReceivable.xlsx");
-//                createPdfsForJournalEntriesReceivable(month, year, receivablesList);
-//            }
+            if(!receivablesList.isEmpty()) {
+                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntriesForReceivable.xlsx");
+                createPdfsForJournalEntriesReceivable(month, year, receivablesList);
+            }
 
 
             if(!expenseAccountDetailsList.isEmpty()) {
@@ -100,15 +100,15 @@ public class CreateJournalEntryService {
                 createPdfsForJournalEntriesExpense(month, year, expenseAccountDetailsList);
             }
 
-//            if(!payablesList.isEmpty()) {
-//                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntriesForPayable.xlsx");
-//                createPdfsForJournalEntriesPayable(month, year, payablesList);
-//            }
+            if(!payablesList.isEmpty()) {
+                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntriesForPayable.xlsx");
+                createPdfsForJournalEntriesPayable(month, year, payablesList);
+            }
 
-//            if(!purchaseInvoiceList.isEmpty()) {
-//                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntriesForPurchase.xlsx");
-//                createPdfsForJournalEntriesPurchase(month, year, purchaseInvoiceList);
-//            }
+            if(!purchaseInvoiceList.isEmpty()) {
+                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntriesForPurchase.xlsx");
+                createPdfsForJournalEntriesPurchase(month, year, purchaseInvoiceList);
+            }
 
             calendar.add(Calendar.MONTH, 1);
             startDate = new Date(calendar.getTimeInMillis());

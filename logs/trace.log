@@ -331,3 +331,55 @@
 2023-09-16 11:48:38,344 INFO  CreateJournalEntryService:81 - [] Found 156 expenses for MARCH_2023
 2023-09-16 11:48:38,657 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
 2023-09-16 11:48:38,707 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_MARCH_2023.pdf
+2023-09-16 12:02:58,990 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 11596 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-16 12:02:58,991 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-16 12:02:59,000 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-16 12:03:14,873 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 16.804 seconds (JVM running for 18.121)
+2023-09-16 12:03:20,028 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-16 12:03:23,692 INFO  CreateJournalEntryService:81 - [] Found 330 expenses for APRIL_2022
+2023-09-16 12:03:27,270 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:28,574 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_APRIL_2022.pdf
+2023-09-16 12:03:28,575 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-16 12:03:30,856 INFO  CreateJournalEntryService:81 - [] Found 311 expenses for MAY_2022
+2023-09-16 12:03:31,705 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:31,988 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_MAY_2022.pdf
+2023-09-16 12:03:31,992 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-16 12:03:33,530 INFO  CreateJournalEntryService:81 - [] Found 134 expenses for JUNE_2022
+2023-09-16 12:03:34,231 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:34,369 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_JUNE_2022.pdf
+2023-09-16 12:03:34,370 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-16 12:03:36,489 INFO  CreateJournalEntryService:81 - [] Found 178 expenses for JULY_2022
+2023-09-16 12:03:36,961 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:37,049 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_JULY_2022.pdf
+2023-09-16 12:03:37,049 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-16 12:03:38,516 INFO  CreateJournalEntryService:81 - [] Found 27 expenses for AUGUST_2022
+2023-09-16 12:03:38,937 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:38,956 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_AUGUST_2022.pdf
+2023-09-16 12:03:38,957 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-16 12:03:40,052 INFO  CreateJournalEntryService:81 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-16 12:03:40,485 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:40,522 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_SEPTEMBER_2022.pdf
+2023-09-16 12:03:40,523 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-16 12:03:42,428 INFO  CreateJournalEntryService:81 - [] Found 307 expenses for OCTOBER_2022
+2023-09-16 12:03:42,902 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:43,025 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_OCTOBER_2022.pdf
+2023-09-16 12:03:43,025 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-16 12:03:43,647 INFO  CreateJournalEntryService:81 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-16 12:03:44,039 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:44,079 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_NOVEMBER_2022.pdf
+2023-09-16 12:03:44,079 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-16 12:03:44,875 INFO  CreateJournalEntryService:81 - [] Found 201 expenses for DECEMBER_2022
+2023-09-16 12:03:45,310 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:45,368 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_DECEMBER_2022.pdf
+2023-09-16 12:03:45,368 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-16 12:03:45,888 INFO  CreateJournalEntryService:81 - [] Found 148 expenses for JANUARY_2023
+2023-09-16 12:03:46,293 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:46,339 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_JANUARY_2023.pdf
+2023-09-16 12:03:46,339 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-16 12:03:46,922 INFO  CreateJournalEntryService:81 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-16 12:03:47,416 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:47,448 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_FEBRUARY_2023.pdf
+2023-09-16 12:03:47,449 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-16 12:03:48,066 INFO  CreateJournalEntryService:81 - [] Found 156 expenses for MARCH_2023
+2023-09-16 12:03:48,629 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntriesForExpense.xlsx
+2023-09-16 12:03:48,667 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_expense_MARCH_2023.pdf
