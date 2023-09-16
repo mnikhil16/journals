@@ -16,8 +16,9 @@ public class ExpenseAccountDetails implements Serializable {
     @Column(name = "id")
     private Integer id;
 
-    @OneToOne(fetch = FetchType.EAGER)
-    private ExpenseType expenseType;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "expense_type")
+    private ExpenseTypes expenseTypes;
 
     @Column(name = "description")
     private String description;

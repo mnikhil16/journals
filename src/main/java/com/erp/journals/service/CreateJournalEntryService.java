@@ -51,7 +51,7 @@ public class CreateJournalEntryService {
     @Autowired
     PurchaseInvoiceRepository purchaseInvoiceRepository;
 
-    @Scheduled(cron ="50 45 18 * * ?")
+    @Scheduled(cron ="20 48 11 * * ?")
     public void executeAndSaveJournalEntries() throws IOException {
 
         Date startDate = Date.valueOf("2022-04-01");
@@ -70,42 +70,46 @@ public class CreateJournalEntryService {
 
 
             // Fetch sales data for the current month and year
-            List<Sale> saleList = saleRepository.findSalesByInvoiceDate(year, month);
-            List<Receivables> receivablesList = receivableRepository.findReceivablesByInvoiceDate(year, month);
-            List<ExpenseAccountDetails> expenseAccountDetailsList = expenseAccountDetailsRepository.findExpensesByExpenseDate(month, year);
-            List<Payables> payablesList = payablesRepository.findPayablesByPaymentDate(month, year);
-            List<PurchaseInvoice> purchaseInvoiceList = purchaseInvoiceRepository.findPurchaseInvoiceByPurchaseDate(month, year);
+//            List<Sale> saleList = saleRepository.findSalesByInvoiceDate(year, month);
+//            List<Receivables> receivablesList = receivableRepository.findReceivablesByInvoiceDate(year, month);
+            List<ExpenseAccountDetails> expenseAccountDetailsList = expenseAccountDetailsRepository.findExpenseAccountDetailsByExpenseDate(year, month);
+//            List<Payables> payablesList = payablesRepository.findPayablesByPaymentDate(year, month);
+//            List<PurchaseInvoice> purchaseInvoiceList = purchaseInvoiceRepository.findPurchaseInvoiceByPurchaseDate(year, month);
 
-            logger.info("Found {} sales invoices for {}_{}", saleList.size(), monthName, year);
-            logger.info("Found {} sales invoices for {}_{}", receivablesList.size(), monthName, year);
+//            logger.info("Found {} sales invoices for {}_{}", saleList.size(), monthName, year);
+//            logger.info("Found {} sales invoices for {}_{}", receivablesList.size(), monthName, year);
             logger.info("Found {} expenses for {}_{}", expenseAccountDetailsList.size(), monthName, year);
-            logger.info("Found {} payables for {}_{}", payablesList.size(), monthName, year);
-            logger.info("Found {} purchases for {}_{}", purchaseInvoiceList.size(), monthName, year);
+//            logger.info("Found {} payables for {}_{}", payablesList.size(), monthName, year);
+//            logger.info("Found {} purchases for {}_{}", purchaseInvoiceList.size(), monthName, year);
 
 
 
-            createExcelForJournalEntriesSale(month, year, saleList, "JournalEntriesForSale.xlsx");
-            createPdfsForJournalEntriesSale(month, year, saleList);
+//            if(!saleList.isEmpty()) {
+//                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntriesForSale.xlsx");
+//                createPdfsForJournalEntriesSale(month, year, saleList);
+//            }
+
+//            if(!receivablesList.isEmpty()) {
+//                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntriesForReceivable.xlsx");
+//                createPdfsForJournalEntriesReceivable(month, year, receivablesList);
+//            }
 
 
+            if(!expenseAccountDetailsList.isEmpty()) {
+                createExcelForJournalEntriesExpense(month, year, expenseAccountDetailsList, "JournalEntriesForExpense.xlsx");
+                createPdfsForJournalEntriesExpense(month, year, expenseAccountDetailsList);
+            }
 
-            createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntriesForReceivable.xlsx");
-            createPdfsForJournalEntriesReceivable(month, year, receivablesList);
+//            if(!payablesList.isEmpty()) {
+//                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntriesForPayable.xlsx");
+//                createPdfsForJournalEntriesPayable(month, year, payablesList);
+//            }
 
+//            if(!purchaseInvoiceList.isEmpty()) {
+//                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntriesForPurchase.xlsx");
+//                createPdfsForJournalEntriesPurchase(month, year, purchaseInvoiceList);
+//            }
 
-            createExcelForJournalEntriesExpense(month, year, expenseAccountDetailsList, "JournalEntriesForExpense.xlsx");
-            createPdfsForJournalEntriesExpense(month, year, expenseAccountDetailsList);
-
-
-            createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntriesForPayable.xlsx");
-            createPdfsForJournalEntriesPayable(month, year, payablesList);
-
-
-            createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntriesForPurchase.xlsx");
-            createPdfsForJournalEntriesPurchase(month, year, purchaseInvoiceList);
-
-
-            // Move to the next month
             calendar.add(Calendar.MONTH, 1);
             startDate = new Date(calendar.getTimeInMillis());
         }
@@ -286,6 +290,7 @@ public class CreateJournalEntryService {
     }
 
     public void createPdfsForJournalEntriesReceivable(int month, int year, List<Receivables> receivablesList) {
+
         Month monthNumber = Month.of(month);
         String monthName = monthNumber.toString();
         String pdfFileName = "journal_entries_for_receivable_" + monthName + "_" + year + ".pdf";
@@ -372,8 +377,8 @@ public class CreateJournalEntryService {
                 Row row1 = sheet.createRow(rowNum++);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 row1.createCell(0).setCellValue(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
-                row1.createCell(1).setCellValue("Paid for "+(expenseAccountDetails.getExpenseType() == null  ?"" : expenseAccountDetails.getExpenseType().getType())+" to " + expenseAccountDetails.getDescription() + " rs " + expenseAccountDetails.getAmount());
-                row1.createCell(2).setCellValue(expenseAccountDetails.getExpenseType().getType()+" a/c");
+                row1.createCell(1).setCellValue("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
+                row1.createCell(2).setCellValue(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(expenseAccountDetails.getAmount());
                 row1.createCell(5).setCellValue("nominal account");
@@ -420,8 +425,8 @@ public class CreateJournalEntryService {
             for (ExpenseAccountDetails expenseAccountDetails: expenseAccountDetailsList) {
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 table.addCell(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
-                table.addCell("Paid for "+(expenseAccountDetails.getExpenseType() == null  ?"" : expenseAccountDetails.getExpenseType().getType())+" to " + expenseAccountDetails.getDescription() + " rs " + expenseAccountDetails.getAmount());
-                table.addCell(expenseAccountDetails.getExpenseType().getType()+" a/c");
+                table.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
+                table.addCell(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
                 table.addCell("d");
                 table.addCell(expenseAccountDetails.getAmount().toString());
                 table.addCell("nominal account");
@@ -483,7 +488,7 @@ public class CreateJournalEntryService {
                 Row row1 = sheet.createRow(rowNum++);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 row1.createCell(0).setCellValue(payables.getPaymentDate().format(formatter));
-                row1.createCell(1).setCellValue("purchased goods from " + payables.getSupplier().getFirstName() + " " +payables.getSupplier().getLastName() + " worth rs " + payables.getAmount());
+                row1.createCell(1).setCellValue("purchased goods from " + (payables.getSupplier() == null  ?"" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
                 row1.createCell(2).setCellValue("purchase a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(payables.getAmount());
@@ -492,7 +497,7 @@ public class CreateJournalEntryService {
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
-                row2.createCell(2).setCellValue("to "+ payables.getPaymentMode() +" a/c");
+                row2.createCell(2).setCellValue("to cash a/c");
                 row2.createCell(3).setCellValue("c");
                 row2.createCell(4).setCellValue(payables.getAmount());
                 row2.createCell(5).setCellValue("real account");
@@ -510,7 +515,7 @@ public class CreateJournalEntryService {
     public void createPdfsForJournalEntriesPayable(int month, int year, List<Payables> payablesList) {
         Month monthNumber = Month.of(month);
         String monthName = monthNumber.toString();
-        String pdfFileName = "journal_entries_for_payable_" + monthName + "_" + year + ".pdf";
+        String pdfFileName = "journal_entries_for_payables_" + monthName + "_" + year + ".pdf";
 
         try {
 
@@ -531,7 +536,7 @@ public class CreateJournalEntryService {
             for (Payables payables: payablesList) {
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 table.addCell(payables.getPaymentDate().format(formatter));
-                table.addCell("purchased goods from " + payables.getSupplier().getFirstName() + " " +payables.getSupplier().getLastName() + " worth rs " + payables.getAmount());
+                table.addCell("purchased goods from " + (payables.getSupplier() == null  ?"" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
                 table.addCell("purchase a/c");
                 table.addCell("d");
                 table.addCell(payables.getAmount().toString());
@@ -539,7 +544,7 @@ public class CreateJournalEntryService {
 
                 table.addCell("");
                 table.addCell("");
-                table.addCell("to "+ payables.getPaymentMode() +" a/c");
+                table.addCell("to cash a/c");
                 table.addCell("c");
                 table.addCell(payables.getAmount().toString());
                 table.addCell("real account");

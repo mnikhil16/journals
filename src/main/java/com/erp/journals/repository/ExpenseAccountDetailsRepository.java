@@ -9,10 +9,6 @@ import java.util.List;
 
 @Repository
 public interface ExpenseAccountDetailsRepository extends JpaRepository<ExpenseAccountDetails, Integer> {
-    @Query("FROM ExpenseAccountDetails ead " +
-            "JOIN ead.expense exp " +
-            "JOIN ead.expenseType et " +
-            "WHERE FUNCTION('EXTRACT', YEAR FROM exp.paymentDate) = :year " +
-            "AND FUNCTION('EXTRACT', MONTH FROM exp.paymentDate) = :month")
-    List<ExpenseAccountDetails> findExpensesByExpenseDate(int year, int month);
+    @Query(value = "FROM ExpenseAccountDetails ead " + "JOIN ead.expense e " + "WHERE FUNCTION('YEAR', e.paymentDate) = :year " + "AND FUNCTION('MONTH', e.paymentDate) = :month")
+    List<ExpenseAccountDetails> findExpenseAccountDetailsByExpenseDate(int year, int month);
 }
