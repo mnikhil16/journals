@@ -1,6 +1,5 @@
 package com.erp.journals.service;
 
-
 import com.erp.journals.entity.*;
 import com.erp.journals.repository.*;
 import com.itextpdf.text.BaseColor;
@@ -51,7 +50,7 @@ public class CreateJournalEntryService {
     @Autowired
     PurchaseInvoiceRepository purchaseInvoiceRepository;
 
-    @Scheduled(cron ="20 03 12 * * ?")
+    @Scheduled(cron ="0 24 18 * * ?")
     public void executeAndSaveJournalEntries() throws IOException {
 
         Date startDate = Date.valueOf("2022-04-01");
@@ -85,30 +84,26 @@ public class CreateJournalEntryService {
 
 
             if(!saleList.isEmpty()) {
-                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntriesForSale.xlsx");
-                createPdfsForJournalEntriesSale(month, year, saleList);
+                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntries.xlsx");
             }
 
             if(!receivablesList.isEmpty()) {
-                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntriesForReceivable.xlsx");
-                createPdfsForJournalEntriesReceivable(month, year, receivablesList);
+                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntries.xlsx");
             }
 
-
             if(!expenseAccountDetailsList.isEmpty()) {
-                createExcelForJournalEntriesExpense(month, year, expenseAccountDetailsList, "JournalEntriesForExpense.xlsx");
-                createPdfsForJournalEntriesExpense(month, year, expenseAccountDetailsList);
+                createExcelForJournalEntriesExpense(month, year, expenseAccountDetailsList, "JournalEntries.xlsx");
             }
 
             if(!payablesList.isEmpty()) {
-                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntriesForPayable.xlsx");
-                createPdfsForJournalEntriesPayable(month, year, payablesList);
+                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntries.xlsx");
             }
 
             if(!purchaseInvoiceList.isEmpty()) {
-                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntriesForPurchase.xlsx");
-                createPdfsForJournalEntriesPurchase(month, year, purchaseInvoiceList);
+                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntries.xlsx");
             }
+
+            createPdfsForJournalEntries(month, year, saleList, receivablesList, expenseAccountDetailsList, payablesList, purchaseInvoiceList);
 
             calendar.add(Calendar.MONTH, 1);
             startDate = new Date(calendar.getTimeInMillis());
@@ -143,8 +138,9 @@ public class CreateJournalEntryService {
                     headerRow.createCell(1).setCellValue("Description");
                     headerRow.createCell(2).setCellValue("Particulars");
                     headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Amount");
-                    headerRow.createCell(5).setCellValue("Account Type");
+                    headerRow.createCell(4).setCellValue("Debit Amount");
+                    headerRow.createCell(5).setCellValue("Credit Amount");
+                    headerRow.createCell(6).setCellValue("Account Type");
                 }
             }
 
@@ -158,71 +154,23 @@ public class CreateJournalEntryService {
                 row1.createCell(2).setCellValue("cash a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(sale.getPaidAmount());
-                row1.createCell(5).setCellValue("real account");
+                row1.createCell(6).setCellValue("real account");
 
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
                 row2.createCell(2).setCellValue("to sales a/c");
                 row2.createCell(3).setCellValue("c");
-                row2.createCell(4).setCellValue(sale.getPaidAmount());
-                row2.createCell(5).setCellValue("nominal account");
+                row2.createCell(5).setCellValue(sale.getPaidAmount());
+                row2.createCell(6).setCellValue("nominal account");
             }
 
             try (FileOutputStream outputStream = new FileOutputStream(existingFilePath)) {
                 workbook.write(outputStream);
-                logger.trace("Excel file updated: " + existingFilePath);
+                logger.trace("Excel file updated for Sale: " + existingFilePath);
             }
         } catch (IOException e) {
             logger.error("error is " + e);
-        }
-    }
-
-    public void createPdfsForJournalEntriesSale(int month, int year, List<Sale> saleList) {
-        Month monthNumber = Month.of(month);
-        String monthName = monthNumber.toString();
-        String pdfFileName = "journal_entries_for_sale_" + monthName + "_" + year + ".pdf";
-
-        try {
-
-            Document document = new Document();
-            PdfWriter.getInstance(document, new FileOutputStream(pdfFileName));
-            document.open();
-
-            PdfPTable table = new PdfPTable(6);
-            Stream.of("Date", "Description", "Particulars", "Entry Type", "Amount", "Account Type")
-                    .forEach(columnTitle -> {
-                        PdfPCell header = new PdfPCell();
-                        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
-                        header.setBorderWidth(2);
-                        header.setPhrase(new Phrase(columnTitle));
-                        table.addCell(header);
-                    });
-
-            for (Sale sale : saleList) {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
-                table.addCell(sale.getInvoiceDate().format(formatter));
-                table.addCell("sold goods to " + (sale.getCustomer() == null  ?"" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
-                table.addCell("cash a/c");
-                table.addCell("d");
-                table.addCell(sale.getPaidAmount().toString());
-                table.addCell("real account");
-
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to sales a/c");
-                table.addCell("c");
-                table.addCell(sale.getPaidAmount().toString());
-                table.addCell("nominal account");
-
-            }
-
-            document.add(table);
-            document.close();
-
-            logger.trace("PDF file created: " + pdfFileName);
-        } catch (DocumentException | IOException e) {
-            throw new RuntimeException(e);
         }
     }
 
@@ -254,8 +202,9 @@ public class CreateJournalEntryService {
                     headerRow.createCell(1).setCellValue("Description");
                     headerRow.createCell(2).setCellValue("Particulars");
                     headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Amount");
-                    headerRow.createCell(5).setCellValue("Account Type");
+                    headerRow.createCell(4).setCellValue("Debit Amount");
+                    headerRow.createCell(5).setCellValue("Credit Amount");
+                    headerRow.createCell(6).setCellValue("Account Type");
                 }
             }
 
@@ -269,72 +218,23 @@ public class CreateJournalEntryService {
                 row1.createCell(2).setCellValue("cash a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(receivables.getAmount());
-                row1.createCell(5).setCellValue("real account");
+                row1.createCell(6).setCellValue("real account");
 
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
                 row2.createCell(2).setCellValue("to sales a/c");
                 row2.createCell(3).setCellValue("c");
-                row2.createCell(4).setCellValue(receivables.getAmount());
-                row2.createCell(5).setCellValue("nominal account");
+                row2.createCell(5).setCellValue(receivables.getAmount());
+                row2.createCell(6).setCellValue("nominal account");
             }
 
             try (FileOutputStream outputStream = new FileOutputStream(existingFilePath)) {
                 workbook.write(outputStream);
-                logger.trace("Excel file updated: " + existingFilePath);
+                logger.trace("Excel file updated for Receivables: " + existingFilePath);
             }
         } catch (IOException e) {
             logger.error("error is " + e);
-        }
-    }
-
-    public void createPdfsForJournalEntriesReceivable(int month, int year, List<Receivables> receivablesList) {
-
-        Month monthNumber = Month.of(month);
-        String monthName = monthNumber.toString();
-        String pdfFileName = "journal_entries_for_receivable_" + monthName + "_" + year + ".pdf";
-
-        try {
-
-            Document document = new Document();
-            PdfWriter.getInstance(document, new FileOutputStream(pdfFileName));
-            document.open();
-
-            PdfPTable table = new PdfPTable(6);
-            Stream.of("Date", "Description", "Particulars", "Entry Type", "Amount", "Account Type")
-                    .forEach(columnTitle -> {
-                        PdfPCell header = new PdfPCell();
-                        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
-                        header.setBorderWidth(2);
-                        header.setPhrase(new Phrase(columnTitle));
-                        table.addCell(header);
-                    });
-
-            for (Receivables receivables: receivablesList) {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
-                table.addCell(receivables.getPaymentDate().format(formatter));
-                table.addCell("sold goods to " + (receivables.getCustomer() == null  ?"" : receivables.getCustomer().getFirstName() + " for rs " + receivables.getAmount()));
-                table.addCell("cash a/c");
-                table.addCell("d");
-                table.addCell(receivables.getAmount().toString());
-                table.addCell("real account");
-
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to sales a/c");
-                table.addCell("c");
-                table.addCell(receivables.getAmount().toString());
-                table.addCell("nominal account");
-
-            }
-
-            document.add(table);
-            document.close();
-
-            logger.trace("PDF file created: " + pdfFileName);
-        } catch (DocumentException | IOException e) {
-            throw new RuntimeException(e);
         }
     }
 
@@ -366,8 +266,9 @@ public class CreateJournalEntryService {
                     headerRow.createCell(1).setCellValue("Description");
                     headerRow.createCell(2).setCellValue("Particulars");
                     headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Amount");
-                    headerRow.createCell(5).setCellValue("Account Type");
+                    headerRow.createCell(4).setCellValue("Debit Amount");
+                    headerRow.createCell(5).setCellValue("Credit Amount");
+                    headerRow.createCell(6).setCellValue("Account Type");
                 }
             }
 
@@ -381,71 +282,23 @@ public class CreateJournalEntryService {
                 row1.createCell(2).setCellValue(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(expenseAccountDetails.getAmount());
-                row1.createCell(5).setCellValue("nominal account");
+                row1.createCell(6).setCellValue("nominal account");
 
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
                 row2.createCell(2).setCellValue("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
                 row2.createCell(3).setCellValue("c");
-                row2.createCell(4).setCellValue(expenseAccountDetails.getAmount());
-                row2.createCell(5).setCellValue("real account");
+                row2.createCell(5).setCellValue(expenseAccountDetails.getAmount());
+                row2.createCell(6).setCellValue("real account");
             }
 
             try (FileOutputStream outputStream = new FileOutputStream(existingFilePath)) {
                 workbook.write(outputStream);
-                logger.trace("Excel file updated: " + existingFilePath);
+                logger.trace("Excel file updated for Expense: " + existingFilePath);
             }
         } catch (IOException e) {
             logger.error("error is " + e);
-        }
-    }
-
-    public void createPdfsForJournalEntriesExpense(int month, int year, List<ExpenseAccountDetails> expenseAccountDetailsList) {
-        Month monthNumber = Month.of(month);
-        String monthName = monthNumber.toString();
-        String pdfFileName = "journal_entries_for_expense_" + monthName + "_" + year + ".pdf";
-
-        try {
-
-            Document document = new Document();
-            PdfWriter.getInstance(document, new FileOutputStream(pdfFileName));
-            document.open();
-
-            PdfPTable table = new PdfPTable(6);
-            Stream.of("Date", "Description", "Particulars", "Entry Type", "Amount", "Account Type")
-                    .forEach(columnTitle -> {
-                        PdfPCell header = new PdfPCell();
-                        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
-                        header.setBorderWidth(2);
-                        header.setPhrase(new Phrase(columnTitle));
-                        table.addCell(header);
-                    });
-
-            for (ExpenseAccountDetails expenseAccountDetails: expenseAccountDetailsList) {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
-                table.addCell(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
-                table.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
-                table.addCell(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
-                table.addCell("d");
-                table.addCell(expenseAccountDetails.getAmount().toString());
-                table.addCell("nominal account");
-
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
-                table.addCell("c");
-                table.addCell(expenseAccountDetails.getAmount().toString());
-                table.addCell("real account");
-
-            }
-
-            document.add(table);
-            document.close();
-
-            logger.trace("PDF file created: " + pdfFileName);
-        } catch (DocumentException | IOException e) {
-            throw new RuntimeException(e);
         }
     }
 
@@ -477,8 +330,9 @@ public class CreateJournalEntryService {
                     headerRow.createCell(1).setCellValue("Description");
                     headerRow.createCell(2).setCellValue("Particulars");
                     headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Amount");
-                    headerRow.createCell(5).setCellValue("Account Type");
+                    headerRow.createCell(4).setCellValue("Debit Amount");
+                    headerRow.createCell(5).setCellValue("Credit Amount");
+                    headerRow.createCell(6).setCellValue("Account Type");
                 }
             }
 
@@ -492,71 +346,23 @@ public class CreateJournalEntryService {
                 row1.createCell(2).setCellValue("purchase a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(payables.getAmount());
-                row1.createCell(5).setCellValue("nominal account");
+                row1.createCell(6).setCellValue("nominal account");
 
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
                 row2.createCell(2).setCellValue("to cash a/c");
                 row2.createCell(3).setCellValue("c");
-                row2.createCell(4).setCellValue(payables.getAmount());
-                row2.createCell(5).setCellValue("real account");
+                row2.createCell(5).setCellValue(payables.getAmount());
+                row2.createCell(6).setCellValue("real account");
             }
 
             try (FileOutputStream outputStream = new FileOutputStream(existingFilePath)) {
                 workbook.write(outputStream);
-                logger.trace("Excel file updated: " + existingFilePath);
+                logger.trace("Excel file updated for Payables: " + existingFilePath);
             }
         } catch (IOException e) {
             logger.error("error is " + e);
-        }
-    }
-
-    public void createPdfsForJournalEntriesPayable(int month, int year, List<Payables> payablesList) {
-        Month monthNumber = Month.of(month);
-        String monthName = monthNumber.toString();
-        String pdfFileName = "journal_entries_for_payables_" + monthName + "_" + year + ".pdf";
-
-        try {
-
-            Document document = new Document();
-            PdfWriter.getInstance(document, new FileOutputStream(pdfFileName));
-            document.open();
-
-            PdfPTable table = new PdfPTable(6);
-            Stream.of("Date", "Description", "Particulars", "Entry Type", "Amount", "Account Type")
-                    .forEach(columnTitle -> {
-                        PdfPCell header = new PdfPCell();
-                        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
-                        header.setBorderWidth(2);
-                        header.setPhrase(new Phrase(columnTitle));
-                        table.addCell(header);
-                    });
-
-            for (Payables payables: payablesList) {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
-                table.addCell(payables.getPaymentDate().format(formatter));
-                table.addCell("purchased goods from " + (payables.getSupplier() == null  ?"" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
-                table.addCell("purchase a/c");
-                table.addCell("d");
-                table.addCell(payables.getAmount().toString());
-                table.addCell("nominal account");
-
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to cash a/c");
-                table.addCell("c");
-                table.addCell(payables.getAmount().toString());
-                table.addCell("real account");
-
-            }
-
-            document.add(table);
-            document.close();
-
-            logger.trace("PDF file created: " + pdfFileName);
-        } catch (DocumentException | IOException e) {
-            throw new RuntimeException(e);
         }
     }
 
@@ -588,8 +394,9 @@ public class CreateJournalEntryService {
                     headerRow.createCell(1).setCellValue("Description");
                     headerRow.createCell(2).setCellValue("Particulars");
                     headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Amount");
-                    headerRow.createCell(5).setCellValue("Account Type");
+                    headerRow.createCell(4).setCellValue("Debit Amount");
+                    headerRow.createCell(5).setCellValue("Credit Amount");
+                    headerRow.createCell(6).setCellValue("Account Type");
                 }
             }
 
@@ -603,39 +410,45 @@ public class CreateJournalEntryService {
                 row1.createCell(2).setCellValue("purchase a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(purchaseInvoice.getPurchaseAmount());
-                row1.createCell(5).setCellValue("nominal account");
+                row1.createCell(6).setCellValue("nominal account");
 
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
                 row2.createCell(2).setCellValue("to cash a/c");
                 row2.createCell(3).setCellValue("c");
-                row2.createCell(4).setCellValue(purchaseInvoice.getPurchaseAmount());
-                row2.createCell(5).setCellValue("real account");
+                row2.createCell(5).setCellValue(purchaseInvoice.getPurchaseAmount());
+                row2.createCell(6).setCellValue("real account");
             }
 
             try (FileOutputStream outputStream = new FileOutputStream(existingFilePath)) {
                 workbook.write(outputStream);
-                logger.trace("Excel file updated: " + existingFilePath);
+                logger.trace("Excel file updated for Purchase: " + existingFilePath);
             }
         } catch (IOException e) {
             logger.error("error is " + e);
         }
     }
 
-    public void createPdfsForJournalEntriesPurchase(int month, int year, List<PurchaseInvoice> purchaseInvoiceList) {
+    public void createPdfsForJournalEntries(int month, int year, List<Sale> saleList, List<Receivables> receivablesList, List<ExpenseAccountDetails> expenseAccountDetailsList, List<Payables> payablesList, List<PurchaseInvoice> purchaseInvoiceList) {
         Month monthNumber = Month.of(month);
         String monthName = monthNumber.toString();
-        String pdfFileName = "journal_entries_for_purchases_" + monthName + "_" + year + ".pdf";
+        String pdfFileName = "journal_entries_for_" + monthName + "_" + year + ".pdf";
 
         try {
-
             Document document = new Document();
-            PdfWriter.getInstance(document, new FileOutputStream(pdfFileName));
+
+            // Check if the PDF file already exists
+            if (new File(pdfFileName).exists()) {
+                PdfWriter.getInstance(document, new FileOutputStream(pdfFileName, true)); // Append mode
+            } else {
+                PdfWriter.getInstance(document, new FileOutputStream(pdfFileName));
+            }
+
             document.open();
 
-            PdfPTable table = new PdfPTable(6);
-            Stream.of("Date", "Description", "Particulars", "Entry Type", "Amount", "Account Type")
+            PdfPTable table = new PdfPTable(7);
+            Stream.of("Date", "Description", "Particulars", "Entry Type", "Debit Amount", "Credit Amount", "Account Type")
                     .forEach(columnTitle -> {
                         PdfPCell header = new PdfPCell();
                         header.setBackgroundColor(BaseColor.LIGHT_GRAY);
@@ -643,20 +456,117 @@ public class CreateJournalEntryService {
                         header.setPhrase(new Phrase(columnTitle));
                         table.addCell(header);
                     });
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
 
-            for (PurchaseInvoice purchaseInvoice: purchaseInvoiceList) {
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
-                table.addCell(purchaseInvoice.getPurchaseDate().format(formatter));
-                table.addCell("purchased stock items worth rs " + purchaseInvoice.getPurchaseAmount() + " and paid through cash");
+            for (Sale sale : saleList) {
+                table.addCell(sale.getInvoiceDate().format(formatter));
+                table.addCell("sold goods to " + (sale.getCustomer() == null  ?"" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
+                table.addCell("cash a/c");
+                table.addCell("d");
+                table.addCell(sale.getPaidAmount().toString());
+                table.addCell("");
+                table.addCell("real account");
+
+                table.addCell("");
+                table.addCell("");
+                table.addCell("to sales a/c");
+                table.addCell("c");
+                table.addCell("");
+                table.addCell(sale.getPaidAmount().toString());
+                table.addCell("nominal account");
+
+            }
+
+            for (Receivables receivables: receivablesList) {
+                table.addCell(receivables.getPaymentDate().format(formatter));
+                table.addCell("sold goods to " + (receivables.getCustomer() == null  ?"" : receivables.getCustomer().getFirstName() + " for rs " + receivables.getAmount()));
+                table.addCell("cash a/c");
+                table.addCell("d");
+                table.addCell(receivables.getAmount().toString());
+                table.addCell("");
+                table.addCell("real account");
+
+                table.addCell("");
+                table.addCell("");
+                table.addCell("to sales a/c");
+                table.addCell("c");
+                table.addCell("");
+                table.addCell(receivables.getAmount().toString());
+                table.addCell("nominal account");
+
+            }
+
+            for (ExpenseAccountDetails expenseAccountDetails: expenseAccountDetailsList) {
+                table.addCell(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
+                table.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
+                table.addCell(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
+                table.addCell("d");
+                table.addCell(expenseAccountDetails.getAmount().toString());
+                table.addCell("");
+                table.addCell("nominal account");
+
+                table.addCell("");
+                table.addCell("");
+                table.addCell("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
+                table.addCell("c");
+                table.addCell("");
+                table.addCell(expenseAccountDetails.getAmount().toString());
+                table.addCell("real account");
+
+            }
+
+            for (ExpenseAccountDetails expenseAccountDetails: expenseAccountDetailsList) {
+                table.addCell(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
+                table.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
+                table.addCell(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
+                table.addCell("d");
+                table.addCell(expenseAccountDetails.getAmount().toString());
+                table.addCell("");
+                table.addCell("nominal account");
+
+                table.addCell("");
+                table.addCell("");
+                table.addCell("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
+                table.addCell("c");
+                table.addCell("");
+                table.addCell(expenseAccountDetails.getAmount().toString());
+                table.addCell("real account");
+
+            }
+
+            for (Payables payables: payablesList) {
+                table.addCell(payables.getPaymentDate().format(formatter));
+                table.addCell("purchased goods from " + (payables.getSupplier() == null  ?"" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
                 table.addCell("purchase a/c");
                 table.addCell("d");
-                table.addCell(purchaseInvoice.getPurchaseAmount().toString());
+                table.addCell(payables.getAmount().toString());
+                table.addCell("");
                 table.addCell("nominal account");
 
                 table.addCell("");
                 table.addCell("");
                 table.addCell("to cash a/c");
                 table.addCell("c");
+                table.addCell("");
+                table.addCell(payables.getAmount().toString());
+                table.addCell("real account");
+
+            }
+
+            for (PurchaseInvoice purchaseInvoice: purchaseInvoiceList) {
+                table.addCell(purchaseInvoice.getPurchaseDate().format(formatter));
+                table.addCell("purchased stock items worth rs " + purchaseInvoice.getPurchaseAmount() + " and paid through cash");
+                table.addCell("purchase a/c");
+                table.addCell("d");
+                table.addCell(purchaseInvoice.getPurchaseAmount().toString());
+                table.addCell("");
+                table.addCell("nominal account");
+
+                table.addCell("");
+                table.addCell("");
+                table.addCell("to cash a/c");
+                table.addCell("c");
+                table.addCell("");
                 table.addCell(purchaseInvoice.getPurchaseAmount().toString());
                 table.addCell("real account");
 
