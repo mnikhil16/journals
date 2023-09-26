@@ -2,16 +2,14 @@ package com.erp.journals.service;
 
 import com.erp.journals.entity.*;
 import com.erp.journals.repository.*;
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Phrase;
+import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfPage;
 import com.itextpdf.text.pdf.PdfWriter;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Font;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,8 +48,8 @@ public class CreateJournalEntryService {
     @Autowired
     PurchaseInvoiceRepository purchaseInvoiceRepository;
 
-    @Scheduled(cron ="0 24 18 * * ?")
-    public void executeAndSaveJournalEntries() throws IOException {
+    @Scheduled(cron ="20 21 23 * * ?")
+    public void executeAndSaveJournalEntries() {
 
         Date startDate = Date.valueOf("2022-04-01");
         Date endDate = Date.valueOf("2023-03-31");
@@ -68,7 +66,7 @@ public class CreateJournalEntryService {
             logger.info("Scheduled task executing..." + startDate + ":" + endDate + monthName + "-" + year);
 
 
-            // Fetch sales data for the current month and year
+            // Fetch data for the current month and year
             List<Sale> saleList = saleRepository.findSalesByInvoiceDate(year, month);
             List<Receivables> receivablesList = receivableRepository.findReceivablesByInvoiceDate(year, month);
             List<ExpenseAccountDetails> expenseAccountDetailsList = expenseAccountDetailsRepository.findExpenseAccountDetailsByExpenseDate(year, month);
@@ -76,32 +74,32 @@ public class CreateJournalEntryService {
             List<PurchaseInvoice> purchaseInvoiceList = purchaseInvoiceRepository.findPurchaseInvoiceByPurchaseDate(year, month);
 
             logger.info("Found {} sales invoices for {}_{}", saleList.size(), monthName, year);
-            logger.info("Found {} sales invoices for {}_{}", receivablesList.size(), monthName, year);
+            logger.info("Found {} receivables for {}_{}", receivablesList.size(), monthName, year);
             logger.info("Found {} expenses for {}_{}", expenseAccountDetailsList.size(), monthName, year);
             logger.info("Found {} payables for {}_{}", payablesList.size(), monthName, year);
             logger.info("Found {} purchases for {}_{}", purchaseInvoiceList.size(), monthName, year);
 
 
 
-            if(!saleList.isEmpty()) {
-                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntries.xlsx");
-            }
-
-            if(!receivablesList.isEmpty()) {
-                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntries.xlsx");
-            }
-
-            if(!expenseAccountDetailsList.isEmpty()) {
-                createExcelForJournalEntriesExpense(month, year, expenseAccountDetailsList, "JournalEntries.xlsx");
-            }
-
-            if(!payablesList.isEmpty()) {
-                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntries.xlsx");
-            }
-
-            if(!purchaseInvoiceList.isEmpty()) {
-                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntries.xlsx");
-            }
+//            if(!saleList.isEmpty()) {
+//                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntries.xlsx");
+//            }
+//
+//            if(!receivablesList.isEmpty()) {
+//                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntries.xlsx");
+//            }
+//
+//            if(!expenseAccountDetailsList.isEmpty()) {
+//                createExcelForJournalEntriesExpense(month, year, expenseAccountDetailsList, "JournalEntries.xlsx");
+//            }
+//
+//            if(!payablesList.isEmpty()) {
+//                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntries.xlsx");
+//            }
+//
+//            if(!purchaseInvoiceList.isEmpty()) {
+//                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntries.xlsx");
+//            }
 
             createPdfsForJournalEntries(month, year, saleList, receivablesList, expenseAccountDetailsList, payablesList, purchaseInvoiceList);
 
@@ -113,7 +111,7 @@ public class CreateJournalEntryService {
     public void createExcelForJournalEntriesSale(int month, int year, List<Sale> saleList, String existingFilePath) {
         Month monthNumber = Month.of(month);
         String monthName = monthNumber.toString();
-        String monthYearString = monthName + "_" + year;
+        String monthYearString = monthName + " " + year;
 
         try {
             // Load the existing Excel workbook if it exists, or create a new one if it doesn't
@@ -129,22 +127,20 @@ public class CreateJournalEntryService {
             Sheet sheet = workbook.getSheet(monthYearString);
             if (sheet == null) {
                 sheet = workbook.createSheet(monthYearString);
-                int rowNum = 0;
-
-                // Create header row (if it doesn't exist)
-                if (sheet.getLastRowNum() == -1) {
-                    Row headerRow = sheet.createRow(rowNum++);
-                    headerRow.createCell(0).setCellValue("Date");
-                    headerRow.createCell(1).setCellValue("Description");
-                    headerRow.createCell(2).setCellValue("Particulars");
-                    headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Debit Amount");
-                    headerRow.createCell(5).setCellValue("Credit Amount");
-                    headerRow.createCell(6).setCellValue("Account Type");
-                }
             }
 
-            int rowNum = sheet.getLastRowNum() + 1;
+            // Find the last row index
+            int lastRow = sheet.getLastRowNum();
+
+            // Create a merged header row
+            createCategoryHeaderRow(sheet, lastRow + 1, "Sales");
+
+            // Create header row (if it doesn't exist)
+            if (sheet.getLastRowNum() < lastRow + 2) {
+                createHeaderRow(sheet, lastRow + 3);
+            }
+
+            int rowNum = lastRow + 3; // Start row index
 
             for (Sale sale : saleList) {
                 Row row1 = sheet.createRow(rowNum++);
@@ -177,7 +173,7 @@ public class CreateJournalEntryService {
     public void createExcelForJournalEntriesReceivable(int month, int year, List<Receivables> receivablesList, String existingFilePath) {
         Month monthNumber = Month.of(month);
         String monthName = monthNumber.toString();
-        String monthYearString = monthName + "_" + year;
+        String monthYearString = monthName + " " + year;
 
         try {
             // Load the existing Excel workbook if it exists, or create a new one if it doesn't
@@ -193,22 +189,22 @@ public class CreateJournalEntryService {
             Sheet sheet = workbook.getSheet(monthYearString);
             if (sheet == null) {
                 sheet = workbook.createSheet(monthYearString);
-                int rowNum = 0;
-
-                // Create header row (if it doesn't exist)
-                if (sheet.getLastRowNum() == -1) {
-                    Row headerRow = sheet.createRow(rowNum++);
-                    headerRow.createCell(0).setCellValue("Date");
-                    headerRow.createCell(1).setCellValue("Description");
-                    headerRow.createCell(2).setCellValue("Particulars");
-                    headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Debit Amount");
-                    headerRow.createCell(5).setCellValue("Credit Amount");
-                    headerRow.createCell(6).setCellValue("Account Type");
-                }
             }
 
-            int rowNum = sheet.getLastRowNum() + 1;
+            // Find the last row index
+            int lastRow = sheet.getLastRowNum();
+
+            sheet.createRow(lastRow);
+
+            // Create a merged header row
+            createCategoryHeaderRow(sheet, lastRow + 1, "Receivables");
+
+            // Create header row (if it doesn't exist)
+            if (sheet.getLastRowNum() < lastRow + 2) {
+                createHeaderRow(sheet, lastRow + 3);
+            }
+
+            int rowNum = lastRow + 3; // Start row
 
             for (Receivables receivables: receivablesList) {
                 Row row1 = sheet.createRow(rowNum++);
@@ -241,7 +237,7 @@ public class CreateJournalEntryService {
     public void createExcelForJournalEntriesExpense(int month, int year, List<ExpenseAccountDetails> expenseAccountDetailsList, String existingFilePath) {
         Month monthNumber = Month.of(month);
         String monthName = monthNumber.toString();
-        String monthYearString = monthName + "_" + year;
+        String monthYearString = monthName + " " + year;
 
         try {
             // Load the existing Excel workbook if it exists, or create a new one if it doesn't
@@ -257,22 +253,22 @@ public class CreateJournalEntryService {
             Sheet sheet = workbook.getSheet(monthYearString);
             if (sheet == null) {
                 sheet = workbook.createSheet(monthYearString);
-                int rowNum = 0;
-
-                // Create header row (if it doesn't exist)
-                if (sheet.getLastRowNum() == -1) {
-                    Row headerRow = sheet.createRow(rowNum++);
-                    headerRow.createCell(0).setCellValue("Date");
-                    headerRow.createCell(1).setCellValue("Description");
-                    headerRow.createCell(2).setCellValue("Particulars");
-                    headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Debit Amount");
-                    headerRow.createCell(5).setCellValue("Credit Amount");
-                    headerRow.createCell(6).setCellValue("Account Type");
-                }
             }
 
-            int rowNum = sheet.getLastRowNum() + 1;
+            // Find the last row index
+            int lastRow = sheet.getLastRowNum();
+
+            sheet.createRow(lastRow);
+
+            // Create a merged header row
+            createCategoryHeaderRow(sheet, lastRow + 1, "Expenses");
+
+            // Create header row (if it doesn't exist)
+            if (sheet.getLastRowNum() < lastRow + 2) {
+                createHeaderRow(sheet, lastRow + 3);
+            }
+
+            int rowNum = lastRow + 3; // Start row index
 
             for (ExpenseAccountDetails expenseAccountDetails: expenseAccountDetailsList) {
                 Row row1 = sheet.createRow(rowNum++);
@@ -305,7 +301,7 @@ public class CreateJournalEntryService {
     public void createExcelForJournalEntriesPayable(int month, int year, List<Payables> payablesList, String existingFilePath) {
         Month monthNumber = Month.of(month);
         String monthName = monthNumber.toString();
-        String monthYearString = monthName + "_" + year;
+        String monthYearString = monthName + " " + year;
 
         try {
             // Load the existing Excel workbook if it exists, or create a new one if it doesn't
@@ -321,22 +317,22 @@ public class CreateJournalEntryService {
             Sheet sheet = workbook.getSheet(monthYearString);
             if (sheet == null) {
                 sheet = workbook.createSheet(monthYearString);
-                int rowNum = 0;
-
-                // Create header row (if it doesn't exist)
-                if (sheet.getLastRowNum() == -1) {
-                    Row headerRow = sheet.createRow(rowNum++);
-                    headerRow.createCell(0).setCellValue("Date");
-                    headerRow.createCell(1).setCellValue("Description");
-                    headerRow.createCell(2).setCellValue("Particulars");
-                    headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Debit Amount");
-                    headerRow.createCell(5).setCellValue("Credit Amount");
-                    headerRow.createCell(6).setCellValue("Account Type");
-                }
             }
 
-            int rowNum = sheet.getLastRowNum() + 1;
+            // Find the last row index
+            int lastRow = sheet.getLastRowNum();
+
+            sheet.createRow(lastRow);
+
+            // Create a merged header row
+            createCategoryHeaderRow(sheet, lastRow + 1, "Payables");
+
+            // Create header row (if it doesn't exist)
+            if (sheet.getLastRowNum() < lastRow + 2) {
+                createHeaderRow(sheet, lastRow + 3);
+            }
+
+            int rowNum = lastRow + 3; // Start row index
 
             for (Payables payables: payablesList) {
                 Row row1 = sheet.createRow(rowNum++);
@@ -369,7 +365,7 @@ public class CreateJournalEntryService {
     public void createExcelForJournalEntriesPurchase(int month, int year, List<PurchaseInvoice> purchaseInvoiceList, String existingFilePath) {
         Month monthNumber = Month.of(month);
         String monthName = monthNumber.toString();
-        String monthYearString = monthName + "_" + year;
+        String monthYearString = monthName + " " + year;
 
         try {
             // Load the existing Excel workbook if it exists, or create a new one if it doesn't
@@ -385,22 +381,22 @@ public class CreateJournalEntryService {
             Sheet sheet = workbook.getSheet(monthYearString);
             if (sheet == null) {
                 sheet = workbook.createSheet(monthYearString);
-                int rowNum = 0;
-
-                // Create header row (if it doesn't exist)
-                if (sheet.getLastRowNum() == -1) {
-                    Row headerRow = sheet.createRow(rowNum++);
-                    headerRow.createCell(0).setCellValue("Date");
-                    headerRow.createCell(1).setCellValue("Description");
-                    headerRow.createCell(2).setCellValue("Particulars");
-                    headerRow.createCell(3).setCellValue("Entry Type");
-                    headerRow.createCell(4).setCellValue("Debit Amount");
-                    headerRow.createCell(5).setCellValue("Credit Amount");
-                    headerRow.createCell(6).setCellValue("Account Type");
-                }
             }
 
-            int rowNum = sheet.getLastRowNum() + 1;
+            // Find the last row index
+            int lastRow = sheet.getLastRowNum();
+
+            sheet.createRow(lastRow);
+
+            // Create a merged header row
+            createCategoryHeaderRow(sheet, lastRow + 1, "Purchases");
+
+            // Create header row (if it doesn't exist)
+            if (sheet.getLastRowNum() < lastRow + 2) {
+                createHeaderRow(sheet, lastRow + 3);
+            }
+
+            int rowNum = lastRow + 3; // Start row index
 
             for (PurchaseInvoice purchaseInvoice: purchaseInvoiceList) {
                 Row row1 = sheet.createRow(rowNum++);
@@ -441,143 +437,230 @@ public class CreateJournalEntryService {
             // Check if the PDF file already exists
             if (new File(pdfFileName).exists()) {
                 PdfWriter.getInstance(document, new FileOutputStream(pdfFileName, true)); // Append mode
-            } else {
-                PdfWriter.getInstance(document, new FileOutputStream(pdfFileName));
             }
+                PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(pdfFileName));
+
 
             document.open();
 
-            PdfPTable table = new PdfPTable(7);
+            PdfPTable table1 = new PdfPTable(7);
             Stream.of("Date", "Description", "Particulars", "Entry Type", "Debit Amount", "Credit Amount", "Account Type")
                     .forEach(columnTitle -> {
                         PdfPCell header = new PdfPCell();
                         header.setBackgroundColor(BaseColor.LIGHT_GRAY);
                         header.setBorderWidth(2);
                         header.setPhrase(new Phrase(columnTitle));
-                        table.addCell(header);
+                        table1.addCell(header);
                     });
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
 
             for (Sale sale : saleList) {
-                table.addCell(sale.getInvoiceDate().format(formatter));
-                table.addCell("sold goods to " + (sale.getCustomer() == null  ?"" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
-                table.addCell("cash a/c");
-                table.addCell("d");
-                table.addCell(sale.getPaidAmount().toString());
-                table.addCell("");
-                table.addCell("real account");
+                table1.addCell(sale.getInvoiceDate().format(formatter));
+                table1.addCell("sold goods to " + (sale.getCustomer() == null  ?"" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
+                table1.addCell("cash a/c");
+                table1.addCell("d");
+                table1.addCell(sale.getPaidAmount().toString());
+                table1.addCell("");
+                table1.addCell("real account");
 
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to sales a/c");
-                table.addCell("c");
-                table.addCell("");
-                table.addCell(sale.getPaidAmount().toString());
-                table.addCell("nominal account");
-
+                table1.addCell("");
+                table1.addCell("");
+                table1.addCell("to sales a/c");
+                table1.addCell("c");
+                table1.addCell("");
+                table1.addCell(sale.getPaidAmount().toString());
+                table1.addCell("nominal account");
             }
+
+            PdfPTable table2 = new PdfPTable(7);
+
+            Stream.of("Date", "Description", "Particulars", "Entry Type", "Debit Amount", "Credit Amount", "Account Type")
+                    .forEach(columnTitle -> {
+                        PdfPCell header = new PdfPCell();
+                        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
+                        header.setBorderWidth(2);
+                        header.setPhrase(new Phrase(columnTitle));
+                        table2.addCell(header);
+                    });
 
             for (Receivables receivables: receivablesList) {
-                table.addCell(receivables.getPaymentDate().format(formatter));
-                table.addCell("sold goods to " + (receivables.getCustomer() == null  ?"" : receivables.getCustomer().getFirstName() + " for rs " + receivables.getAmount()));
-                table.addCell("cash a/c");
-                table.addCell("d");
-                table.addCell(receivables.getAmount().toString());
-                table.addCell("");
-                table.addCell("real account");
+                table2.addCell(receivables.getPaymentDate().format(formatter));
+                table2.addCell("sold goods to " + (receivables.getCustomer() == null  ?"" : receivables.getCustomer().getFirstName() + " for rs " + receivables.getAmount()));
+                table2.addCell("cash a/c");
+                table2.addCell("d");
+                table2.addCell(receivables.getAmount().toString());
+                table2.addCell("");
+                table2.addCell("real account");
 
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to sales a/c");
-                table.addCell("c");
-                table.addCell("");
-                table.addCell(receivables.getAmount().toString());
-                table.addCell("nominal account");
-
+                table2.addCell("");
+                table2.addCell("");
+                table2.addCell("to sales a/c");
+                table2.addCell("c");
+                table2.addCell("");
+                table2.addCell(receivables.getAmount().toString());
+                table2.addCell("nominal account");
             }
+
+            PdfPTable table3 = new PdfPTable(7);
+
+            Stream.of("Date", "Description", "Particulars", "Entry Type", "Debit Amount", "Credit Amount", "Account Type")
+                    .forEach(columnTitle -> {
+                        PdfPCell header = new PdfPCell();
+                        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
+                        header.setBorderWidth(2);
+                        header.setPhrase(new Phrase(columnTitle));
+                        table3.addCell(header);
+                    });
 
             for (ExpenseAccountDetails expenseAccountDetails: expenseAccountDetailsList) {
-                table.addCell(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
-                table.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
-                table.addCell(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
-                table.addCell("d");
-                table.addCell(expenseAccountDetails.getAmount().toString());
-                table.addCell("");
-                table.addCell("nominal account");
+                table3.addCell(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
+                table3.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
+                table3.addCell(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
+                table3.addCell("d");
+                table3.addCell(expenseAccountDetails.getAmount().toString());
+                table3.addCell("");
+                table3.addCell("nominal account");
 
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
-                table.addCell("c");
-                table.addCell("");
-                table.addCell(expenseAccountDetails.getAmount().toString());
-                table.addCell("real account");
-
+                table3.addCell("");
+                table3.addCell("");
+                table3.addCell("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
+                table3.addCell("c");
+                table3.addCell("");
+                table3.addCell(expenseAccountDetails.getAmount().toString());
+                table3.addCell("real account");
             }
 
-            for (ExpenseAccountDetails expenseAccountDetails: expenseAccountDetailsList) {
-                table.addCell(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
-                table.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
-                table.addCell(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
-                table.addCell("d");
-                table.addCell(expenseAccountDetails.getAmount().toString());
-                table.addCell("");
-                table.addCell("nominal account");
+            PdfPTable table4 = new PdfPTable(7);
 
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
-                table.addCell("c");
-                table.addCell("");
-                table.addCell(expenseAccountDetails.getAmount().toString());
-                table.addCell("real account");
-
-            }
+            Stream.of("Date", "Description", "Particulars", "Entry Type", "Debit Amount", "Credit Amount", "Account Type")
+                    .forEach(columnTitle -> {
+                        PdfPCell header = new PdfPCell();
+                        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
+                        header.setBorderWidth(2);
+                        header.setPhrase(new Phrase(columnTitle));
+                        table4.addCell(header);
+                    });
 
             for (Payables payables: payablesList) {
-                table.addCell(payables.getPaymentDate().format(formatter));
-                table.addCell("purchased goods from " + (payables.getSupplier() == null  ?"" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
-                table.addCell("purchase a/c");
-                table.addCell("d");
-                table.addCell(payables.getAmount().toString());
-                table.addCell("");
-                table.addCell("nominal account");
+                table4.addCell(payables.getPaymentDate().format(formatter));
+                table4.addCell("purchased goods from " + (payables.getSupplier() == null  ?"" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
+                table4.addCell("purchase a/c");
+                table4.addCell("d");
+                table4.addCell(payables.getAmount().toString());
+                table4.addCell("");
+                table4.addCell("nominal account");
 
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to cash a/c");
-                table.addCell("c");
-                table.addCell("");
-                table.addCell(payables.getAmount().toString());
-                table.addCell("real account");
-
+                table4.addCell("");
+                table4.addCell("");
+                table4.addCell("to cash a/c");
+                table4.addCell("c");
+                table4.addCell("");
+                table4.addCell(payables.getAmount().toString());
+                table4.addCell("real account");
             }
+
+            PdfPTable table5 = new PdfPTable(7);
+
+            Stream.of("Date", "Description", "Particulars", "Entry Type", "Debit Amount", "Credit Amount", "Account Type")
+                    .forEach(columnTitle -> {
+                        PdfPCell header = new PdfPCell();
+                        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
+                        header.setBorderWidth(2);
+                        header.setPhrase(new Phrase(columnTitle));
+                        table5.addCell(header);
+                    });
 
             for (PurchaseInvoice purchaseInvoice: purchaseInvoiceList) {
-                table.addCell(purchaseInvoice.getPurchaseDate().format(formatter));
-                table.addCell("purchased stock items worth rs " + purchaseInvoice.getPurchaseAmount() + " and paid through cash");
-                table.addCell("purchase a/c");
-                table.addCell("d");
-                table.addCell(purchaseInvoice.getPurchaseAmount().toString());
-                table.addCell("");
-                table.addCell("nominal account");
+                table5.addCell(purchaseInvoice.getPurchaseDate().format(formatter));
+                table5.addCell("purchased stock items worth rs " + purchaseInvoice.getPurchaseAmount() + " and paid through cash");
+                table5.addCell("purchase a/c");
+                table5.addCell("d");
+                table5.addCell(purchaseInvoice.getPurchaseAmount().toString());
+                table5.addCell("");
+                table5.addCell("nominal account");
 
-                table.addCell("");
-                table.addCell("");
-                table.addCell("to cash a/c");
-                table.addCell("c");
-                table.addCell("");
-                table.addCell(purchaseInvoice.getPurchaseAmount().toString());
-                table.addCell("real account");
-
+                table5.addCell("");
+                table5.addCell("");
+                table5.addCell("to cash a/c");
+                table5.addCell("c");
+                table5.addCell("");
+                table5.addCell(purchaseInvoice.getPurchaseAmount().toString());
+                table5.addCell("real account");
             }
 
-            document.add(table);
+            //Adding new page after every table
+            document.add(table1);
+            document.newPage();
+            document.add(table2);
+            document.newPage();
+            document.add(table3);
+            document.newPage();
+            document.add(table4);
+            document.newPage();
+            document.add(table5);
             document.close();
 
             logger.trace("PDF file created: " + pdfFileName);
         } catch (DocumentException | IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    private void createCategoryHeaderRow(Sheet sheet, int rowIndex, String category) {
+        Row headerRow = sheet.createRow(rowIndex);
+        Cell cell = headerRow.createCell(0);
+        cell.setCellValue(category);
+        sheet.addMergedRegion(new CellRangeAddress(rowIndex, rowIndex, 0, 6));
+        CellStyle cellStyle = sheet.getWorkbook().createCellStyle();
+        cellStyle.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+        cellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+        cellStyle.setAlignment(HorizontalAlignment.CENTER);
+        Font font = sheet.getWorkbook().createFont();
+        font.setBold(true);
+        font.setFontHeightInPoints((short) 12);
+        cellStyle.setFont(font);
+        cell.setCellStyle(cellStyle);
+    }
+
+    private void createHeaderRow(Sheet sheet, int rowIndex) {
+        Row headerRow = sheet.createRow(rowIndex - 1);
+
+        // Create a cell style with blue background and centered alignment
+        CellStyle style = sheet.getWorkbook().createCellStyle();
+        style.setFillForegroundColor(IndexedColors.DARK_BLUE.getIndex());
+        style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+        style.setAlignment(HorizontalAlignment.CENTER);
+
+        // Create a font with white color
+        Font font = sheet.getWorkbook().createFont();
+        font.setColor(IndexedColors.WHITE.getIndex());
+        style.setFont(font);
+
+        // Create cells with the specified style for each column
+        for (int i = 0; i < 7; i++) {
+            Cell cell = headerRow.createCell(i);
+            cell.setCellValue(getHeaderTitle(i));
+            cell.setCellStyle(style);
+        }
+    }
+    private String getHeaderTitle(int columnIndex) {
+        switch (columnIndex) {
+            case 0:
+                return "Date";
+            case 1:
+                return "Description";
+            case 2:
+                return "Particulars";
+            case 3:
+                return "Entry Type";
+            case 4:
+                return "Debit Amount";
+            case 5:
+                return "Credit Amount";
+            case 6:
+                return "Account Type";
+            default:
+                return "";
         }
     }
 }

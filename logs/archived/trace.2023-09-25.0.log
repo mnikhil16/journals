@@ -1,0 +1,1125 @@
+2023-09-25 13:12:45,333 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 13044 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 13:12:45,340 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 13:12:45,349 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 13:12:59,839 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 15.12 seconds (JVM running for 16.569)
+2023-09-25 13:13:30,024 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 13:13:38,715 INFO  CreateJournalEntryService:79 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 13:13:38,715 INFO  CreateJournalEntryService:80 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 13:13:38,717 INFO  CreateJournalEntryService:81 - [] Found 330 expenses for APRIL_2022
+2023-09-25 13:13:38,717 INFO  CreateJournalEntryService:82 - [] Found 92 payables for APRIL_2022
+2023-09-25 13:13:38,717 INFO  CreateJournalEntryService:83 - [] Found 83 purchases for APRIL_2022
+2023-09-25 13:13:40,108 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:13:40,899 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_sale_APRIL_2022.pdf
+2023-09-25 13:13:41,321 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:13:41,397 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_receivable_APRIL_2022.pdf
+2023-09-25 13:13:41,702 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:16:26,557 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 2248 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 13:16:26,559 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 13:16:26,563 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 13:16:39,383 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 13.609 seconds (JVM running for 14.562)
+2023-09-25 13:17:00,024 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 13:17:08,192 INFO  CreateJournalEntryService:79 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 13:17:08,192 INFO  CreateJournalEntryService:80 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 13:17:08,193 INFO  CreateJournalEntryService:81 - [] Found 330 expenses for APRIL_2022
+2023-09-25 13:17:08,195 INFO  CreateJournalEntryService:82 - [] Found 92 payables for APRIL_2022
+2023-09-25 13:17:08,195 INFO  CreateJournalEntryService:83 - [] Found 83 purchases for APRIL_2022
+2023-09-25 13:17:09,510 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:09,925 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:10,354 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:10,673 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:10,904 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:10,905 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 13:17:17,189 INFO  CreateJournalEntryService:79 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 13:17:17,190 INFO  CreateJournalEntryService:80 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 13:17:17,190 INFO  CreateJournalEntryService:81 - [] Found 311 expenses for MAY_2022
+2023-09-25 13:17:17,191 INFO  CreateJournalEntryService:82 - [] Found 47 payables for MAY_2022
+2023-09-25 13:17:17,191 INFO  CreateJournalEntryService:83 - [] Found 102 purchases for MAY_2022
+2023-09-25 13:17:17,641 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:17,847 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:18,138 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:18,359 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:18,561 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:18,561 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 13:17:24,147 INFO  CreateJournalEntryService:79 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 13:17:24,147 INFO  CreateJournalEntryService:80 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 13:17:24,147 INFO  CreateJournalEntryService:81 - [] Found 134 expenses for JUNE_2022
+2023-09-25 13:17:24,147 INFO  CreateJournalEntryService:82 - [] Found 85 payables for JUNE_2022
+2023-09-25 13:17:24,147 INFO  CreateJournalEntryService:83 - [] Found 134 purchases for JUNE_2022
+2023-09-25 13:17:24,467 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:24,731 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:25,017 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:25,305 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:25,532 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:25,532 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 13:17:31,972 INFO  CreateJournalEntryService:79 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 13:17:31,972 INFO  CreateJournalEntryService:80 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 13:17:31,973 INFO  CreateJournalEntryService:81 - [] Found 178 expenses for JULY_2022
+2023-09-25 13:17:31,973 INFO  CreateJournalEntryService:82 - [] Found 14 payables for JULY_2022
+2023-09-25 13:17:31,973 INFO  CreateJournalEntryService:83 - [] Found 71 purchases for JULY_2022
+2023-09-25 13:17:32,331 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:32,625 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:33,015 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:33,289 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:33,564 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:33,564 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 13:17:34,040 INFO  CreateJournalEntryService:79 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 13:17:34,041 INFO  CreateJournalEntryService:80 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 13:17:34,041 INFO  CreateJournalEntryService:81 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 13:17:34,042 INFO  CreateJournalEntryService:82 - [] Found 1 payables for AUGUST_2022
+2023-09-25 13:17:34,042 INFO  CreateJournalEntryService:83 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 13:17:34,361 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:34,637 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:34,929 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:35,206 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:35,500 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:35,501 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 13:17:38,168 INFO  CreateJournalEntryService:79 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 13:17:38,168 INFO  CreateJournalEntryService:80 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 13:17:38,169 INFO  CreateJournalEntryService:81 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 13:17:38,169 INFO  CreateJournalEntryService:82 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 13:17:38,169 INFO  CreateJournalEntryService:83 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 13:17:38,539 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:38,841 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:39,199 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:39,587 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:39,924 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:39,925 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 13:17:45,774 INFO  CreateJournalEntryService:79 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 13:17:45,776 INFO  CreateJournalEntryService:80 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 13:17:45,776 INFO  CreateJournalEntryService:81 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 13:17:45,776 INFO  CreateJournalEntryService:82 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 13:17:45,776 INFO  CreateJournalEntryService:83 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 13:17:46,232 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:46,630 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:47,038 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:47,750 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:48,391 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:48,392 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 13:17:51,434 INFO  CreateJournalEntryService:79 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 13:17:51,434 INFO  CreateJournalEntryService:80 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 13:17:51,435 INFO  CreateJournalEntryService:81 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 13:17:51,435 INFO  CreateJournalEntryService:82 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 13:17:51,435 INFO  CreateJournalEntryService:83 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 13:17:51,991 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:52,460 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:52,932 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:53,332 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:53,783 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:53,783 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 13:17:57,308 INFO  CreateJournalEntryService:79 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 13:17:57,309 INFO  CreateJournalEntryService:80 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 13:17:57,309 INFO  CreateJournalEntryService:81 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 13:17:57,309 INFO  CreateJournalEntryService:82 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 13:17:57,309 INFO  CreateJournalEntryService:83 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 13:17:57,831 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:58,341 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:59,000 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:17:59,629 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:00,135 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:00,136 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 13:18:02,165 INFO  CreateJournalEntryService:79 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 13:18:02,165 INFO  CreateJournalEntryService:80 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 13:18:02,166 INFO  CreateJournalEntryService:81 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 13:18:02,166 INFO  CreateJournalEntryService:82 - [] Found 1 payables for JANUARY_2023
+2023-09-25 13:18:02,166 INFO  CreateJournalEntryService:83 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 13:18:02,720 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:03,301 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:03,888 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:04,602 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:04,602 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 13:18:06,142 INFO  CreateJournalEntryService:79 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 13:18:06,143 INFO  CreateJournalEntryService:80 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 13:18:06,143 INFO  CreateJournalEntryService:81 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 13:18:06,143 INFO  CreateJournalEntryService:82 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 13:18:06,144 INFO  CreateJournalEntryService:83 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 13:18:06,902 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:07,690 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:08,280 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:08,788 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:09,290 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:09,290 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 13:18:11,005 INFO  CreateJournalEntryService:79 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 13:18:11,006 INFO  CreateJournalEntryService:80 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 13:18:11,006 INFO  CreateJournalEntryService:81 - [] Found 156 expenses for MARCH_2023
+2023-09-25 13:18:11,007 INFO  CreateJournalEntryService:82 - [] Found 6 payables for MARCH_2023
+2023-09-25 13:18:11,007 INFO  CreateJournalEntryService:83 - [] Found 10 purchases for MARCH_2023
+2023-09-25 13:18:11,548 TRACE CreateJournalEntryService:174 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:12,083 TRACE CreateJournalEntryService:285 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:12,580 TRACE CreateJournalEntryService:397 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:13,144 TRACE CreateJournalEntryService:508 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:18:13,701 TRACE CreateJournalEntryService:619 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 13:25:10,054 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 13476 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 13:25:10,057 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 13:25:10,069 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 13:25:24,301 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 14.972 seconds (JVM running for 15.905)
+2023-09-25 13:26:00,032 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 13:27:05,987 INFO  CreateJournalEntryService:79 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 13:27:05,988 INFO  CreateJournalEntryService:80 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 13:27:05,989 INFO  CreateJournalEntryService:81 - [] Found 330 expenses for APRIL_2022
+2023-09-25 13:27:05,989 INFO  CreateJournalEntryService:82 - [] Found 92 payables for APRIL_2022
+2023-09-25 13:27:05,989 INFO  CreateJournalEntryService:83 - [] Found 83 purchases for APRIL_2022
+2023-09-25 13:27:06,648 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 13:27:06,796 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 13:27:07,067 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 13:27:07,113 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 13:27:07,155 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 13:27:07,156 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 13:27:56,362 INFO  CreateJournalEntryService:79 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 13:27:56,363 INFO  CreateJournalEntryService:80 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 13:27:56,363 INFO  CreateJournalEntryService:81 - [] Found 311 expenses for MAY_2022
+2023-09-25 13:27:56,363 INFO  CreateJournalEntryService:82 - [] Found 47 payables for MAY_2022
+2023-09-25 13:27:56,363 INFO  CreateJournalEntryService:83 - [] Found 102 purchases for MAY_2022
+2023-09-25 13:27:56,624 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 13:27:56,637 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 13:27:56,820 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 13:27:56,859 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 13:27:56,906 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 13:27:56,906 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 13:28:38,249 INFO  CreateJournalEntryService:79 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 13:28:38,249 INFO  CreateJournalEntryService:80 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 13:28:38,249 INFO  CreateJournalEntryService:81 - [] Found 134 expenses for JUNE_2022
+2023-09-25 13:28:38,249 INFO  CreateJournalEntryService:82 - [] Found 85 payables for JUNE_2022
+2023-09-25 13:28:38,249 INFO  CreateJournalEntryService:83 - [] Found 134 purchases for JUNE_2022
+2023-09-25 13:28:38,429 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 13:28:38,437 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 13:28:38,472 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 13:28:38,502 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 13:28:38,569 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 13:28:38,569 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 13:29:26,285 INFO  CreateJournalEntryService:79 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 13:29:26,287 INFO  CreateJournalEntryService:80 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 13:29:26,287 INFO  CreateJournalEntryService:81 - [] Found 178 expenses for JULY_2022
+2023-09-25 13:29:26,288 INFO  CreateJournalEntryService:82 - [] Found 14 payables for JULY_2022
+2023-09-25 13:29:26,288 INFO  CreateJournalEntryService:83 - [] Found 71 purchases for JULY_2022
+2023-09-25 13:29:26,421 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 13:29:26,470 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 13:29:26,584 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 13:29:26,592 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 13:29:26,632 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 13:29:26,633 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 13:29:29,039 INFO  CreateJournalEntryService:79 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 13:29:29,040 INFO  CreateJournalEntryService:80 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 13:29:29,040 INFO  CreateJournalEntryService:81 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 13:29:29,040 INFO  CreateJournalEntryService:82 - [] Found 1 payables for AUGUST_2022
+2023-09-25 13:29:29,040 INFO  CreateJournalEntryService:83 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 13:29:29,048 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 13:29:29,051 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 13:29:29,063 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 13:29:29,064 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 13:29:29,076 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 13:29:29,076 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 13:29:45,720 INFO  CreateJournalEntryService:79 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 13:29:45,721 INFO  CreateJournalEntryService:80 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 13:29:45,721 INFO  CreateJournalEntryService:81 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 13:29:45,721 INFO  CreateJournalEntryService:82 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 13:29:45,722 INFO  CreateJournalEntryService:83 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 13:29:45,838 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 13:29:45,842 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 13:29:45,885 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 13:29:45,889 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 13:29:45,902 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 13:29:45,902 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 13:30:28,234 INFO  CreateJournalEntryService:79 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 13:30:28,235 INFO  CreateJournalEntryService:80 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 13:30:28,235 INFO  CreateJournalEntryService:81 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 13:30:28,235 INFO  CreateJournalEntryService:82 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 13:30:28,235 INFO  CreateJournalEntryService:83 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 13:30:28,387 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 13:30:28,409 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 13:30:28,514 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 13:30:28,540 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 13:30:28,585 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 13:30:28,585 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 13:30:47,621 INFO  CreateJournalEntryService:79 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 13:30:47,621 INFO  CreateJournalEntryService:80 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 13:30:47,622 INFO  CreateJournalEntryService:81 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 13:30:47,622 INFO  CreateJournalEntryService:82 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 13:30:47,622 INFO  CreateJournalEntryService:83 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 13:30:47,723 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 13:30:47,734 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 13:30:47,833 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 13:30:47,838 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 13:30:47,844 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 13:30:47,844 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 13:31:04,666 INFO  CreateJournalEntryService:79 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 13:31:04,666 INFO  CreateJournalEntryService:80 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 13:31:04,666 INFO  CreateJournalEntryService:81 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 13:31:04,666 INFO  CreateJournalEntryService:82 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 13:31:04,666 INFO  CreateJournalEntryService:83 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 13:31:04,769 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 13:31:04,776 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 13:31:04,815 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 13:31:04,827 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 13:31:04,830 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 13:31:04,830 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 13:31:14,588 INFO  CreateJournalEntryService:79 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 13:31:14,588 INFO  CreateJournalEntryService:80 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 13:31:14,588 INFO  CreateJournalEntryService:81 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 13:31:14,588 INFO  CreateJournalEntryService:82 - [] Found 1 payables for JANUARY_2023
+2023-09-25 13:31:14,588 INFO  CreateJournalEntryService:83 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 13:31:14,653 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 13:31:14,686 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 13:31:14,686 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 13:31:14,702 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 13:31:14,702 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 13:31:20,216 INFO  CreateJournalEntryService:79 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 13:31:20,219 INFO  CreateJournalEntryService:80 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 13:31:20,219 INFO  CreateJournalEntryService:81 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 13:31:20,219 INFO  CreateJournalEntryService:82 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 13:31:20,219 INFO  CreateJournalEntryService:83 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 13:31:20,253 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 13:31:20,255 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 13:31:20,276 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 13:31:20,284 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 13:31:20,288 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 13:31:20,288 INFO  CreateJournalEntryService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 13:31:23,683 INFO  CreateJournalEntryService:79 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 13:31:23,683 INFO  CreateJournalEntryService:80 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 13:31:23,683 INFO  CreateJournalEntryService:81 - [] Found 156 expenses for MARCH_2023
+2023-09-25 13:31:23,683 INFO  CreateJournalEntryService:82 - [] Found 6 payables for MARCH_2023
+2023-09-25 13:31:23,684 INFO  CreateJournalEntryService:83 - [] Found 10 purchases for MARCH_2023
+2023-09-25 13:31:23,725 TRACE CreateJournalEntryService:223 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 13:31:23,728 TRACE CreateJournalEntryService:335 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 13:31:23,781 TRACE CreateJournalEntryService:446 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 13:31:23,784 TRACE CreateJournalEntryService:557 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 13:31:23,788 TRACE CreateJournalEntryService:668 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 14:55:31,834 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 11500 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 14:55:31,836 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 14:55:31,844 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 14:55:44,013 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.896 seconds (JVM running for 13.887)
+2023-09-25 14:56:00,033 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 14:56:09,616 INFO  CreateJournalEntryService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 14:56:09,616 INFO  CreateJournalEntryService:79 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 14:56:09,616 INFO  CreateJournalEntryService:80 - [] Found 330 expenses for APRIL_2022
+2023-09-25 14:56:09,616 INFO  CreateJournalEntryService:81 - [] Found 92 payables for APRIL_2022
+2023-09-25 14:56:09,616 INFO  CreateJournalEntryService:82 - [] Found 83 purchases for APRIL_2022
+2023-09-25 14:56:10,382 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 14:56:10,483 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 14:56:10,733 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 14:56:10,809 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 14:56:10,858 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 14:56:10,858 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 14:56:16,376 INFO  CreateJournalEntryService:78 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 14:56:16,377 INFO  CreateJournalEntryService:79 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 14:56:16,377 INFO  CreateJournalEntryService:80 - [] Found 311 expenses for MAY_2022
+2023-09-25 14:56:16,378 INFO  CreateJournalEntryService:81 - [] Found 47 payables for MAY_2022
+2023-09-25 14:56:16,378 INFO  CreateJournalEntryService:82 - [] Found 102 purchases for MAY_2022
+2023-09-25 14:56:16,677 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 14:56:16,694 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 14:56:16,886 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 14:56:16,915 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 14:56:16,951 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 14:56:16,952 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 14:56:21,403 INFO  CreateJournalEntryService:78 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 14:56:21,403 INFO  CreateJournalEntryService:79 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 14:56:21,403 INFO  CreateJournalEntryService:80 - [] Found 134 expenses for JUNE_2022
+2023-09-25 14:56:21,403 INFO  CreateJournalEntryService:81 - [] Found 85 payables for JUNE_2022
+2023-09-25 14:56:21,403 INFO  CreateJournalEntryService:82 - [] Found 134 purchases for JUNE_2022
+2023-09-25 14:56:21,561 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 14:56:21,568 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 14:56:21,602 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 14:56:21,622 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 14:56:21,657 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 14:56:21,657 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 14:56:27,536 INFO  CreateJournalEntryService:78 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 14:56:27,537 INFO  CreateJournalEntryService:79 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 14:56:27,537 INFO  CreateJournalEntryService:80 - [] Found 178 expenses for JULY_2022
+2023-09-25 14:56:27,537 INFO  CreateJournalEntryService:81 - [] Found 14 payables for JULY_2022
+2023-09-25 14:56:27,537 INFO  CreateJournalEntryService:82 - [] Found 71 purchases for JULY_2022
+2023-09-25 14:56:27,654 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 14:56:27,682 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 14:56:27,740 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 14:56:27,745 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 14:56:27,761 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 14:56:27,762 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 14:56:28,302 INFO  CreateJournalEntryService:78 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 14:56:28,302 INFO  CreateJournalEntryService:79 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 14:56:28,302 INFO  CreateJournalEntryService:80 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 14:56:28,303 INFO  CreateJournalEntryService:81 - [] Found 1 payables for AUGUST_2022
+2023-09-25 14:56:28,303 INFO  CreateJournalEntryService:82 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 14:56:28,309 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 14:56:28,313 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 14:56:28,324 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 14:56:28,326 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 14:56:28,333 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 14:56:28,334 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 14:56:30,014 INFO  CreateJournalEntryService:78 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 14:56:30,015 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 14:56:30,016 INFO  CreateJournalEntryService:80 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 14:56:30,016 INFO  CreateJournalEntryService:81 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 14:56:30,016 INFO  CreateJournalEntryService:82 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 14:56:30,059 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 14:56:30,061 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 14:56:30,077 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 14:56:30,079 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 14:56:30,086 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 14:56:30,086 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 14:56:37,900 INFO  CreateJournalEntryService:78 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 14:56:37,901 INFO  CreateJournalEntryService:79 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 14:56:37,901 INFO  CreateJournalEntryService:80 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 14:56:37,901 INFO  CreateJournalEntryService:81 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 14:56:37,901 INFO  CreateJournalEntryService:82 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 14:56:38,059 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 14:56:38,086 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 14:56:38,145 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 14:56:38,166 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 14:56:38,205 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 14:56:38,205 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 14:56:41,420 INFO  CreateJournalEntryService:78 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 14:56:41,420 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 14:56:41,420 INFO  CreateJournalEntryService:80 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 14:56:41,420 INFO  CreateJournalEntryService:81 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 14:56:41,420 INFO  CreateJournalEntryService:82 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 14:56:41,528 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 14:56:41,530 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 14:56:41,557 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 14:56:41,559 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 14:56:41,562 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 14:56:41,562 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 14:56:44,242 INFO  CreateJournalEntryService:78 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 14:56:44,243 INFO  CreateJournalEntryService:79 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 14:56:44,243 INFO  CreateJournalEntryService:80 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 14:56:44,244 INFO  CreateJournalEntryService:81 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 14:56:44,244 INFO  CreateJournalEntryService:82 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 14:56:44,319 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 14:56:44,323 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 14:56:44,376 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 14:56:44,380 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 14:56:44,392 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 14:56:44,392 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 14:56:46,888 INFO  CreateJournalEntryService:78 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 14:56:46,888 INFO  CreateJournalEntryService:79 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 14:56:46,888 INFO  CreateJournalEntryService:80 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 14:56:46,888 INFO  CreateJournalEntryService:81 - [] Found 1 payables for JANUARY_2023
+2023-09-25 14:56:46,889 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 14:56:46,951 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 14:56:46,993 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 14:56:46,994 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 14:56:47,001 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 14:56:47,001 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 14:56:48,259 INFO  CreateJournalEntryService:78 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 14:56:48,260 INFO  CreateJournalEntryService:79 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 14:56:48,260 INFO  CreateJournalEntryService:80 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 14:56:48,260 INFO  CreateJournalEntryService:81 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 14:56:48,260 INFO  CreateJournalEntryService:82 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 14:56:48,285 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 14:56:48,286 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 14:56:48,312 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 14:56:48,314 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 14:56:48,317 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 14:56:48,317 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 14:56:49,865 INFO  CreateJournalEntryService:78 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 14:56:49,865 INFO  CreateJournalEntryService:79 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 14:56:49,866 INFO  CreateJournalEntryService:80 - [] Found 156 expenses for MARCH_2023
+2023-09-25 14:56:49,866 INFO  CreateJournalEntryService:81 - [] Found 6 payables for MARCH_2023
+2023-09-25 14:56:49,866 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for MARCH_2023
+2023-09-25 14:56:49,903 TRACE CreateJournalEntryService:228 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 14:56:49,907 TRACE CreateJournalEntryService:345 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 14:56:49,935 TRACE CreateJournalEntryService:461 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 14:56:49,938 TRACE CreateJournalEntryService:577 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 14:56:49,941 TRACE CreateJournalEntryService:693 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 15:47:09,593 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 12824 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 15:47:09,595 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 15:47:09,599 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 15:47:22,366 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 13.425 seconds (JVM running for 14.349)
+2023-09-25 15:47:50,018 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 15:48:10,250 INFO  CreateJournalEntryService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 15:48:10,250 INFO  CreateJournalEntryService:79 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 15:48:10,250 INFO  CreateJournalEntryService:80 - [] Found 330 expenses for APRIL_2022
+2023-09-25 15:48:10,250 INFO  CreateJournalEntryService:81 - [] Found 92 payables for APRIL_2022
+2023-09-25 15:48:10,250 INFO  CreateJournalEntryService:82 - [] Found 83 purchases for APRIL_2022
+2023-09-25 15:48:11,079 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 15:48:11,079 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 15:48:32,424 INFO  CreateJournalEntryService:78 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 15:48:32,424 INFO  CreateJournalEntryService:79 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 15:48:32,424 INFO  CreateJournalEntryService:80 - [] Found 311 expenses for MAY_2022
+2023-09-25 15:48:32,424 INFO  CreateJournalEntryService:81 - [] Found 47 payables for MAY_2022
+2023-09-25 15:48:32,424 INFO  CreateJournalEntryService:82 - [] Found 102 purchases for MAY_2022
+2023-09-25 15:48:32,727 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 15:48:32,727 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 15:48:42,233 INFO  CreateJournalEntryService:78 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 15:48:42,233 INFO  CreateJournalEntryService:79 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 15:48:42,233 INFO  CreateJournalEntryService:80 - [] Found 134 expenses for JUNE_2022
+2023-09-25 15:48:42,233 INFO  CreateJournalEntryService:81 - [] Found 85 payables for JUNE_2022
+2023-09-25 15:48:42,233 INFO  CreateJournalEntryService:82 - [] Found 134 purchases for JUNE_2022
+2023-09-25 15:48:42,467 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 15:48:42,467 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 15:48:53,577 INFO  CreateJournalEntryService:78 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 15:48:53,578 INFO  CreateJournalEntryService:79 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 15:48:53,578 INFO  CreateJournalEntryService:80 - [] Found 178 expenses for JULY_2022
+2023-09-25 15:48:53,578 INFO  CreateJournalEntryService:81 - [] Found 14 payables for JULY_2022
+2023-09-25 15:48:53,578 INFO  CreateJournalEntryService:82 - [] Found 71 purchases for JULY_2022
+2023-09-25 15:48:53,885 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 15:48:53,886 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 15:48:54,687 INFO  CreateJournalEntryService:78 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 15:48:54,688 INFO  CreateJournalEntryService:79 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 15:48:54,688 INFO  CreateJournalEntryService:80 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 15:48:54,688 INFO  CreateJournalEntryService:81 - [] Found 1 payables for AUGUST_2022
+2023-09-25 15:48:54,688 INFO  CreateJournalEntryService:82 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 15:48:54,697 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 15:48:54,697 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 15:48:57,157 INFO  CreateJournalEntryService:78 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 15:48:57,158 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 15:48:57,158 INFO  CreateJournalEntryService:80 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 15:48:57,159 INFO  CreateJournalEntryService:81 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 15:48:57,159 INFO  CreateJournalEntryService:82 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 15:48:57,197 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 15:48:57,197 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 15:49:14,981 INFO  CreateJournalEntryService:78 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 15:49:14,982 INFO  CreateJournalEntryService:79 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 15:49:14,982 INFO  CreateJournalEntryService:80 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 15:49:14,982 INFO  CreateJournalEntryService:81 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 15:49:14,982 INFO  CreateJournalEntryService:82 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 15:49:15,154 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 15:49:15,154 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 15:49:19,418 INFO  CreateJournalEntryService:78 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 15:49:19,419 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 15:49:19,419 INFO  CreateJournalEntryService:80 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 15:49:19,419 INFO  CreateJournalEntryService:81 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 15:49:19,419 INFO  CreateJournalEntryService:82 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 15:49:19,516 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 15:49:19,516 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 15:49:24,997 INFO  CreateJournalEntryService:78 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 15:49:24,998 INFO  CreateJournalEntryService:79 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 15:49:24,998 INFO  CreateJournalEntryService:80 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 15:49:24,998 INFO  CreateJournalEntryService:81 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 15:49:24,998 INFO  CreateJournalEntryService:82 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 15:49:25,103 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 15:49:25,104 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 15:49:28,217 INFO  CreateJournalEntryService:78 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 15:49:28,218 INFO  CreateJournalEntryService:79 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 15:49:28,218 INFO  CreateJournalEntryService:80 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 15:49:28,218 INFO  CreateJournalEntryService:81 - [] Found 1 payables for JANUARY_2023
+2023-09-25 15:49:28,218 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 15:49:28,293 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 15:49:28,293 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 15:49:29,548 INFO  CreateJournalEntryService:78 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 15:49:29,549 INFO  CreateJournalEntryService:79 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 15:49:29,549 INFO  CreateJournalEntryService:80 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 15:49:29,549 INFO  CreateJournalEntryService:81 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 15:49:29,549 INFO  CreateJournalEntryService:82 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 15:49:29,593 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 15:49:29,594 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 15:49:30,868 INFO  CreateJournalEntryService:78 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 15:49:30,868 INFO  CreateJournalEntryService:79 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 15:49:30,869 INFO  CreateJournalEntryService:80 - [] Found 156 expenses for MARCH_2023
+2023-09-25 15:49:30,869 INFO  CreateJournalEntryService:81 - [] Found 6 payables for MARCH_2023
+2023-09-25 15:49:30,869 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for MARCH_2023
+2023-09-25 15:49:30,900 TRACE CreateJournalEntryService:246 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 16:05:44,919 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 16284 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 16:05:44,922 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 16:05:44,927 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 16:05:57,412 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 13.184 seconds (JVM running for 14.063)
+2023-09-25 16:06:20,033 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 16:06:44,035 INFO  CreateJournalEntryService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 16:06:44,037 INFO  CreateJournalEntryService:79 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 16:06:44,037 INFO  CreateJournalEntryService:80 - [] Found 330 expenses for APRIL_2022
+2023-09-25 16:06:44,038 INFO  CreateJournalEntryService:81 - [] Found 92 payables for APRIL_2022
+2023-09-25 16:06:44,038 INFO  CreateJournalEntryService:82 - [] Found 83 purchases for APRIL_2022
+2023-09-25 16:06:45,411 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 16:06:45,412 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 16:07:01,627 INFO  CreateJournalEntryService:78 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 16:07:01,628 INFO  CreateJournalEntryService:79 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 16:07:01,628 INFO  CreateJournalEntryService:80 - [] Found 311 expenses for MAY_2022
+2023-09-25 16:07:01,628 INFO  CreateJournalEntryService:81 - [] Found 47 payables for MAY_2022
+2023-09-25 16:07:01,628 INFO  CreateJournalEntryService:82 - [] Found 102 purchases for MAY_2022
+2023-09-25 16:07:02,110 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 16:07:02,110 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 16:07:15,641 INFO  CreateJournalEntryService:78 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 16:07:15,642 INFO  CreateJournalEntryService:79 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 16:07:15,642 INFO  CreateJournalEntryService:80 - [] Found 134 expenses for JUNE_2022
+2023-09-25 16:07:15,643 INFO  CreateJournalEntryService:81 - [] Found 85 payables for JUNE_2022
+2023-09-25 16:07:15,643 INFO  CreateJournalEntryService:82 - [] Found 134 purchases for JUNE_2022
+2023-09-25 16:07:16,002 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 16:07:16,002 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 16:07:39,184 INFO  CreateJournalEntryService:78 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 16:07:39,184 INFO  CreateJournalEntryService:79 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 16:07:39,184 INFO  CreateJournalEntryService:80 - [] Found 178 expenses for JULY_2022
+2023-09-25 16:07:39,184 INFO  CreateJournalEntryService:81 - [] Found 14 payables for JULY_2022
+2023-09-25 16:07:39,184 INFO  CreateJournalEntryService:82 - [] Found 71 purchases for JULY_2022
+2023-09-25 16:07:39,483 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 16:07:39,483 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 16:07:41,613 INFO  CreateJournalEntryService:78 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 16:07:41,613 INFO  CreateJournalEntryService:79 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 16:07:41,614 INFO  CreateJournalEntryService:80 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 16:07:41,614 INFO  CreateJournalEntryService:81 - [] Found 1 payables for AUGUST_2022
+2023-09-25 16:07:41,614 INFO  CreateJournalEntryService:82 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 16:07:41,630 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 16:07:41,630 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 16:07:50,079 INFO  CreateJournalEntryService:78 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 16:07:50,080 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 16:07:50,080 INFO  CreateJournalEntryService:80 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 16:07:50,080 INFO  CreateJournalEntryService:81 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 16:07:50,080 INFO  CreateJournalEntryService:82 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 16:07:50,154 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 16:07:50,154 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 16:08:18,040 INFO  CreateJournalEntryService:78 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 16:08:18,041 INFO  CreateJournalEntryService:79 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 16:08:18,041 INFO  CreateJournalEntryService:80 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 16:08:18,041 INFO  CreateJournalEntryService:81 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 16:08:18,042 INFO  CreateJournalEntryService:82 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 16:08:18,408 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 16:08:18,408 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 16:08:31,571 INFO  CreateJournalEntryService:78 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 16:08:31,572 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 16:08:31,572 INFO  CreateJournalEntryService:80 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 16:08:31,572 INFO  CreateJournalEntryService:81 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 16:08:31,572 INFO  CreateJournalEntryService:82 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 16:08:31,754 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 16:08:31,754 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 16:08:37,820 INFO  CreateJournalEntryService:78 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 16:08:37,820 INFO  CreateJournalEntryService:79 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 16:08:37,820 INFO  CreateJournalEntryService:80 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 16:08:37,820 INFO  CreateJournalEntryService:81 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 16:08:37,820 INFO  CreateJournalEntryService:82 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 16:08:37,994 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 16:08:37,994 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 16:08:39,911 INFO  CreateJournalEntryService:78 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 16:08:39,911 INFO  CreateJournalEntryService:79 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 16:08:39,911 INFO  CreateJournalEntryService:80 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 16:08:39,911 INFO  CreateJournalEntryService:81 - [] Found 1 payables for JANUARY_2023
+2023-09-25 16:08:39,911 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 16:08:40,050 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 16:08:40,050 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 16:08:41,576 INFO  CreateJournalEntryService:78 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 16:08:41,577 INFO  CreateJournalEntryService:79 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 16:08:41,577 INFO  CreateJournalEntryService:80 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 16:08:41,577 INFO  CreateJournalEntryService:81 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 16:08:41,577 INFO  CreateJournalEntryService:82 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 16:08:42,212 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 16:08:42,212 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 16:08:44,094 INFO  CreateJournalEntryService:78 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 16:08:44,094 INFO  CreateJournalEntryService:79 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 16:08:44,094 INFO  CreateJournalEntryService:80 - [] Found 156 expenses for MARCH_2023
+2023-09-25 16:08:44,095 INFO  CreateJournalEntryService:81 - [] Found 6 payables for MARCH_2023
+2023-09-25 16:08:44,095 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for MARCH_2023
+2023-09-25 16:08:44,293 TRACE CreateJournalEntryService:561 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 16:24:21,278 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15216 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 16:24:21,279 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 16:24:21,284 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 16:24:33,301 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.698 seconds (JVM running for 13.546)
+2023-09-25 16:25:00,032 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 16:25:06,697 INFO  CreateJournalEntryService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 16:25:06,697 INFO  CreateJournalEntryService:79 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 16:25:06,697 INFO  CreateJournalEntryService:80 - [] Found 330 expenses for APRIL_2022
+2023-09-25 16:25:06,698 INFO  CreateJournalEntryService:81 - [] Found 92 payables for APRIL_2022
+2023-09-25 16:25:06,698 INFO  CreateJournalEntryService:82 - [] Found 83 purchases for APRIL_2022
+2023-09-25 16:25:08,186 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:08,633 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:09,005 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:09,273 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:09,517 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:10,839 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 16:25:10,839 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 16:25:16,417 INFO  CreateJournalEntryService:78 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 16:25:16,418 INFO  CreateJournalEntryService:79 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 16:25:16,418 INFO  CreateJournalEntryService:80 - [] Found 311 expenses for MAY_2022
+2023-09-25 16:25:16,418 INFO  CreateJournalEntryService:81 - [] Found 47 payables for MAY_2022
+2023-09-25 16:25:16,418 INFO  CreateJournalEntryService:82 - [] Found 102 purchases for MAY_2022
+2023-09-25 16:25:16,840 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:17,079 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:17,385 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:17,606 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:17,820 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:18,303 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 16:25:18,304 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 16:25:22,478 INFO  CreateJournalEntryService:78 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 16:25:22,479 INFO  CreateJournalEntryService:79 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 16:25:22,479 INFO  CreateJournalEntryService:80 - [] Found 134 expenses for JUNE_2022
+2023-09-25 16:25:22,479 INFO  CreateJournalEntryService:81 - [] Found 85 payables for JUNE_2022
+2023-09-25 16:25:22,480 INFO  CreateJournalEntryService:82 - [] Found 134 purchases for JUNE_2022
+2023-09-25 16:25:22,865 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:23,117 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:23,358 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:23,575 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:23,791 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:23,997 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 16:25:23,998 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 16:25:29,734 INFO  CreateJournalEntryService:78 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 16:25:29,734 INFO  CreateJournalEntryService:79 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 16:25:29,735 INFO  CreateJournalEntryService:80 - [] Found 178 expenses for JULY_2022
+2023-09-25 16:25:29,735 INFO  CreateJournalEntryService:81 - [] Found 14 payables for JULY_2022
+2023-09-25 16:25:29,735 INFO  CreateJournalEntryService:82 - [] Found 71 purchases for JULY_2022
+2023-09-25 16:25:30,038 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:30,325 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:30,587 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:30,832 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:31,111 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:31,399 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 16:25:31,399 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 16:25:31,839 INFO  CreateJournalEntryService:78 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 16:25:31,840 INFO  CreateJournalEntryService:79 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 16:25:31,840 INFO  CreateJournalEntryService:80 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 16:25:31,840 INFO  CreateJournalEntryService:81 - [] Found 1 payables for AUGUST_2022
+2023-09-25 16:25:31,840 INFO  CreateJournalEntryService:82 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 16:25:32,199 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:32,450 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:32,708 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:33,006 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:33,327 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:33,366 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 16:25:33,366 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 16:25:34,901 INFO  CreateJournalEntryService:78 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 16:25:34,902 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 16:25:34,902 INFO  CreateJournalEntryService:80 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 16:25:34,902 INFO  CreateJournalEntryService:81 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 16:25:34,902 INFO  CreateJournalEntryService:82 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 16:25:35,260 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:35,537 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:35,801 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:36,079 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:36,333 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:36,426 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 16:25:36,427 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 16:25:42,215 INFO  CreateJournalEntryService:78 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 16:25:42,215 INFO  CreateJournalEntryService:79 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 16:25:42,215 INFO  CreateJournalEntryService:80 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 16:25:42,216 INFO  CreateJournalEntryService:81 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 16:25:42,216 INFO  CreateJournalEntryService:82 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 16:25:42,590 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:42,984 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:43,332 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:43,725 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:44,179 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:44,590 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 16:25:44,590 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 16:25:47,597 INFO  CreateJournalEntryService:78 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 16:25:47,598 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 16:25:47,598 INFO  CreateJournalEntryService:80 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 16:25:47,598 INFO  CreateJournalEntryService:81 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 16:25:47,598 INFO  CreateJournalEntryService:82 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 16:25:48,051 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:48,449 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:48,904 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:49,321 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:49,752 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:49,916 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 16:25:49,916 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 16:25:53,775 INFO  CreateJournalEntryService:78 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 16:25:53,775 INFO  CreateJournalEntryService:79 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 16:25:53,776 INFO  CreateJournalEntryService:80 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 16:25:53,776 INFO  CreateJournalEntryService:81 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 16:25:53,776 INFO  CreateJournalEntryService:82 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 16:25:54,281 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:54,721 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:55,244 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:55,753 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:56,255 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:56,453 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 16:25:56,453 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 16:25:58,636 INFO  CreateJournalEntryService:78 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 16:25:58,637 INFO  CreateJournalEntryService:79 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 16:25:58,637 INFO  CreateJournalEntryService:80 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 16:25:58,637 INFO  CreateJournalEntryService:81 - [] Found 1 payables for JANUARY_2023
+2023-09-25 16:25:58,637 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 16:25:59,207 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:25:59,942 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:00,670 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:01,385 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:01,487 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 16:26:01,487 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 16:26:02,892 INFO  CreateJournalEntryService:78 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 16:26:02,892 INFO  CreateJournalEntryService:79 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 16:26:02,892 INFO  CreateJournalEntryService:80 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 16:26:02,892 INFO  CreateJournalEntryService:81 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 16:26:02,892 INFO  CreateJournalEntryService:82 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 16:26:03,382 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:03,826 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:04,334 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:04,877 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:05,455 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:05,584 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 16:26:05,585 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 16:26:06,947 INFO  CreateJournalEntryService:78 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 16:26:06,948 INFO  CreateJournalEntryService:79 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 16:26:06,948 INFO  CreateJournalEntryService:80 - [] Found 156 expenses for MARCH_2023
+2023-09-25 16:26:06,948 INFO  CreateJournalEntryService:81 - [] Found 6 payables for MARCH_2023
+2023-09-25 16:26:06,949 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for MARCH_2023
+2023-09-25 16:26:07,487 TRACE CreateJournalEntryService:170 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:08,044 TRACE CreateJournalEntryService:234 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:08,568 TRACE CreateJournalEntryService:298 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:09,055 TRACE CreateJournalEntryService:362 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:09,575 TRACE CreateJournalEntryService:426 - [] Excel file updated: JournalEntries.xlsx
+2023-09-25 16:26:09,660 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 16:27:54,218 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 9972 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 16:27:54,221 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 16:27:54,226 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 16:28:06,087 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.576 seconds (JVM running for 13.475)
+2023-09-25 16:28:20,017 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 16:28:28,628 INFO  CreateJournalEntryService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 16:28:28,629 INFO  CreateJournalEntryService:79 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 16:28:28,630 INFO  CreateJournalEntryService:80 - [] Found 330 expenses for APRIL_2022
+2023-09-25 16:28:28,630 INFO  CreateJournalEntryService:81 - [] Found 92 payables for APRIL_2022
+2023-09-25 16:28:28,631 INFO  CreateJournalEntryService:82 - [] Found 83 purchases for APRIL_2022
+2023-09-25 16:28:30,154 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 16:28:30,155 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 16:28:37,161 INFO  CreateJournalEntryService:78 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 16:28:37,162 INFO  CreateJournalEntryService:79 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 16:28:37,162 INFO  CreateJournalEntryService:80 - [] Found 311 expenses for MAY_2022
+2023-09-25 16:28:37,162 INFO  CreateJournalEntryService:81 - [] Found 47 payables for MAY_2022
+2023-09-25 16:28:37,162 INFO  CreateJournalEntryService:82 - [] Found 102 purchases for MAY_2022
+2023-09-25 16:28:37,716 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 16:28:37,716 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 16:28:43,150 INFO  CreateJournalEntryService:78 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 16:28:43,151 INFO  CreateJournalEntryService:79 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 16:28:43,151 INFO  CreateJournalEntryService:80 - [] Found 134 expenses for JUNE_2022
+2023-09-25 16:28:43,151 INFO  CreateJournalEntryService:81 - [] Found 85 payables for JUNE_2022
+2023-09-25 16:28:43,151 INFO  CreateJournalEntryService:82 - [] Found 134 purchases for JUNE_2022
+2023-09-25 16:28:43,440 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 16:28:43,440 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 16:28:51,977 INFO  CreateJournalEntryService:78 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 16:28:51,978 INFO  CreateJournalEntryService:79 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 16:28:51,978 INFO  CreateJournalEntryService:80 - [] Found 178 expenses for JULY_2022
+2023-09-25 16:28:51,978 INFO  CreateJournalEntryService:81 - [] Found 14 payables for JULY_2022
+2023-09-25 16:28:51,978 INFO  CreateJournalEntryService:82 - [] Found 71 purchases for JULY_2022
+2023-09-25 16:28:52,303 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 16:28:52,303 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 16:28:52,767 INFO  CreateJournalEntryService:78 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 16:28:52,767 INFO  CreateJournalEntryService:79 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 16:28:52,767 INFO  CreateJournalEntryService:80 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 16:28:52,768 INFO  CreateJournalEntryService:81 - [] Found 1 payables for AUGUST_2022
+2023-09-25 16:28:52,768 INFO  CreateJournalEntryService:82 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 16:28:52,850 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 16:28:52,850 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 16:28:54,670 INFO  CreateJournalEntryService:78 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 16:28:54,670 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 16:28:54,671 INFO  CreateJournalEntryService:80 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 16:28:54,671 INFO  CreateJournalEntryService:81 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 16:28:54,671 INFO  CreateJournalEntryService:82 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 16:28:54,818 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 16:28:54,819 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 16:29:01,838 INFO  CreateJournalEntryService:78 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 16:29:01,838 INFO  CreateJournalEntryService:79 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 16:29:01,838 INFO  CreateJournalEntryService:80 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 16:29:01,838 INFO  CreateJournalEntryService:81 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 16:29:01,838 INFO  CreateJournalEntryService:82 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 16:29:02,251 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 16:29:02,252 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 16:29:05,865 INFO  CreateJournalEntryService:78 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 16:29:05,865 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 16:29:05,866 INFO  CreateJournalEntryService:80 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 16:29:05,866 INFO  CreateJournalEntryService:81 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 16:29:05,866 INFO  CreateJournalEntryService:82 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 16:29:06,033 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 16:29:06,033 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 16:29:09,134 INFO  CreateJournalEntryService:78 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 16:29:09,134 INFO  CreateJournalEntryService:79 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 16:29:09,134 INFO  CreateJournalEntryService:80 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 16:29:09,136 INFO  CreateJournalEntryService:81 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 16:29:09,136 INFO  CreateJournalEntryService:82 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 16:29:09,348 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 16:29:09,348 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 16:29:11,573 INFO  CreateJournalEntryService:78 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 16:29:11,574 INFO  CreateJournalEntryService:79 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 16:29:11,574 INFO  CreateJournalEntryService:80 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 16:29:11,574 INFO  CreateJournalEntryService:81 - [] Found 1 payables for JANUARY_2023
+2023-09-25 16:29:11,574 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 16:29:11,703 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 16:29:11,704 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 16:29:12,984 INFO  CreateJournalEntryService:78 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 16:29:12,985 INFO  CreateJournalEntryService:79 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 16:29:12,985 INFO  CreateJournalEntryService:80 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 16:29:12,985 INFO  CreateJournalEntryService:81 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 16:29:12,985 INFO  CreateJournalEntryService:82 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 16:29:13,084 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 16:29:13,085 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 16:29:14,668 INFO  CreateJournalEntryService:78 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 16:29:14,670 INFO  CreateJournalEntryService:79 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 16:29:14,670 INFO  CreateJournalEntryService:80 - [] Found 156 expenses for MARCH_2023
+2023-09-25 16:29:14,670 INFO  CreateJournalEntryService:81 - [] Found 6 payables for MARCH_2023
+2023-09-25 16:29:14,670 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for MARCH_2023
+2023-09-25 16:29:14,812 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 18:19:25,908 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1072 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 18:19:25,909 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 18:19:25,913 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 18:19:38,192 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 12.921 seconds (JVM running for 13.786)
+2023-09-25 18:20:00,023 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 18:20:09,815 INFO  CreateJournalEntryService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 18:20:09,815 INFO  CreateJournalEntryService:79 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 18:20:09,816 INFO  CreateJournalEntryService:80 - [] Found 330 expenses for APRIL_2022
+2023-09-25 18:20:09,816 INFO  CreateJournalEntryService:81 - [] Found 92 payables for APRIL_2022
+2023-09-25 18:20:09,816 INFO  CreateJournalEntryService:82 - [] Found 83 purchases for APRIL_2022
+2023-09-25 18:20:13,323 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:20:14,479 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:20:15,500 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:20:16,240 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:20:16,997 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:20:18,418 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 18:20:18,419 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 18:20:32,996 INFO  CreateJournalEntryService:78 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 18:20:32,996 INFO  CreateJournalEntryService:79 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 18:20:32,996 INFO  CreateJournalEntryService:80 - [] Found 311 expenses for MAY_2022
+2023-09-25 18:20:32,997 INFO  CreateJournalEntryService:81 - [] Found 47 payables for MAY_2022
+2023-09-25 18:20:32,997 INFO  CreateJournalEntryService:82 - [] Found 102 purchases for MAY_2022
+2023-09-25 18:20:34,007 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:20:34,631 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:20:35,364 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:20:36,087 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:20:36,688 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:20:37,222 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 18:20:37,223 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 18:20:51,062 INFO  CreateJournalEntryService:78 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 18:20:51,062 INFO  CreateJournalEntryService:79 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 18:20:51,062 INFO  CreateJournalEntryService:80 - [] Found 134 expenses for JUNE_2022
+2023-09-25 18:20:51,063 INFO  CreateJournalEntryService:81 - [] Found 85 payables for JUNE_2022
+2023-09-25 18:20:51,063 INFO  CreateJournalEntryService:82 - [] Found 134 purchases for JUNE_2022
+2023-09-25 18:20:51,693 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:20:52,297 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:20:52,933 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:20:53,607 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:20:54,449 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:20:54,741 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 18:20:54,741 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 18:21:17,434 INFO  CreateJournalEntryService:78 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 18:21:17,435 INFO  CreateJournalEntryService:79 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 18:21:17,435 INFO  CreateJournalEntryService:80 - [] Found 178 expenses for JULY_2022
+2023-09-25 18:21:17,436 INFO  CreateJournalEntryService:81 - [] Found 14 payables for JULY_2022
+2023-09-25 18:21:17,436 INFO  CreateJournalEntryService:82 - [] Found 71 purchases for JULY_2022
+2023-09-25 18:21:18,211 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:21:18,919 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:21:20,243 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:21:21,122 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:21:21,988 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:21:22,376 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 18:21:22,377 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 18:21:23,885 INFO  CreateJournalEntryService:78 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 18:21:23,886 INFO  CreateJournalEntryService:79 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 18:21:23,886 INFO  CreateJournalEntryService:80 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 18:21:23,886 INFO  CreateJournalEntryService:81 - [] Found 1 payables for AUGUST_2022
+2023-09-25 18:21:23,886 INFO  CreateJournalEntryService:82 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 18:21:24,798 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:21:25,490 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:21:26,185 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:21:26,873 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:21:27,669 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:21:27,741 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 18:21:27,741 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 18:21:29,893 INFO  CreateJournalEntryService:78 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 18:21:29,894 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 18:21:29,894 INFO  CreateJournalEntryService:80 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 18:21:29,894 INFO  CreateJournalEntryService:81 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 18:21:29,896 INFO  CreateJournalEntryService:82 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 18:21:30,786 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:21:31,688 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:21:32,513 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:21:33,425 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:21:34,304 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:21:34,405 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 18:21:34,406 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 18:21:50,706 INFO  CreateJournalEntryService:78 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 18:21:50,706 INFO  CreateJournalEntryService:79 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 18:21:50,706 INFO  CreateJournalEntryService:80 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 18:21:50,707 INFO  CreateJournalEntryService:81 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 18:21:50,707 INFO  CreateJournalEntryService:82 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 18:21:51,761 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:21:52,744 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:21:53,766 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:21:54,716 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:21:55,727 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:21:56,215 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 18:21:56,215 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 18:21:59,356 INFO  CreateJournalEntryService:78 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 18:21:59,356 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 18:21:59,357 INFO  CreateJournalEntryService:80 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 18:21:59,357 INFO  CreateJournalEntryService:81 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 18:21:59,357 INFO  CreateJournalEntryService:82 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 18:22:00,574 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:22:01,654 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:22:02,590 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:22:03,490 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:22:04,489 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:22:04,820 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 18:22:04,821 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 18:22:10,786 INFO  CreateJournalEntryService:78 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 18:22:10,787 INFO  CreateJournalEntryService:79 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 18:22:10,787 INFO  CreateJournalEntryService:80 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 18:22:10,787 INFO  CreateJournalEntryService:81 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 18:22:10,787 INFO  CreateJournalEntryService:82 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 18:22:11,743 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:22:12,744 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:22:13,752 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:22:14,799 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:22:15,704 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:22:16,072 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 18:22:16,072 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 18:22:27,115 INFO  CreateJournalEntryService:78 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 18:22:27,116 INFO  CreateJournalEntryService:79 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 18:22:27,116 INFO  CreateJournalEntryService:80 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 18:22:27,116 INFO  CreateJournalEntryService:81 - [] Found 1 payables for JANUARY_2023
+2023-09-25 18:22:27,116 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 18:22:28,211 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:22:29,300 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:22:30,378 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:22:31,381 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:22:31,722 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 18:22:31,723 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 18:22:33,031 INFO  CreateJournalEntryService:78 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 18:22:33,031 INFO  CreateJournalEntryService:79 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 18:22:33,031 INFO  CreateJournalEntryService:80 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 18:22:33,031 INFO  CreateJournalEntryService:81 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 18:22:33,031 INFO  CreateJournalEntryService:82 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 18:22:34,063 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:22:35,101 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:22:36,144 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:22:37,280 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:22:38,315 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:22:38,489 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 18:22:38,490 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 18:22:39,810 INFO  CreateJournalEntryService:78 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 18:22:39,811 INFO  CreateJournalEntryService:79 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 18:22:39,811 INFO  CreateJournalEntryService:80 - [] Found 156 expenses for MARCH_2023
+2023-09-25 18:22:39,811 INFO  CreateJournalEntryService:81 - [] Found 6 payables for MARCH_2023
+2023-09-25 18:22:39,811 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for MARCH_2023
+2023-09-25 18:22:40,922 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:22:41,898 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:22:42,894 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:22:44,027 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:22:45,034 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:22:45,214 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
+2023-09-25 18:23:25,730 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 5376 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-25 18:23:25,733 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-25 18:23:25,739 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-25 18:23:38,326 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 13.278 seconds (JVM running for 14.22)
+2023-09-25 18:24:00,021 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-09-25 18:24:08,957 INFO  CreateJournalEntryService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-09-25 18:24:08,957 INFO  CreateJournalEntryService:79 - [] Found 181 sales invoices for APRIL_2022
+2023-09-25 18:24:08,958 INFO  CreateJournalEntryService:80 - [] Found 330 expenses for APRIL_2022
+2023-09-25 18:24:08,958 INFO  CreateJournalEntryService:81 - [] Found 92 payables for APRIL_2022
+2023-09-25 18:24:08,958 INFO  CreateJournalEntryService:82 - [] Found 83 purchases for APRIL_2022
+2023-09-25 18:24:10,209 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:24:10,638 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:24:11,023 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:24:11,230 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:24:11,467 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:24:12,902 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_APRIL_2022.pdf
+2023-09-25 18:24:12,903 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-09-25 18:24:24,045 INFO  CreateJournalEntryService:78 - [] Found 524 sales invoices for MAY_2022
+2023-09-25 18:24:24,045 INFO  CreateJournalEntryService:79 - [] Found 24 sales invoices for MAY_2022
+2023-09-25 18:24:24,046 INFO  CreateJournalEntryService:80 - [] Found 311 expenses for MAY_2022
+2023-09-25 18:24:24,046 INFO  CreateJournalEntryService:81 - [] Found 47 payables for MAY_2022
+2023-09-25 18:24:24,046 INFO  CreateJournalEntryService:82 - [] Found 102 purchases for MAY_2022
+2023-09-25 18:24:24,609 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:24:24,871 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:24:25,183 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:24:25,408 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:24:25,627 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:24:26,181 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_MAY_2022.pdf
+2023-09-25 18:24:26,181 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-09-25 18:24:33,823 INFO  CreateJournalEntryService:78 - [] Found 441 sales invoices for JUNE_2022
+2023-09-25 18:24:33,823 INFO  CreateJournalEntryService:79 - [] Found 23 sales invoices for JUNE_2022
+2023-09-25 18:24:33,824 INFO  CreateJournalEntryService:80 - [] Found 134 expenses for JUNE_2022
+2023-09-25 18:24:33,824 INFO  CreateJournalEntryService:81 - [] Found 85 payables for JUNE_2022
+2023-09-25 18:24:33,824 INFO  CreateJournalEntryService:82 - [] Found 134 purchases for JUNE_2022
+2023-09-25 18:24:34,140 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:24:34,405 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:24:34,628 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:24:34,820 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:24:35,034 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:24:35,303 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JUNE_2022.pdf
+2023-09-25 18:24:35,303 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-09-25 18:24:46,619 INFO  CreateJournalEntryService:78 - [] Found 595 sales invoices for JULY_2022
+2023-09-25 18:24:46,620 INFO  CreateJournalEntryService:79 - [] Found 100 sales invoices for JULY_2022
+2023-09-25 18:24:46,621 INFO  CreateJournalEntryService:80 - [] Found 178 expenses for JULY_2022
+2023-09-25 18:24:46,623 INFO  CreateJournalEntryService:81 - [] Found 14 payables for JULY_2022
+2023-09-25 18:24:46,624 INFO  CreateJournalEntryService:82 - [] Found 71 purchases for JULY_2022
+2023-09-25 18:24:46,937 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:24:47,208 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:24:47,503 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:24:47,735 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:24:48,026 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:24:48,267 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JULY_2022.pdf
+2023-09-25 18:24:48,268 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-09-25 18:24:50,136 INFO  CreateJournalEntryService:78 - [] Found 20 sales invoices for AUGUST_2022
+2023-09-25 18:24:50,137 INFO  CreateJournalEntryService:79 - [] Found 2 sales invoices for AUGUST_2022
+2023-09-25 18:24:50,137 INFO  CreateJournalEntryService:80 - [] Found 27 expenses for AUGUST_2022
+2023-09-25 18:24:50,137 INFO  CreateJournalEntryService:81 - [] Found 1 payables for AUGUST_2022
+2023-09-25 18:24:50,137 INFO  CreateJournalEntryService:82 - [] Found 20 purchases for AUGUST_2022
+2023-09-25 18:24:50,405 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:24:50,691 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:24:50,936 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:24:51,194 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:24:51,430 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:24:51,464 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_AUGUST_2022.pdf
+2023-09-25 18:24:51,464 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-09-25 18:25:01,182 INFO  CreateJournalEntryService:78 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-09-25 18:25:01,182 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for SEPTEMBER_2022
+2023-09-25 18:25:01,183 INFO  CreateJournalEntryService:80 - [] Found 84 expenses for SEPTEMBER_2022
+2023-09-25 18:25:01,184 INFO  CreateJournalEntryService:81 - [] Found 6 payables for SEPTEMBER_2022
+2023-09-25 18:25:01,184 INFO  CreateJournalEntryService:82 - [] Found 26 purchases for SEPTEMBER_2022
+2023-09-25 18:25:01,495 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:25:01,770 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:25:02,030 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:25:02,329 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:25:02,597 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:25:02,675 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_SEPTEMBER_2022.pdf
+2023-09-25 18:25:02,676 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-09-25 18:25:31,250 INFO  CreateJournalEntryService:78 - [] Found 512 sales invoices for OCTOBER_2022
+2023-09-25 18:25:31,251 INFO  CreateJournalEntryService:79 - [] Found 131 sales invoices for OCTOBER_2022
+2023-09-25 18:25:31,251 INFO  CreateJournalEntryService:80 - [] Found 307 expenses for OCTOBER_2022
+2023-09-25 18:25:31,251 INFO  CreateJournalEntryService:81 - [] Found 138 payables for OCTOBER_2022
+2023-09-25 18:25:31,251 INFO  CreateJournalEntryService:82 - [] Found 201 purchases for OCTOBER_2022
+2023-09-25 18:25:31,637 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:25:31,939 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:25:32,317 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:25:32,722 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:25:33,162 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:25:33,677 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_OCTOBER_2022.pdf
+2023-09-25 18:25:33,678 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-09-25 18:25:47,039 INFO  CreateJournalEntryService:78 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-09-25 18:25:47,041 INFO  CreateJournalEntryService:79 - [] Found 6 sales invoices for NOVEMBER_2022
+2023-09-25 18:25:47,041 INFO  CreateJournalEntryService:80 - [] Found 162 expenses for NOVEMBER_2022
+2023-09-25 18:25:47,041 INFO  CreateJournalEntryService:81 - [] Found 2 payables for NOVEMBER_2022
+2023-09-25 18:25:47,041 INFO  CreateJournalEntryService:82 - [] Found 11 purchases for NOVEMBER_2022
+2023-09-25 18:25:47,478 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:25:47,830 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:25:48,208 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:25:48,608 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:25:48,969 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:25:49,153 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_NOVEMBER_2022.pdf
+2023-09-25 18:25:49,153 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-09-25 18:26:03,062 INFO  CreateJournalEntryService:78 - [] Found 376 sales invoices for DECEMBER_2022
+2023-09-25 18:26:03,062 INFO  CreateJournalEntryService:79 - [] Found 10 sales invoices for DECEMBER_2022
+2023-09-25 18:26:03,062 INFO  CreateJournalEntryService:80 - [] Found 201 expenses for DECEMBER_2022
+2023-09-25 18:26:03,064 INFO  CreateJournalEntryService:81 - [] Found 11 payables for DECEMBER_2022
+2023-09-25 18:26:03,064 INFO  CreateJournalEntryService:82 - [] Found 32 purchases for DECEMBER_2022
+2023-09-25 18:26:03,504 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:26:03,896 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:26:04,326 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:26:04,764 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:26:05,262 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:26:05,472 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_DECEMBER_2022.pdf
+2023-09-25 18:26:05,473 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-09-25 18:26:11,244 INFO  CreateJournalEntryService:78 - [] Found 253 sales invoices for JANUARY_2023
+2023-09-25 18:26:11,244 INFO  CreateJournalEntryService:79 - [] Found 0 sales invoices for JANUARY_2023
+2023-09-25 18:26:11,244 INFO  CreateJournalEntryService:80 - [] Found 148 expenses for JANUARY_2023
+2023-09-25 18:26:11,244 INFO  CreateJournalEntryService:81 - [] Found 1 payables for JANUARY_2023
+2023-09-25 18:26:11,245 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for JANUARY_2023
+2023-09-25 18:26:11,708 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:26:12,310 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:26:12,859 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:26:13,443 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:26:13,628 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_JANUARY_2023.pdf
+2023-09-25 18:26:13,628 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-09-25 18:26:19,156 INFO  CreateJournalEntryService:78 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-09-25 18:26:19,157 INFO  CreateJournalEntryService:79 - [] Found 1 sales invoices for FEBRUARY_2023
+2023-09-25 18:26:19,158 INFO  CreateJournalEntryService:80 - [] Found 97 expenses for FEBRUARY_2023
+2023-09-25 18:26:19,158 INFO  CreateJournalEntryService:81 - [] Found 3 payables for FEBRUARY_2023
+2023-09-25 18:26:19,159 INFO  CreateJournalEntryService:82 - [] Found 13 purchases for FEBRUARY_2023
+2023-09-25 18:26:19,722 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:26:20,340 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:26:20,874 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:26:21,376 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:26:21,941 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:26:22,055 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_FEBRUARY_2023.pdf
+2023-09-25 18:26:22,055 INFO  CreateJournalEntryService:68 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-09-25 18:26:27,718 INFO  CreateJournalEntryService:78 - [] Found 147 sales invoices for MARCH_2023
+2023-09-25 18:26:27,719 INFO  CreateJournalEntryService:79 - [] Found 9 sales invoices for MARCH_2023
+2023-09-25 18:26:27,719 INFO  CreateJournalEntryService:80 - [] Found 156 expenses for MARCH_2023
+2023-09-25 18:26:27,719 INFO  CreateJournalEntryService:81 - [] Found 6 payables for MARCH_2023
+2023-09-25 18:26:27,719 INFO  CreateJournalEntryService:82 - [] Found 10 purchases for MARCH_2023
+2023-09-25 18:26:28,263 TRACE CreateJournalEntryService:170 - [] Excel file updated for Sale: JournalEntries.xlsx
+2023-09-25 18:26:28,719 TRACE CreateJournalEntryService:234 - [] Excel file updated for Receivables: JournalEntries.xlsx
+2023-09-25 18:26:29,209 TRACE CreateJournalEntryService:298 - [] Excel file updated for Expense: JournalEntries.xlsx
+2023-09-25 18:26:29,686 TRACE CreateJournalEntryService:362 - [] Excel file updated for Payables: JournalEntries.xlsx
+2023-09-25 18:26:30,170 TRACE CreateJournalEntryService:426 - [] Excel file updated for Purchase: JournalEntries.xlsx
+2023-09-25 18:26:30,321 TRACE CreateJournalEntryService:578 - [] PDF file created: journal_entries_for_MARCH_2023.pdf
