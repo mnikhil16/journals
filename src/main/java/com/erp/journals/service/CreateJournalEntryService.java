@@ -5,7 +5,6 @@ import com.erp.journals.repository.*;
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfPage;
 import com.itextpdf.text.pdf.PdfWriter;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.usermodel.Font;
@@ -81,25 +80,25 @@ public class CreateJournalEntryService {
 
 
 
-//            if(!saleList.isEmpty()) {
-//                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntries.xlsx");
-//            }
-//
-//            if(!receivablesList.isEmpty()) {
-//                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntries.xlsx");
-//            }
-//
-//            if(!expenseAccountDetailsList.isEmpty()) {
-//                createExcelForJournalEntriesExpense(month, year, expenseAccountDetailsList, "JournalEntries.xlsx");
-//            }
-//
-//            if(!payablesList.isEmpty()) {
-//                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntries.xlsx");
-//            }
-//
-//            if(!purchaseInvoiceList.isEmpty()) {
-//                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntries.xlsx");
-//            }
+            if(!saleList.isEmpty()) {
+                createExcelForJournalEntriesSale(month, year, saleList, "JournalEntries.xlsx");
+            }
+
+            if(!receivablesList.isEmpty()) {
+                createExcelForJournalEntriesReceivable(month, year, receivablesList, "JournalEntries.xlsx");
+            }
+
+            if(!expenseAccountDetailsList.isEmpty()) {
+                createExcelForJournalEntriesExpense(month, year, expenseAccountDetailsList, "JournalEntries.xlsx");
+            }
+
+            if(!payablesList.isEmpty()) {
+                createExcelForJournalEntriesPayable(month, year, payablesList, "JournalEntries.xlsx");
+            }
+
+            if(!purchaseInvoiceList.isEmpty()) {
+                createExcelForJournalEntriesPurchase(month, year, purchaseInvoiceList, "JournalEntries.xlsx");
+            }
 
             createPdfsForJournalEntries(month, year, saleList, receivablesList, expenseAccountDetailsList, payablesList, purchaseInvoiceList);
 

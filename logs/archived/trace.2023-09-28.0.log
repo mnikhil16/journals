@@ -1,0 +1,4 @@
+2023-09-28 15:27:12,871 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 7668 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-09-28 15:27:12,875 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-09-28 15:27:12,880 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-09-28 15:27:39,268 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 26.964 seconds (JVM running for 33.533)
