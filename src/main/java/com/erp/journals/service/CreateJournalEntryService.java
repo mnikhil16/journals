@@ -47,7 +47,7 @@ public class CreateJournalEntryService {
     @Autowired
     PurchaseInvoiceRepository purchaseInvoiceRepository;
 
-    @Scheduled(cron ="20 21 23 * * ?")
+    @Scheduled(cron ="30 28 18 * * ?")
     public void executeAndSaveJournalEntries() {
 
         Date startDate = Date.valueOf("2022-04-01");
@@ -145,8 +145,8 @@ public class CreateJournalEntryService {
                 Row row1 = sheet.createRow(rowNum++);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 row1.createCell(0).setCellValue(sale.getInvoiceDate().format(formatter));
-                row1.createCell(1).setCellValue("sold goods to " + (sale.getCustomer() == null  ?"" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
-                row1.createCell(2).setCellValue("cash a/c");
+                row1.createCell(1).setCellValue("sold goods to " + (sale.getCustomer() == null  ? "" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
+                row1.createCell(2).setCellValue(sale.extractPaymentMethod() == null ? "cash a/c" : sale.extractPaymentMethod().toLowerCase() + " a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(sale.getPaidAmount());
                 row1.createCell(6).setCellValue("real account");
@@ -209,8 +209,8 @@ public class CreateJournalEntryService {
                 Row row1 = sheet.createRow(rowNum++);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 row1.createCell(0).setCellValue(receivables.getPaymentDate().format(formatter));
-                row1.createCell(1).setCellValue("sold goods to " + (receivables.getCustomer() == null  ?"" : receivables.getCustomer().getFirstName() + " for rs " + receivables.getAmount()));
-                row1.createCell(2).setCellValue("cash a/c");
+                row1.createCell(1).setCellValue("sold goods to " + (receivables.getCustomer() == null  ? "" : receivables.getCustomer().getFirstName() + " for rs " + receivables.getAmount()));
+                row1.createCell(2).setCellValue(receivables.getPaymentMode() == null ? "cash a/c" : receivables.getPaymentMode().toLowerCase() + " a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(receivables.getAmount());
                 row1.createCell(6).setCellValue("real account");
@@ -273,8 +273,8 @@ public class CreateJournalEntryService {
                 Row row1 = sheet.createRow(rowNum++);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 row1.createCell(0).setCellValue(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
-                row1.createCell(1).setCellValue("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
-                row1.createCell(2).setCellValue(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
+                row1.createCell(1).setCellValue("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ? "" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
+                row1.createCell(2).setCellValue(expenseAccountDetails.getExpenseTypes().getType() == null ? "expense a/c" : expenseAccountDetails.getExpenseTypes().getType().toLowerCase()+" a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(expenseAccountDetails.getAmount());
                 row1.createCell(6).setCellValue("nominal account");
@@ -282,7 +282,7 @@ public class CreateJournalEntryService {
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
-                row2.createCell(2).setCellValue("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
+                row2.createCell(2).setCellValue(expenseAccountDetails.getExpense().getPaymentMode() == null ? "to cash a/c" : "to "+expenseAccountDetails.getExpense().getPaymentMode().toLowerCase()+" a/c");
                 row2.createCell(3).setCellValue("c");
                 row2.createCell(5).setCellValue(expenseAccountDetails.getAmount());
                 row2.createCell(6).setCellValue("real account");
@@ -337,7 +337,7 @@ public class CreateJournalEntryService {
                 Row row1 = sheet.createRow(rowNum++);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 row1.createCell(0).setCellValue(payables.getPaymentDate().format(formatter));
-                row1.createCell(1).setCellValue("purchased goods from " + (payables.getSupplier() == null  ?"" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
+                row1.createCell(1).setCellValue("purchased goods from " + (payables.getSupplier() == null  ? "" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
                 row1.createCell(2).setCellValue("purchase a/c");
                 row1.createCell(3).setCellValue("d");
                 row1.createCell(4).setCellValue(payables.getAmount());
@@ -346,7 +346,7 @@ public class CreateJournalEntryService {
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
-                row2.createCell(2).setCellValue("to cash a/c");
+                row2.createCell(2).setCellValue(payables.getPaymentMode() == null ? "to cash a/c" : "to " + payables.getPaymentMode().toLowerCase() + " a/c");
                 row2.createCell(3).setCellValue("c");
                 row2.createCell(5).setCellValue(payables.getAmount());
                 row2.createCell(6).setCellValue("real account");
@@ -410,7 +410,7 @@ public class CreateJournalEntryService {
                 Row row2 = sheet.createRow(rowNum++);
                 row2.createCell(0).setCellValue("");
                 row2.createCell(1).setCellValue("");
-                row2.createCell(2).setCellValue("to cash a/c");
+                row2.createCell(2).setCellValue(purchaseInvoice.extractPaymentMethod() == null ? "to cash a/c" : "to " + purchaseInvoice.extractPaymentMethod().toLowerCase() + " a/c");
                 row2.createCell(3).setCellValue("c");
                 row2.createCell(5).setCellValue(purchaseInvoice.getPurchaseAmount());
                 row2.createCell(6).setCellValue("real account");
@@ -455,8 +455,8 @@ public class CreateJournalEntryService {
 
             for (Sale sale : saleList) {
                 table1.addCell(sale.getInvoiceDate().format(formatter));
-                table1.addCell("sold goods to " + (sale.getCustomer() == null  ?"" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
-                table1.addCell("cash a/c");
+                table1.addCell("sold goods to " + (sale.getCustomer() == null  ? "" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
+                table1.addCell(sale.extractPaymentMethod() == null ? "cash a/c" : sale.extractPaymentMethod().toLowerCase() + " a/c");
                 table1.addCell("d");
                 table1.addCell(sale.getPaidAmount().toString());
                 table1.addCell("");
@@ -484,8 +484,8 @@ public class CreateJournalEntryService {
 
             for (Receivables receivables: receivablesList) {
                 table2.addCell(receivables.getPaymentDate().format(formatter));
-                table2.addCell("sold goods to " + (receivables.getCustomer() == null  ?"" : receivables.getCustomer().getFirstName() + " for rs " + receivables.getAmount()));
-                table2.addCell("cash a/c");
+                table2.addCell("sold goods to " + (receivables.getCustomer() == null  ? "" : receivables.getCustomer().getFirstName() + " for rs " + receivables.getAmount()));
+                table2.addCell(receivables.getPaymentMode() == null ? "cash a/c" : receivables.getPaymentMode().toLowerCase() + " a/c");
                 table2.addCell("d");
                 table2.addCell(receivables.getAmount().toString());
                 table2.addCell("");
@@ -513,8 +513,8 @@ public class CreateJournalEntryService {
 
             for (ExpenseAccountDetails expenseAccountDetails: expenseAccountDetailsList) {
                 table3.addCell(expenseAccountDetails.getExpense().getPaymentDate().format(formatter));
-                table3.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ?"" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
-                table3.addCell(expenseAccountDetails.getExpenseTypes().getType()+" a/c");
+                table3.addCell("Paid for "+(expenseAccountDetails.getExpenseTypes() == null  ? "" : expenseAccountDetails.getExpenseTypes().getType())+" to " + (expenseAccountDetails.getDescription() == null ? "":expenseAccountDetails.getDescription()) + " rs " + expenseAccountDetails.getAmount());
+                table3.addCell(expenseAccountDetails.getExpenseTypes().getType() == null ? "cash a/c" : expenseAccountDetails.getExpenseTypes().getType().toLowerCase()+" a/c");
                 table3.addCell("d");
                 table3.addCell(expenseAccountDetails.getAmount().toString());
                 table3.addCell("");
@@ -522,7 +522,7 @@ public class CreateJournalEntryService {
 
                 table3.addCell("");
                 table3.addCell("");
-                table3.addCell("to "+expenseAccountDetails.getExpense().getPaymentMode()+" a/c");
+                table3.addCell(expenseAccountDetails.getExpense().getPaymentMode() == null ? "to cash a/c" : "to "+expenseAccountDetails.getExpense().getPaymentMode().toLowerCase()+" a/c");
                 table3.addCell("c");
                 table3.addCell("");
                 table3.addCell(expenseAccountDetails.getAmount().toString());
@@ -542,7 +542,7 @@ public class CreateJournalEntryService {
 
             for (Payables payables: payablesList) {
                 table4.addCell(payables.getPaymentDate().format(formatter));
-                table4.addCell("purchased goods from " + (payables.getSupplier() == null  ?"" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
+                table4.addCell("purchased goods from " + (payables.getSupplier() == null  ? "" : payables.getSupplier().getFirstName()+" "+ payables.getSupplier().getLastName() + " worth rs " + payables.getAmount()));
                 table4.addCell("purchase a/c");
                 table4.addCell("d");
                 table4.addCell(payables.getAmount().toString());
@@ -551,7 +551,7 @@ public class CreateJournalEntryService {
 
                 table4.addCell("");
                 table4.addCell("");
-                table4.addCell("to cash a/c");
+                table4.addCell(payables.getPaymentMode() == null ? "to cash a/c" : "to " + payables.getPaymentMode().toLowerCase() + " a/c");
                 table4.addCell("c");
                 table4.addCell("");
                 table4.addCell(payables.getAmount().toString());
@@ -580,7 +580,7 @@ public class CreateJournalEntryService {
 
                 table5.addCell("");
                 table5.addCell("");
-                table5.addCell("to cash a/c");
+                table5.addCell(purchaseInvoice.extractPaymentMethod() == null ? "to cash a/c" : "to " + purchaseInvoice.extractPaymentMethod().toLowerCase() + " a/c");
                 table5.addCell("c");
                 table5.addCell("");
                 table5.addCell(purchaseInvoice.getPurchaseAmount().toString());

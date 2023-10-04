@@ -36,11 +36,11 @@ public class CreateLedgerService {
     @Autowired
     SaleRepository saleRepository;
 
-    @Scheduled(cron ="20 27 16 * * ?")
+    @Scheduled(cron ="30 0 18 * * ?")
     public void executeAndSaveLedgers() {
 
         Date startDate = Date.valueOf("2022-04-01");
-        Date endDate = Date.valueOf("2023-03-31");
+        Date endDate = Date.valueOf("2022-04-30");
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(startDate);
@@ -104,7 +104,7 @@ public class CreateLedgerService {
                 Row row1 = sheet.createRow(rowNum++);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
                 row1.createCell(0).setCellValue(sale.getInvoiceDate().format(formatter));
-                row1.createCell(1).setCellValue("by cash");
+                row1.createCell(1).setCellValue(sale.extractPaymentMethod() == null ? "by cash" : "by "+ sale.extractPaymentMethod().toLowerCase());
                 row1.createCell(2).setCellValue("");
                 row1.createCell(3).setCellValue(sale.getPaidAmount());
             }
@@ -119,7 +119,7 @@ public class CreateLedgerService {
     }
 
     public void createPdfsForLedgers(List<Sale> saleList) {
-        String pdfFileName = "Sale Ledger" + ".pdf";
+        String pdfFileName = "sale_ledger" + ".pdf";
 
         try {
             Document document = new Document();
@@ -146,8 +146,7 @@ public class CreateLedgerService {
 
             for (Sale sale : saleList) {
                 table1.addCell(sale.getInvoiceDate().format(formatter));
-                table1.addCell("sold goods to " + (sale.getCustomer() == null  ?"" : sale.getCustomer().getFirstName() + " for rs " + sale.getPaidAmount()));
-                table1.addCell("by cash");
+                table1.addCell(sale.extractPaymentMethod() == null ? "by cash" : "by "+ sale.extractPaymentMethod().toLowerCase());
                 table1.addCell("");
                 table1.addCell(sale.getPaidAmount().toString());
             }
