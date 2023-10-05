@@ -1,7 +1,8 @@
 package com.erp.journals.service;
 
-import com.erp.journals.entity.Sale;
-import com.erp.journals.repository.SaleRepository;
+import com.erp.journals.dto.LedgerDTO;
+import com.erp.journals.entity.*;
+import com.erp.journals.repository.*;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -25,6 +26,7 @@ import java.io.IOException;
 import java.sql.Date;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.stream.Stream;
@@ -36,11 +38,23 @@ public class CreateLedgerService {
     @Autowired
     SaleRepository saleRepository;
 
-    @Scheduled(cron ="30 0 18 * * ?")
+    @Autowired
+    ReceivableRepository receivableRepository;
+
+    @Autowired
+    ExpenseAccountDetailsRepository expenseAccountDetailsRepository;
+
+    @Autowired
+    PayablesRepository payablesRepository;
+
+    @Autowired
+    PurchaseInvoiceRepository purchaseInvoiceRepository;
+
+    @Scheduled(cron ="0 26 18 * * ?")
     public void executeAndSaveLedgers() {
 
         Date startDate = Date.valueOf("2022-04-01");
-        Date endDate = Date.valueOf("2022-04-30");
+        Date endDate = Date.valueOf("2023-03-31");
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(startDate);
@@ -54,20 +68,74 @@ public class CreateLedgerService {
             logger.info("Scheduled task executing..." + startDate + ":" + endDate + monthName + "-" + year);
 
 
-            // Fetch data for the current month and year
+            // Fetch data for the current month and year for sale and receivables
             List<Sale> saleList = saleRepository.findSalesByInvoiceDate(year, month);
+            List<Receivables> receivablesList = receivableRepository.findReceivablesByPaymentDate(year, month);
+
             logger.info("Found {} sales invoices for {}_{}", saleList.size(), monthName, year);
-            if(!saleList.isEmpty()) {
-                createExcelForLedgers(saleList, "Ledgers.xlsx");
+            logger.info("Found {} receivables invoices for {}_{}", receivablesList.size(), monthName, year);
+
+            // Create ledger entries
+            List<LedgerDTO> saleLedgerDtoList = new ArrayList<>();
+
+            for (Sale sale : saleList) {
+                LedgerDTO ledgerDTO = new LedgerDTO();
+                ledgerDTO.setDate(sale.getInvoiceDate());
+                ledgerDTO.setParticulars("by " + (sale.extractPaymentMethod() == null ? "cash" : sale.extractPaymentMethod().toLowerCase()));
+                ledgerDTO.setCreditAmount(sale.getPaidAmount());
+                saleLedgerDtoList.add(ledgerDTO);
             }
-            createPdfsForLedgers(saleList);
+
+            for (Receivables receivable : receivablesList) {
+                LedgerDTO ledgerDTO = new LedgerDTO();
+                ledgerDTO.setDate(receivable.getPaymentDate());
+                ledgerDTO.setParticulars("by " + (receivable.getPaymentMode() == null ? "cash" : receivable.getPaymentMode().toLowerCase()));
+                ledgerDTO.setCreditAmount(receivable.getAmount());
+                saleLedgerDtoList.add(ledgerDTO);
+            }
+
+            // Sort ledgers by date
+            saleLedgerDtoList.sort((ledgerDTO1, ledgerDTO2) -> ledgerDTO1.getDate().compareTo(ledgerDTO2.getDate()));
+
+            createExcelForLedgers(saleLedgerDtoList, "Ledgers.xlsx", "Sale Ledger");
+
+            // Fetch data for the current month and year for payables and purchase invoice
+            List<Payables> payablesList = payablesRepository.findPayablesByPaymentDate(year, month);
+            List<PurchaseInvoice> purchaseInvoiceList = purchaseInvoiceRepository.findPurchaseInvoiceByPurchaseDate(year, month);
+
+            logger.info("Found {} payable invoices for {}_{}", payablesList.size(), monthName, year);
+            logger.info("Found {} purchase invoices for {}_{}", purchaseInvoiceList.size(), monthName, year);
+            // Create ledger entries
+            List<LedgerDTO> payableLedgerDtoList = new ArrayList<>();
+
+            for (Payables payables : payablesList) {
+                LedgerDTO ledgerDTO = new LedgerDTO();
+                ledgerDTO.setDate(payables.getPaymentDate());
+                ledgerDTO.setParticulars("to " + (payables.getPaymentMode() == null ? "cash" : payables.getPaymentMode().toLowerCase()) + " a/c");
+                ledgerDTO.setDebitAmount(payables.getAmount());
+                payableLedgerDtoList.add(ledgerDTO);
+            }
+
+            for (PurchaseInvoice purchaseInvoice : purchaseInvoiceList) {
+                LedgerDTO ledgerDTO = new LedgerDTO();
+                ledgerDTO.setDate(purchaseInvoice.getPurchaseDate());
+                ledgerDTO.setParticulars("to " + (purchaseInvoice.extractPaymentMethod() == null ? "cash" : purchaseInvoice.extractPaymentMethod().toLowerCase()) + " a/c");
+                ledgerDTO.setDebitAmount(purchaseInvoice.getPurchaseAmount());
+                payableLedgerDtoList.add(ledgerDTO);
+            }
+
+            // Sort ledgers by date
+            payableLedgerDtoList.sort((ledgerDTO1, ledgerDTO2) -> ledgerDTO1.getDate().compareTo(ledgerDTO2.getDate()));
+
+            createExcelForLedgers(payableLedgerDtoList, "Ledgers.xlsx", "Purchase Ledger");
+
+//            createPdfsForLedgers(saleLedgerDtoList,"sale_ledger.pdf");
 
             calendar.add(Calendar.MONTH, 1);
             startDate = new Date(calendar.getTimeInMillis());
         }
     }
-    public void createExcelForLedgers(List<Sale> saleList, String existingFilePath) {
-        String sheetName = "Sale Ledger";
+    public void createExcelForLedgers(List<LedgerDTO> ledgerDTOList, String existingFilePath, String sheetName) {
 
         try {
             // Load the existing Excel workbook if it exists, or create a new one if it doesn't
@@ -83,30 +151,31 @@ public class CreateLedgerService {
             Sheet sheet = workbook.getSheet(sheetName);
             if (sheet == null) {
                 sheet = workbook.createSheet(sheetName);
-                // Find the last row index
-                int lastRow = sheet.getLastRowNum();
-
-                // Create a merged header row
-                createCategoryHeaderRow(sheet, lastRow + 1, "Sales");
             }
 
             // Find the last row index
             int lastRow = sheet.getLastRowNum();
 
             // Create header row (if it doesn't exist)
-            if (sheet.getLastRowNum() < lastRow + 2) {
-                createHeaderRow(sheet, lastRow + 3);
+            if (sheet.getLastRowNum() < lastRow + 1) {
+                createHeaderRow(sheet, lastRow + 2);
             }
 
-            int rowNum = lastRow + 3; // Start row index
+            int rowNum = lastRow + 2; // Start row index
 
-            for (Sale sale : saleList) {
-                Row row1 = sheet.createRow(rowNum++);
+            for (LedgerDTO ledgerDTO : ledgerDTOList) {
+                Row row = sheet.createRow(rowNum++);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
-                row1.createCell(0).setCellValue(sale.getInvoiceDate().format(formatter));
-                row1.createCell(1).setCellValue(sale.extractPaymentMethod() == null ? "by cash" : "by "+ sale.extractPaymentMethod().toLowerCase());
-                row1.createCell(2).setCellValue("");
-                row1.createCell(3).setCellValue(sale.getPaidAmount());
+                row.createCell(0).setCellValue(ledgerDTO.getDate().format(formatter));
+                row.createCell(1).setCellValue(ledgerDTO.getParticulars());
+                Integer debitAmount = ledgerDTO.getDebitAmount();
+                if (debitAmount != null) {
+                    row.createCell(2).setCellValue(debitAmount);
+                }
+                Integer creditAmount = ledgerDTO.getCreditAmount();
+                if (creditAmount != null) {
+                    row.createCell(3).setCellValue(creditAmount);
+                }
             }
 
             try (FileOutputStream outputStream = new FileOutputStream(existingFilePath)) {
@@ -118,8 +187,7 @@ public class CreateLedgerService {
         }
     }
 
-    public void createPdfsForLedgers(List<Sale> saleList) {
-        String pdfFileName = "sale_ledger" + ".pdf";
+    public void createPdfsForLedgers(List<LedgerDTO> ledgerDTOList, String pdfFileName) {
 
         try {
             Document document = new Document();
@@ -133,26 +201,38 @@ public class CreateLedgerService {
 
             document.open();
 
-            PdfPTable table1 = new PdfPTable(4);
+            PdfPTable table = new PdfPTable(4);
             Stream.of("Date", "Particulars", "Debit Amount", "Credit Amount")
                     .forEach(columnTitle -> {
                         PdfPCell header = new PdfPCell();
                         header.setBackgroundColor(BaseColor.LIGHT_GRAY);
                         header.setBorderWidth(2);
                         header.setPhrase(new Phrase(columnTitle));
-                        table1.addCell(header);
+                        table.addCell(header);
                     });
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS Z");
 
-            for (Sale sale : saleList) {
-                table1.addCell(sale.getInvoiceDate().format(formatter));
-                table1.addCell(sale.extractPaymentMethod() == null ? "by cash" : "by "+ sale.extractPaymentMethod().toLowerCase());
-                table1.addCell("");
-                table1.addCell(sale.getPaidAmount().toString());
+            for (LedgerDTO ledgerDTO : ledgerDTOList) {
+                table.addCell(ledgerDTO.getDate().format(formatter));
+                table.addCell(ledgerDTO.getParticulars());
+                Integer debitAmount = ledgerDTO.getDebitAmount();
+                if (debitAmount != null) {
+                    table.addCell(debitAmount.toString());
+                }
+                else{
+                    table.addCell("");
+                }
+                Integer creditAmount = ledgerDTO.getCreditAmount();
+                if (creditAmount != null) {
+                    table.addCell(creditAmount.toString());
+                }
+                else {
+                    table.addCell("");
+                }
             }
 
-//Adding new page after every table
-            document.add(table1);
+            //Adding new page after every table
+            document.add(table);
             document.newPage();
             document.close();
 
@@ -166,7 +246,7 @@ public class CreateLedgerService {
         Row headerRow = sheet.createRow(rowIndex);
         Cell cell = headerRow.createCell(0);
         cell.setCellValue(category);
-        sheet.addMergedRegion(new CellRangeAddress(rowIndex, rowIndex, 0, 6));
+        sheet.addMergedRegion(new CellRangeAddress(rowIndex, rowIndex, 0, 3));
         CellStyle cellStyle = sheet.getWorkbook().createCellStyle();
         cellStyle.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
         cellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
@@ -193,7 +273,7 @@ public class CreateLedgerService {
         style.setFont(font);
 
         // Create cells with the specified style for each column
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 4; i++) {
             Cell cell = headerRow.createCell(i);
             cell.setCellValue(getHeaderTitle(i));
             cell.setCellStyle(style);

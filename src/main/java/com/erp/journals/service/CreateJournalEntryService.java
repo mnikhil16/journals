@@ -67,7 +67,7 @@ public class CreateJournalEntryService {
 
             // Fetch data for the current month and year
             List<Sale> saleList = saleRepository.findSalesByInvoiceDate(year, month);
-            List<Receivables> receivablesList = receivableRepository.findReceivablesByInvoiceDate(year, month);
+            List<Receivables> receivablesList = receivableRepository.findReceivablesByPaymentDate(year, month);
             List<ExpenseAccountDetails> expenseAccountDetailsList = expenseAccountDetailsRepository.findExpenseAccountDetailsByExpenseDate(year, month);
             List<Payables> payablesList = payablesRepository.findPayablesByPaymentDate(year, month);
             List<PurchaseInvoice> purchaseInvoiceList = purchaseInvoiceRepository.findPurchaseInvoiceByPurchaseDate(year, month);
