@@ -13,7 +13,7 @@ public interface PurchaseInvoiceRepository extends JpaRepository<PurchaseInvoice
     @Query(value = "FROM PurchaseInvoice WHERE EXTRACT(YEAR FROM purchaseDate) = :year AND EXTRACT(MONTH FROM purchaseDate) = :month")
     List<PurchaseInvoice> findPurchaseInvoiceByPurchaseDate(int year, int month);
 
-    @Query(value = "FROM PurchaseInvoice WHERE FUNCTION('JSON_EXTRACT', paymentDetails, '$.paymentData.paymentList[0].method') = :method AND EXTRACT(YEAR FROM purchaseDate) = :year AND EXTRACT(MONTH FROM purchaseDate) = :month")
+    @Query(value = "FROM PurchaseInvoice WHERE paymentDetails IS NOT NULL AND FUNCTION('JSON_EXTRACT', paymentDetails, '$.paymentData.paymentList[0].method') = :method AND EXTRACT(YEAR FROM purchaseDate) = :year AND EXTRACT(MONTH FROM purchaseDate) = :month")
     List<PurchaseInvoice> findPurchaseInvoiceByPaymentMethodAndPurchaseDate(String method, int year, int month);
 
 }

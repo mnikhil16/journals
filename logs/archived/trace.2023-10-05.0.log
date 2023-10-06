@@ -1,0 +1,484 @@
+2023-10-05 12:35:04,360 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15128 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 12:35:04,363 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 12:35:04,369 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 12:35:29,935 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 26.215 seconds (JVM running for 27.634)
+2023-10-05 12:36:00,032 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-10-05 12:36:03,596 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 12:36:05,726 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 12:36:07,044 TRACE CreateLedgerService:157 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 12:54:11,959 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 6100 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 12:54:11,962 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 12:54:11,966 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 12:54:36,440 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 25.168 seconds (JVM running for 26.165)
+2023-10-05 12:55:00,036 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-10-05 12:55:03,316 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 12:55:05,072 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 13:03:40,602 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 17376 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 13:03:40,605 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 13:03:40,610 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 13:04:03,830 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.96 seconds (JVM running for 24.953)
+2023-10-05 13:04:30,013 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-10-05 13:04:33,363 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 13:04:35,176 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 13:04:36,300 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 13:15:46,412 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 8572 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 13:15:46,417 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 13:15:46,425 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 13:16:09,953 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.252 seconds (JVM running for 25.156)
+2023-10-05 13:16:30,022 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-10-05 13:16:33,497 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 13:16:35,311 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 13:16:36,537 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 13:24:24,559 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 12880 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 13:24:24,561 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 13:24:24,572 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 13:24:47,528 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.68 seconds (JVM running for 24.578)
+2023-10-05 13:25:00,029 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-10-05 13:25:04,028 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 13:25:05,923 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 13:29:02,706 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 14572 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 13:29:02,709 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 13:29:02,720 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 13:29:25,838 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.828 seconds (JVM running for 24.703)
+2023-10-05 13:30:00,040 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-10-05 13:30:03,961 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 13:30:05,869 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 13:30:06,960 TRACE CreateLedgerService:159 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 13:32:07,352 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 17372 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 13:32:07,354 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 13:32:07,356 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 13:32:30,506 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.814 seconds (JVM running for 24.73)
+2023-10-05 13:33:00,041 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-10-05 13:33:03,932 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 13:33:05,853 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 13:33:06,936 TRACE CreateLedgerService:159 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 13:33:50,565 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 6412 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 13:33:50,567 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 13:33:50,574 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 13:34:13,704 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.86 seconds (JVM running for 24.749)
+2023-10-05 13:35:00,037 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2022-04-30APRIL-2022
+2023-10-05 13:35:03,913 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 13:35:05,815 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 13:35:07,004 TRACE CreateLedgerService:159 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:06:41,161 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 12176 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 14:06:41,163 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 14:06:41,167 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 14:07:06,605 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 26.175 seconds (JVM running for 27.161)
+2023-10-05 14:07:30,031 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-10-05 14:07:33,878 INFO  CreateLedgerService:74 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 14:07:35,964 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 14:07:37,215 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:07:37,216 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-10-05 14:07:41,908 INFO  CreateLedgerService:74 - [] Found 524 sales invoices for MAY_2022
+2023-10-05 14:07:42,181 INFO  CreateLedgerService:77 - [] Found 24 receivables invoices for MAY_2022
+2023-10-05 14:07:42,590 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:07:42,591 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-10-05 14:07:46,326 INFO  CreateLedgerService:74 - [] Found 441 sales invoices for JUNE_2022
+2023-10-05 14:07:46,459 INFO  CreateLedgerService:77 - [] Found 23 receivables invoices for JUNE_2022
+2023-10-05 14:07:46,729 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:07:46,731 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-10-05 14:07:51,758 INFO  CreateLedgerService:74 - [] Found 595 sales invoices for JULY_2022
+2023-10-05 14:07:52,721 INFO  CreateLedgerService:77 - [] Found 100 receivables invoices for JULY_2022
+2023-10-05 14:07:53,035 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:07:53,036 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-10-05 14:07:53,480 INFO  CreateLedgerService:74 - [] Found 20 sales invoices for AUGUST_2022
+2023-10-05 14:07:53,524 INFO  CreateLedgerService:77 - [] Found 2 receivables invoices for AUGUST_2022
+2023-10-05 14:07:53,683 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:07:53,684 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-10-05 14:07:55,201 INFO  CreateLedgerService:74 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-10-05 14:07:55,289 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for SEPTEMBER_2022
+2023-10-05 14:07:55,446 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:07:55,447 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-10-05 14:07:59,622 INFO  CreateLedgerService:74 - [] Found 512 sales invoices for OCTOBER_2022
+2023-10-05 14:08:00,631 INFO  CreateLedgerService:77 - [] Found 131 receivables invoices for OCTOBER_2022
+2023-10-05 14:08:00,841 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:08:00,842 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-10-05 14:08:03,509 INFO  CreateLedgerService:74 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-10-05 14:08:03,597 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for NOVEMBER_2022
+2023-10-05 14:08:03,796 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:08:03,798 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-10-05 14:08:06,182 INFO  CreateLedgerService:74 - [] Found 376 sales invoices for DECEMBER_2022
+2023-10-05 14:08:06,306 INFO  CreateLedgerService:77 - [] Found 10 receivables invoices for DECEMBER_2022
+2023-10-05 14:08:06,489 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:08:06,490 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-10-05 14:08:08,132 INFO  CreateLedgerService:74 - [] Found 253 sales invoices for JANUARY_2023
+2023-10-05 14:08:08,145 INFO  CreateLedgerService:77 - [] Found 0 receivables invoices for JANUARY_2023
+2023-10-05 14:08:08,361 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:08:08,362 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-10-05 14:08:09,465 INFO  CreateLedgerService:74 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-10-05 14:08:09,490 INFO  CreateLedgerService:77 - [] Found 1 receivables invoices for FEBRUARY_2023
+2023-10-05 14:08:09,663 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 14:08:09,664 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-10-05 14:08:10,734 INFO  CreateLedgerService:74 - [] Found 147 sales invoices for MARCH_2023
+2023-10-05 14:08:10,833 INFO  CreateLedgerService:77 - [] Found 9 receivables invoices for MARCH_2023
+2023-10-05 14:08:11,018 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:01:02,198 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 1836 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 15:01:02,201 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 15:01:02,204 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 15:01:26,135 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.624 seconds (JVM running for 25.61)
+2023-10-05 15:02:00,037 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-10-05 15:02:05,388 INFO  CreateLedgerService:76 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 15:02:05,389 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 15:02:06,564 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:07,191 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:07,191 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-10-05 15:02:11,813 INFO  CreateLedgerService:76 - [] Found 524 sales invoices for MAY_2022
+2023-10-05 15:02:11,814 INFO  CreateLedgerService:77 - [] Found 24 receivables invoices for MAY_2022
+2023-10-05 15:02:12,242 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:12,466 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:12,467 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-10-05 15:02:15,936 INFO  CreateLedgerService:76 - [] Found 441 sales invoices for JUNE_2022
+2023-10-05 15:02:15,936 INFO  CreateLedgerService:77 - [] Found 23 receivables invoices for JUNE_2022
+2023-10-05 15:02:16,158 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:16,326 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:16,326 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-10-05 15:02:21,986 INFO  CreateLedgerService:76 - [] Found 595 sales invoices for JULY_2022
+2023-10-05 15:02:21,987 INFO  CreateLedgerService:77 - [] Found 100 receivables invoices for JULY_2022
+2023-10-05 15:02:22,215 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:22,593 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:22,595 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-10-05 15:02:22,897 INFO  CreateLedgerService:76 - [] Found 20 sales invoices for AUGUST_2022
+2023-10-05 15:02:22,898 INFO  CreateLedgerService:77 - [] Found 2 receivables invoices for AUGUST_2022
+2023-10-05 15:02:23,009 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:23,025 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:23,026 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-10-05 15:02:24,443 INFO  CreateLedgerService:76 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-10-05 15:02:24,444 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for SEPTEMBER_2022
+2023-10-05 15:02:24,605 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:24,647 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:24,648 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-10-05 15:02:28,848 INFO  CreateLedgerService:76 - [] Found 512 sales invoices for OCTOBER_2022
+2023-10-05 15:02:28,849 INFO  CreateLedgerService:77 - [] Found 131 receivables invoices for OCTOBER_2022
+2023-10-05 15:02:28,993 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:29,214 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:29,214 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-10-05 15:02:31,612 INFO  CreateLedgerService:76 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-10-05 15:02:31,613 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for NOVEMBER_2022
+2023-10-05 15:02:31,763 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:31,868 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:31,869 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-10-05 15:02:34,211 INFO  CreateLedgerService:76 - [] Found 376 sales invoices for DECEMBER_2022
+2023-10-05 15:02:34,212 INFO  CreateLedgerService:77 - [] Found 10 receivables invoices for DECEMBER_2022
+2023-10-05 15:02:34,390 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:34,489 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:34,489 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-10-05 15:02:35,959 INFO  CreateLedgerService:76 - [] Found 253 sales invoices for JANUARY_2023
+2023-10-05 15:02:35,960 INFO  CreateLedgerService:77 - [] Found 0 receivables invoices for JANUARY_2023
+2023-10-05 15:02:36,103 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:36,197 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:36,197 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-10-05 15:02:37,214 INFO  CreateLedgerService:76 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-10-05 15:02:37,215 INFO  CreateLedgerService:77 - [] Found 1 receivables invoices for FEBRUARY_2023
+2023-10-05 15:02:37,349 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:37,397 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:02:37,397 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-10-05 15:02:38,359 INFO  CreateLedgerService:76 - [] Found 147 sales invoices for MARCH_2023
+2023-10-05 15:02:38,360 INFO  CreateLedgerService:77 - [] Found 9 receivables invoices for MARCH_2023
+2023-10-05 15:02:38,521 TRACE CreateLedgerService:156 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 15:02:38,554 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:11:55,518 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 5896 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 15:11:55,522 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 15:11:55,529 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 15:12:18,924 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.143 seconds (JVM running for 24.995)
+2023-10-05 15:13:00,044 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-10-05 15:13:06,150 INFO  CreateLedgerService:76 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 15:13:06,151 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 15:13:06,843 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:06,846 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-10-05 15:13:12,044 INFO  CreateLedgerService:76 - [] Found 524 sales invoices for MAY_2022
+2023-10-05 15:13:12,044 INFO  CreateLedgerService:77 - [] Found 24 receivables invoices for MAY_2022
+2023-10-05 15:13:12,379 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:12,381 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-10-05 15:13:16,336 INFO  CreateLedgerService:76 - [] Found 441 sales invoices for JUNE_2022
+2023-10-05 15:13:16,337 INFO  CreateLedgerService:77 - [] Found 23 receivables invoices for JUNE_2022
+2023-10-05 15:13:16,576 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:16,577 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-10-05 15:13:22,568 INFO  CreateLedgerService:76 - [] Found 595 sales invoices for JULY_2022
+2023-10-05 15:13:22,569 INFO  CreateLedgerService:77 - [] Found 100 receivables invoices for JULY_2022
+2023-10-05 15:13:22,870 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:22,870 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-10-05 15:13:23,210 INFO  CreateLedgerService:76 - [] Found 20 sales invoices for AUGUST_2022
+2023-10-05 15:13:23,210 INFO  CreateLedgerService:77 - [] Found 2 receivables invoices for AUGUST_2022
+2023-10-05 15:13:23,220 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:23,220 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-10-05 15:13:24,684 INFO  CreateLedgerService:76 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-10-05 15:13:24,685 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for SEPTEMBER_2022
+2023-10-05 15:13:24,742 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:24,742 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-10-05 15:13:29,557 INFO  CreateLedgerService:76 - [] Found 512 sales invoices for OCTOBER_2022
+2023-10-05 15:13:29,557 INFO  CreateLedgerService:77 - [] Found 131 receivables invoices for OCTOBER_2022
+2023-10-05 15:13:29,786 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:29,787 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-10-05 15:13:32,405 INFO  CreateLedgerService:76 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-10-05 15:13:32,406 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for NOVEMBER_2022
+2023-10-05 15:13:32,496 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:32,496 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-10-05 15:13:34,942 INFO  CreateLedgerService:76 - [] Found 376 sales invoices for DECEMBER_2022
+2023-10-05 15:13:34,943 INFO  CreateLedgerService:77 - [] Found 10 receivables invoices for DECEMBER_2022
+2023-10-05 15:13:35,095 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:35,096 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-10-05 15:13:36,808 INFO  CreateLedgerService:76 - [] Found 253 sales invoices for JANUARY_2023
+2023-10-05 15:13:36,809 INFO  CreateLedgerService:77 - [] Found 0 receivables invoices for JANUARY_2023
+2023-10-05 15:13:36,893 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:36,894 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-10-05 15:13:38,030 INFO  CreateLedgerService:76 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-10-05 15:13:38,030 INFO  CreateLedgerService:77 - [] Found 1 receivables invoices for FEBRUARY_2023
+2023-10-05 15:13:38,085 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:13:38,086 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-10-05 15:13:39,217 INFO  CreateLedgerService:76 - [] Found 147 sales invoices for MARCH_2023
+2023-10-05 15:13:39,218 INFO  CreateLedgerService:77 - [] Found 9 receivables invoices for MARCH_2023
+2023-10-05 15:13:39,275 TRACE CreateLedgerService:207 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:47:46,772 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 9484 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 15:47:46,776 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 15:47:46,782 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 15:48:11,888 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 25.909 seconds (JVM running for 27.036)
+2023-10-05 15:48:30,018 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-10-05 15:48:35,535 INFO  CreateLedgerService:76 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 15:48:35,535 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 15:48:36,291 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:48:36,292 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-10-05 15:48:41,061 INFO  CreateLedgerService:76 - [] Found 524 sales invoices for MAY_2022
+2023-10-05 15:48:41,062 INFO  CreateLedgerService:77 - [] Found 24 receivables invoices for MAY_2022
+2023-10-05 15:48:41,424 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:48:41,424 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-10-05 15:48:45,029 INFO  CreateLedgerService:76 - [] Found 441 sales invoices for JUNE_2022
+2023-10-05 15:48:45,029 INFO  CreateLedgerService:77 - [] Found 23 receivables invoices for JUNE_2022
+2023-10-05 15:48:45,400 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:48:45,400 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-10-05 15:48:51,108 INFO  CreateLedgerService:76 - [] Found 595 sales invoices for JULY_2022
+2023-10-05 15:48:51,108 INFO  CreateLedgerService:77 - [] Found 100 receivables invoices for JULY_2022
+2023-10-05 15:48:51,379 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:48:51,379 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-10-05 15:48:51,698 INFO  CreateLedgerService:76 - [] Found 20 sales invoices for AUGUST_2022
+2023-10-05 15:48:51,698 INFO  CreateLedgerService:77 - [] Found 2 receivables invoices for AUGUST_2022
+2023-10-05 15:48:51,708 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:48:51,708 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-10-05 15:48:53,007 INFO  CreateLedgerService:76 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-10-05 15:48:53,007 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for SEPTEMBER_2022
+2023-10-05 15:48:53,084 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:48:53,085 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-10-05 15:48:57,526 INFO  CreateLedgerService:76 - [] Found 512 sales invoices for OCTOBER_2022
+2023-10-05 15:48:57,528 INFO  CreateLedgerService:77 - [] Found 131 receivables invoices for OCTOBER_2022
+2023-10-05 15:48:57,718 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:48:57,719 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-10-05 15:49:00,329 INFO  CreateLedgerService:76 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-10-05 15:49:00,330 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for NOVEMBER_2022
+2023-10-05 15:49:00,409 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:49:00,410 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-10-05 15:49:02,830 INFO  CreateLedgerService:76 - [] Found 376 sales invoices for DECEMBER_2022
+2023-10-05 15:49:02,831 INFO  CreateLedgerService:77 - [] Found 10 receivables invoices for DECEMBER_2022
+2023-10-05 15:49:02,920 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:49:02,920 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-10-05 15:49:04,506 INFO  CreateLedgerService:76 - [] Found 253 sales invoices for JANUARY_2023
+2023-10-05 15:49:04,507 INFO  CreateLedgerService:77 - [] Found 0 receivables invoices for JANUARY_2023
+2023-10-05 15:49:04,579 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:49:04,580 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-10-05 15:49:05,665 INFO  CreateLedgerService:76 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-10-05 15:49:05,666 INFO  CreateLedgerService:77 - [] Found 1 receivables invoices for FEBRUARY_2023
+2023-10-05 15:49:05,722 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 15:49:05,722 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-10-05 15:49:06,772 INFO  CreateLedgerService:76 - [] Found 147 sales invoices for MARCH_2023
+2023-10-05 15:49:06,772 INFO  CreateLedgerService:77 - [] Found 9 receivables invoices for MARCH_2023
+2023-10-05 15:49:06,806 TRACE CreateLedgerService:212 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:13:14,519 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 12616 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 16:13:14,520 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 16:13:14,522 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 16:13:40,357 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 27.034 seconds (JVM running for 27.948)
+2023-10-05 16:14:00,032 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-10-05 16:15:14,338 INFO  CreateLedgerService:76 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 16:15:14,338 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 16:15:14,910 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:15:14,911 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-10-05 16:15:54,972 INFO  CreateLedgerService:76 - [] Found 524 sales invoices for MAY_2022
+2023-10-05 16:15:54,974 INFO  CreateLedgerService:77 - [] Found 24 receivables invoices for MAY_2022
+2023-10-05 16:15:55,218 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:15:55,218 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-10-05 16:16:20,382 INFO  CreateLedgerService:76 - [] Found 441 sales invoices for JUNE_2022
+2023-10-05 16:16:20,383 INFO  CreateLedgerService:77 - [] Found 23 receivables invoices for JUNE_2022
+2023-10-05 16:16:20,535 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:16:20,536 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-10-05 16:17:44,962 INFO  CreateLedgerService:76 - [] Found 595 sales invoices for JULY_2022
+2023-10-05 16:17:44,963 INFO  CreateLedgerService:77 - [] Found 100 receivables invoices for JULY_2022
+2023-10-05 16:17:45,315 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:17:45,316 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-10-05 16:17:48,952 INFO  CreateLedgerService:76 - [] Found 20 sales invoices for AUGUST_2022
+2023-10-05 16:17:48,953 INFO  CreateLedgerService:77 - [] Found 2 receivables invoices for AUGUST_2022
+2023-10-05 16:17:48,962 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:17:48,963 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-10-05 16:18:08,717 INFO  CreateLedgerService:76 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-10-05 16:18:08,718 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for SEPTEMBER_2022
+2023-10-05 16:18:08,774 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:18:08,774 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-10-05 16:19:15,380 INFO  CreateLedgerService:76 - [] Found 512 sales invoices for OCTOBER_2022
+2023-10-05 16:19:15,381 INFO  CreateLedgerService:77 - [] Found 131 receivables invoices for OCTOBER_2022
+2023-10-05 16:19:15,512 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:19:15,513 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-10-05 16:19:50,115 INFO  CreateLedgerService:76 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-10-05 16:19:50,115 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for NOVEMBER_2022
+2023-10-05 16:19:50,168 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:19:50,169 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-10-05 16:20:16,100 INFO  CreateLedgerService:76 - [] Found 376 sales invoices for DECEMBER_2022
+2023-10-05 16:20:16,100 INFO  CreateLedgerService:77 - [] Found 10 receivables invoices for DECEMBER_2022
+2023-10-05 16:20:16,209 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:20:16,209 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-10-05 16:20:36,891 INFO  CreateLedgerService:76 - [] Found 253 sales invoices for JANUARY_2023
+2023-10-05 16:20:36,891 INFO  CreateLedgerService:77 - [] Found 0 receivables invoices for JANUARY_2023
+2023-10-05 16:20:36,943 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:20:36,944 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-10-05 16:20:50,652 INFO  CreateLedgerService:76 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-10-05 16:20:50,653 INFO  CreateLedgerService:77 - [] Found 1 receivables invoices for FEBRUARY_2023
+2023-10-05 16:20:50,676 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:20:50,676 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-10-05 16:21:05,559 INFO  CreateLedgerService:76 - [] Found 147 sales invoices for MARCH_2023
+2023-10-05 16:21:05,560 INFO  CreateLedgerService:77 - [] Found 9 receivables invoices for MARCH_2023
+2023-10-05 16:21:05,586 TRACE CreateLedgerService:206 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:42:07,616 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 6332 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 16:42:07,619 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 16:42:07,629 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 16:42:32,841 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 25.939 seconds (JVM running for 26.819)
+2023-10-05 16:43:00,043 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-10-05 16:44:08,799 INFO  CreateLedgerService:76 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 16:44:08,800 INFO  CreateLedgerService:77 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 16:44:09,534 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:44:09,535 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-10-05 16:45:09,699 INFO  CreateLedgerService:76 - [] Found 524 sales invoices for MAY_2022
+2023-10-05 16:45:09,700 INFO  CreateLedgerService:77 - [] Found 24 receivables invoices for MAY_2022
+2023-10-05 16:45:09,919 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:45:09,922 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-10-05 16:45:47,689 INFO  CreateLedgerService:76 - [] Found 441 sales invoices for JUNE_2022
+2023-10-05 16:45:47,690 INFO  CreateLedgerService:77 - [] Found 23 receivables invoices for JUNE_2022
+2023-10-05 16:45:47,898 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:45:47,899 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-10-05 16:46:59,578 INFO  CreateLedgerService:76 - [] Found 595 sales invoices for JULY_2022
+2023-10-05 16:46:59,579 INFO  CreateLedgerService:77 - [] Found 100 receivables invoices for JULY_2022
+2023-10-05 16:46:59,752 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:46:59,753 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-10-05 16:47:03,119 INFO  CreateLedgerService:76 - [] Found 20 sales invoices for AUGUST_2022
+2023-10-05 16:47:03,120 INFO  CreateLedgerService:77 - [] Found 2 receivables invoices for AUGUST_2022
+2023-10-05 16:47:03,135 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:47:03,136 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-10-05 16:47:19,541 INFO  CreateLedgerService:76 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-10-05 16:47:19,542 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for SEPTEMBER_2022
+2023-10-05 16:47:19,610 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:47:19,611 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-10-05 16:48:19,858 INFO  CreateLedgerService:76 - [] Found 512 sales invoices for OCTOBER_2022
+2023-10-05 16:48:19,858 INFO  CreateLedgerService:77 - [] Found 131 receivables invoices for OCTOBER_2022
+2023-10-05 16:48:20,030 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:48:20,030 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-10-05 16:48:50,064 INFO  CreateLedgerService:76 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-10-05 16:48:50,064 INFO  CreateLedgerService:77 - [] Found 6 receivables invoices for NOVEMBER_2022
+2023-10-05 16:48:50,130 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:48:50,131 INFO  CreateLedgerService:69 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-10-05 16:49:18,632 INFO  CreateLedgerService:76 - [] Found 376 sales invoices for DECEMBER_2022
+2023-10-05 16:49:18,632 INFO  CreateLedgerService:77 - [] Found 10 receivables invoices for DECEMBER_2022
+2023-10-05 16:49:18,708 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:49:18,708 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-10-05 16:49:36,655 INFO  CreateLedgerService:76 - [] Found 253 sales invoices for JANUARY_2023
+2023-10-05 16:49:36,655 INFO  CreateLedgerService:77 - [] Found 0 receivables invoices for JANUARY_2023
+2023-10-05 16:49:36,692 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:49:36,692 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-10-05 16:49:48,966 INFO  CreateLedgerService:76 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-10-05 16:49:48,967 INFO  CreateLedgerService:77 - [] Found 1 receivables invoices for FEBRUARY_2023
+2023-10-05 16:49:49,015 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 16:49:49,016 INFO  CreateLedgerService:69 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-10-05 16:50:01,231 INFO  CreateLedgerService:76 - [] Found 147 sales invoices for MARCH_2023
+2023-10-05 16:50:01,231 INFO  CreateLedgerService:77 - [] Found 9 receivables invoices for MARCH_2023
+2023-10-05 16:50:01,260 TRACE CreateLedgerService:210 - [] PDF file created: sale_ledger.pdf
+2023-10-05 18:19:34,459 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 15160 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 18:19:34,461 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 18:19:34,465 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 18:19:58,190 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 24.446 seconds (JVM running for 25.412)
+2023-10-05 18:21:00,028 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-10-05 18:21:05,936 INFO  CreateLedgerService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 18:21:05,936 INFO  CreateLedgerService:79 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 18:21:07,361 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:21:08,440 INFO  CreateLedgerService:109 - [] Found 92 payable invoices for APRIL_2022
+2023-10-05 18:21:08,442 INFO  CreateLedgerService:110 - [] Found 83 purchase invoices for APRIL_2022
+2023-10-05 18:25:01,897 INFO  StartupInfoLogger:55 - [] Starting JournalsApplication on Nikhil with PID 4544 (C:\journals\target\classes started by mnikh in C:\journals)
+2023-10-05 18:25:01,898 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2023-10-05 18:25:01,904 INFO  SpringApplication:651 - [] No active profile set, falling back to default profiles: default
+2023-10-05 18:25:25,022 INFO  StartupInfoLogger:61 - [] Started JournalsApplication in 23.821 seconds (JVM running for 24.705)
+2023-10-05 18:26:00,031 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-04-01:2023-03-31APRIL-2022
+2023-10-05 18:26:05,137 INFO  CreateLedgerService:78 - [] Found 354 sales invoices for APRIL_2022
+2023-10-05 18:26:05,137 INFO  CreateLedgerService:79 - [] Found 181 receivables invoices for APRIL_2022
+2023-10-05 18:26:06,117 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:07,028 INFO  CreateLedgerService:109 - [] Found 92 payable invoices for APRIL_2022
+2023-10-05 18:26:07,029 INFO  CreateLedgerService:110 - [] Found 83 purchase invoices for APRIL_2022
+2023-10-05 18:26:07,362 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:07,362 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-05-01:2023-03-31MAY-2022
+2023-10-05 18:26:11,592 INFO  CreateLedgerService:78 - [] Found 524 sales invoices for MAY_2022
+2023-10-05 18:26:11,593 INFO  CreateLedgerService:79 - [] Found 24 receivables invoices for MAY_2022
+2023-10-05 18:26:11,846 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:12,183 INFO  CreateLedgerService:109 - [] Found 47 payable invoices for MAY_2022
+2023-10-05 18:26:12,184 INFO  CreateLedgerService:110 - [] Found 102 purchase invoices for MAY_2022
+2023-10-05 18:26:12,362 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:12,363 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-06-01:2023-03-31JUNE-2022
+2023-10-05 18:26:15,533 INFO  CreateLedgerService:78 - [] Found 441 sales invoices for JUNE_2022
+2023-10-05 18:26:15,534 INFO  CreateLedgerService:79 - [] Found 23 receivables invoices for JUNE_2022
+2023-10-05 18:26:15,707 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:16,237 INFO  CreateLedgerService:109 - [] Found 85 payable invoices for JUNE_2022
+2023-10-05 18:26:16,237 INFO  CreateLedgerService:110 - [] Found 134 purchase invoices for JUNE_2022
+2023-10-05 18:26:16,373 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:16,373 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-07-01:2023-03-31JULY-2022
+2023-10-05 18:26:21,401 INFO  CreateLedgerService:78 - [] Found 595 sales invoices for JULY_2022
+2023-10-05 18:26:21,407 INFO  CreateLedgerService:79 - [] Found 100 receivables invoices for JULY_2022
+2023-10-05 18:26:21,633 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:21,769 INFO  CreateLedgerService:109 - [] Found 14 payable invoices for JULY_2022
+2023-10-05 18:26:21,769 INFO  CreateLedgerService:110 - [] Found 71 purchase invoices for JULY_2022
+2023-10-05 18:26:21,886 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:21,887 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-08-01:2023-03-31AUGUST-2022
+2023-10-05 18:26:22,132 INFO  CreateLedgerService:78 - [] Found 20 sales invoices for AUGUST_2022
+2023-10-05 18:26:22,134 INFO  CreateLedgerService:79 - [] Found 2 receivables invoices for AUGUST_2022
+2023-10-05 18:26:22,259 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:22,295 INFO  CreateLedgerService:109 - [] Found 1 payable invoices for AUGUST_2022
+2023-10-05 18:26:22,295 INFO  CreateLedgerService:110 - [] Found 20 purchase invoices for AUGUST_2022
+2023-10-05 18:26:22,413 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:22,414 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-09-01:2023-03-31SEPTEMBER-2022
+2023-10-05 18:26:23,660 INFO  CreateLedgerService:78 - [] Found 159 sales invoices for SEPTEMBER_2022
+2023-10-05 18:26:23,661 INFO  CreateLedgerService:79 - [] Found 6 receivables invoices for SEPTEMBER_2022
+2023-10-05 18:26:23,787 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:23,859 INFO  CreateLedgerService:109 - [] Found 6 payable invoices for SEPTEMBER_2022
+2023-10-05 18:26:23,860 INFO  CreateLedgerService:110 - [] Found 26 purchase invoices for SEPTEMBER_2022
+2023-10-05 18:26:23,977 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:23,978 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-10-01:2023-03-31OCTOBER-2022
+2023-10-05 18:26:27,912 INFO  CreateLedgerService:78 - [] Found 512 sales invoices for OCTOBER_2022
+2023-10-05 18:26:27,913 INFO  CreateLedgerService:79 - [] Found 131 receivables invoices for OCTOBER_2022
+2023-10-05 18:26:28,097 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:29,097 INFO  CreateLedgerService:109 - [] Found 138 payable invoices for OCTOBER_2022
+2023-10-05 18:26:29,098 INFO  CreateLedgerService:110 - [] Found 201 purchase invoices for OCTOBER_2022
+2023-10-05 18:26:29,267 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:29,268 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-11-01:2023-03-31NOVEMBER-2022
+2023-10-05 18:26:31,528 INFO  CreateLedgerService:78 - [] Found 348 sales invoices for NOVEMBER_2022
+2023-10-05 18:26:31,529 INFO  CreateLedgerService:79 - [] Found 6 receivables invoices for NOVEMBER_2022
+2023-10-05 18:26:31,700 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:31,745 INFO  CreateLedgerService:109 - [] Found 2 payable invoices for NOVEMBER_2022
+2023-10-05 18:26:31,746 INFO  CreateLedgerService:110 - [] Found 11 purchase invoices for NOVEMBER_2022
+2023-10-05 18:26:31,874 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:31,875 INFO  CreateLedgerService:71 - [] Scheduled task executing...2022-12-01:2023-03-31DECEMBER-2022
+2023-10-05 18:26:33,952 INFO  CreateLedgerService:78 - [] Found 376 sales invoices for DECEMBER_2022
+2023-10-05 18:26:33,953 INFO  CreateLedgerService:79 - [] Found 10 receivables invoices for DECEMBER_2022
+2023-10-05 18:26:34,128 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:34,241 INFO  CreateLedgerService:109 - [] Found 11 payable invoices for DECEMBER_2022
+2023-10-05 18:26:34,241 INFO  CreateLedgerService:110 - [] Found 32 purchase invoices for DECEMBER_2022
+2023-10-05 18:26:34,361 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:34,363 INFO  CreateLedgerService:71 - [] Scheduled task executing...2023-01-01:2023-03-31JANUARY-2023
+2023-10-05 18:26:35,745 INFO  CreateLedgerService:78 - [] Found 253 sales invoices for JANUARY_2023
+2023-10-05 18:26:35,746 INFO  CreateLedgerService:79 - [] Found 0 receivables invoices for JANUARY_2023
+2023-10-05 18:26:35,917 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:35,957 INFO  CreateLedgerService:109 - [] Found 1 payable invoices for JANUARY_2023
+2023-10-05 18:26:35,957 INFO  CreateLedgerService:110 - [] Found 10 purchase invoices for JANUARY_2023
+2023-10-05 18:26:36,086 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:36,088 INFO  CreateLedgerService:71 - [] Scheduled task executing...2023-02-01:2023-03-31FEBRUARY-2023
+2023-10-05 18:26:37,022 INFO  CreateLedgerService:78 - [] Found 152 sales invoices for FEBRUARY_2023
+2023-10-05 18:26:37,023 INFO  CreateLedgerService:79 - [] Found 1 receivables invoices for FEBRUARY_2023
+2023-10-05 18:26:37,183 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:37,227 INFO  CreateLedgerService:109 - [] Found 3 payable invoices for FEBRUARY_2023
+2023-10-05 18:26:37,227 INFO  CreateLedgerService:110 - [] Found 13 purchase invoices for FEBRUARY_2023
+2023-10-05 18:26:37,361 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:37,362 INFO  CreateLedgerService:71 - [] Scheduled task executing...2023-03-01:2023-03-31MARCH-2023
+2023-10-05 18:26:38,296 INFO  CreateLedgerService:78 - [] Found 147 sales invoices for MARCH_2023
+2023-10-05 18:26:38,297 INFO  CreateLedgerService:79 - [] Found 9 receivables invoices for MARCH_2023
+2023-10-05 18:26:38,443 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
+2023-10-05 18:26:38,502 INFO  CreateLedgerService:109 - [] Found 6 payable invoices for MARCH_2023
+2023-10-05 18:26:38,503 INFO  CreateLedgerService:110 - [] Found 10 purchase invoices for MARCH_2023
+2023-10-05 18:26:38,634 TRACE CreateLedgerService:186 - [] Excel file updated for Sale: Ledgers.xlsx
