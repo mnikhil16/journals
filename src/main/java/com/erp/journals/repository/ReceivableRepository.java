@@ -13,7 +13,7 @@ public interface ReceivableRepository extends JpaRepository<Receivables, Integer
     @Query(value = "FROM Receivables WHERE EXTRACT(YEAR FROM paymentDate) = :year AND EXTRACT(MONTH FROM paymentDate) = :month")
     List<Receivables> findReceivablesByPaymentDate(int year, int month);
 
-    @Query(value = "FROM Receivables WHERE paymentMode = :paymentMode AND EXTRACT(YEAR FROM paymentDate) = :year AND EXTRACT(MONTH FROM paymentDate) = :month")
-    List<Receivables> findReceivablesByPaymentModeAndPaymentDate(String paymentMode, int year, int month);
+    @Query(value = "FROM Receivables WHERE EXTRACT(YEAR FROM paymentDate) = :year AND EXTRACT(MONTH FROM paymentDate) = :month AND LOWER(paymentMode) = LOWER(:paymentMode)" )
+    List<Receivables> findReceivablesByPaymentModeAndPaymentDate(int year, int month, String paymentMode);
 
 }

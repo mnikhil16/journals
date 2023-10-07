@@ -54,7 +54,7 @@ public class CreateLedgerService {
     @Autowired
     PurchaseInvoiceRepository purchaseInvoiceRepository;
 
-    @Scheduled(cron ="0 44 19 * * ?")
+    @Scheduled(cron ="0 49 18 * * ?")
     public void executeAndSaveLedgers() {
 
         Date startDate = Date.valueOf("2022-04-01");
@@ -113,14 +113,14 @@ public class CreateLedgerService {
             logger.info("Found {} purchase invoices for {}_{}", purchaseInvoiceList.size(), monthName, year);
 
             // Create ledger entries
-            List<LedgerDTO> payableLedgerDtoList = new ArrayList<>();
+            List<LedgerDTO> purchaseLedgerDtoList = new ArrayList<>();
 
             for (Payables payables : payablesList) {
                 LedgerDTO ledgerDTO = new LedgerDTO();
                 ledgerDTO.setDate(payables.getPaymentDate());
                 ledgerDTO.setParticulars("to " + (payables.getPaymentMode() == null ? "cash" : payables.getPaymentMode().toLowerCase()) + " a/c");
                 ledgerDTO.setDebitAmount(payables.getAmount());
-                payableLedgerDtoList.add(ledgerDTO);
+                purchaseLedgerDtoList.add(ledgerDTO);
             }
 
             for (PurchaseInvoice purchaseInvoice : purchaseInvoiceList) {
@@ -128,14 +128,14 @@ public class CreateLedgerService {
                 ledgerDTO.setDate(purchaseInvoice.getPurchaseDate());
                 ledgerDTO.setParticulars("to " + (purchaseInvoice.extractPaymentMethod() == null ? "cash" : purchaseInvoice.extractPaymentMethod().toLowerCase()) + " a/c");
                 ledgerDTO.setDebitAmount(purchaseInvoice.getPurchaseAmount());
-                payableLedgerDtoList.add(ledgerDTO);
+                purchaseLedgerDtoList.add(ledgerDTO);
             }
 
             // Sort ledgers by date
-            payableLedgerDtoList.sort(Comparator.comparing(LedgerDTO::getDate));
+            purchaseLedgerDtoList.sort(Comparator.comparing(LedgerDTO::getDate));
 
             if(!(purchaseInvoiceList.isEmpty() && payablesList.isEmpty())) {
-                createExcelForLedgers(payableLedgerDtoList, "Ledgers.xlsx", "Purchase Ledger");
+                createExcelForLedgers(purchaseLedgerDtoList, "Ledgers.xlsx", "Purchase Ledger");
             }
 
 
@@ -161,64 +161,72 @@ public class CreateLedgerService {
                 }
             }
 
-//            List<Sale> sales = saleRepository.findSalesByPaymentMethodAndInvoiceDate("CASH",month,year);
-//            List<Receivables> receivables = receivableRepository.findReceivablesByPaymentModeAndPaymentDate("Cash",year,month);
-//            List<ExpenseAccountDetails> expenseAccountDetails = expenseAccountDetailsRepository.findExpenseAccountDetailsByExpenseTypeAndExpenseDate("CASH",year,month);
-//            List<Payables> payables = payablesRepository.findPayablesByPaymentModeAndPaymentDate("Cash",year,month);
-//            List<PurchaseInvoice> purchaseInvoices = purchaseInvoiceRepository.findPurchaseInvoiceByPaymentMethodAndPurchaseDate("CASH",year,month);
-//
-//            logger.info("Found {} cash ledgers from sales {}_{}", sales.size(), monthName, year);
-//            logger.info("Found {} cash ledgers from receivables {}_{}", receivables.size(), monthName, year);
-//            logger.info("Found {} cash ledgers from expense {}_{}", expenseAccountDetails.size(), monthName, year);
-//            logger.info("Found {} cash ledgers from payables {}_{}", payables.size(), monthName, year);
-//            logger.info("Found {} cash ledgers from purchases {}_{}", purchaseInvoices.size(), monthName, year);
-//
-//            List<LedgerDTO> cashLedgerDtoList = new ArrayList<>();
-//
-//            for (Sale sale : saleList) {
-//                LedgerDTO ledgerDTO = new LedgerDTO();
-//                ledgerDTO.setDate(sale.getInvoiceDate());
-//                ledgerDTO.setParticulars("to sales a/c");
-//                ledgerDTO.setDebitAmount(sale.getPaidAmount());
-//                cashLedgerDtoList.add(ledgerDTO);
-//            }
-//
-//            for (Receivables receivable : receivablesList) {
-//                LedgerDTO ledgerDTO = new LedgerDTO();
-//                ledgerDTO.setDate(receivable.getPaymentDate());
-//                ledgerDTO.setParticulars("to sales a/c");
-//                ledgerDTO.setDebitAmount(receivable.getAmount());
-//                cashLedgerDtoList.add(ledgerDTO);
-//            }
-//
-//            for (ExpenseAccountDetails expenseAccountDetail : expenseAccountDetails) {
-//                LedgerDTO ledgerDTO = new LedgerDTO();
-//                ledgerDTO.setDate(expenseAccountDetail.getExpense().getPaymentDate());
-//                ledgerDTO.setParticulars("by " + (expenseAccountDetail.getExpense().getPaymentMode() == null ? "expense" : expenseAccountDetail.getExpenseTypes().getType().toLowerCase()) + " a/c");
-//                ledgerDTO.setCreditAmount(expenseAccountDetail.getAmount());
-//                cashLedgerDtoList.add(ledgerDTO);
-//            }
-//
-//            for (Payables payable : payables) {
-//                LedgerDTO ledgerDTO = new LedgerDTO();
-//                ledgerDTO.setDate(payable.getPaymentDate());
-//                ledgerDTO.setParticulars("by purchase a/c");
-//                ledgerDTO.setCreditAmount(payable.getAmount());
-//                cashLedgerDtoList.add(ledgerDTO);
-//            }
-//
-//            for (PurchaseInvoice purchaseInvoice : purchaseInvoices) {
-//                LedgerDTO ledgerDTO = new LedgerDTO();
-//                ledgerDTO.setDate(purchaseInvoice.getPurchaseDate());
-//                ledgerDTO.setParticulars("by purchase a/c");
-//                ledgerDTO.setCreditAmount(purchaseInvoice.getPurchaseAmount());
-//                cashLedgerDtoList.add(ledgerDTO);
-//            }
-//
-//            // Sort ledgers by date
-//            cashLedgerDtoList.sort(Comparator.comparing(LedgerDTO::getDate));
-//
-//            createExcelForLedgers(cashLedgerDtoList, "Ledgers.xlsx", "Cash Ledger");
+            List<String> paymentTypes = new ArrayList<>();
+            paymentTypes.add("cash");
+            paymentTypes.add("card");
+            paymentTypes.add("wallet");
+            paymentTypes.add("upi");
+            for(String type : paymentTypes) {
+                List<Sale> sales = saleRepository.findSalesByInvoiceDateAndPaymentMethod(year, month, type);
+                List<Receivables> receivables = receivableRepository.findReceivablesByPaymentModeAndPaymentDate(year, month, type);
+                List<ExpenseAccountDetails> expenseAccountDetails = expenseAccountDetailsRepository.findExpenseAccountDetailsByPaymentModeAndExpenseDate(year, month, type);
+                List<Payables> payables = payablesRepository.findPayablesByPaymentModeAndPaymentDate(year, month, type);
+                List<PurchaseInvoice> purchaseInvoices = purchaseInvoiceRepository.findPurchaseInvoiceByPaymentMethodAndPurchaseDate(year, month, type);
+                logger.info("Found {} {} ledgers from sales {}_{}", sales.size(), type, monthName, year);
+                logger.info("Found {} {} ledgers from receivables {}_{}", receivables.size(), type, monthName, year);
+                logger.info("Found {} {} ledgers from expense {}_{}", expenseAccountDetails.size(), type, monthName, year);
+                logger.info("Found {} {} ledgers from payables {}_{}", payables.size(), type, monthName, year);
+                logger.info("Found {} {} ledgers from purchases {}_{}", purchaseInvoices.size(), type, monthName, year);
+
+                List<LedgerDTO> cashLedgerDtoList = new ArrayList<>();
+
+                for (Sale sale : sales) {
+                    LedgerDTO ledgerDTO = new LedgerDTO();
+                    ledgerDTO.setDate(sale.getInvoiceDate());
+                    ledgerDTO.setParticulars("to sales a/c");
+                    ledgerDTO.setDebitAmount(sale.getPaidAmount());
+                    cashLedgerDtoList.add(ledgerDTO);
+                }
+
+                for (Receivables receivable : receivables) {
+                    LedgerDTO ledgerDTO = new LedgerDTO();
+                    ledgerDTO.setDate(receivable.getPaymentDate());
+                    ledgerDTO.setParticulars("to sales a/c");
+                    ledgerDTO.setDebitAmount(receivable.getAmount());
+                    cashLedgerDtoList.add(ledgerDTO);
+                }
+
+                for (ExpenseAccountDetails expenseAccountDetail : expenseAccountDetails) {
+                    LedgerDTO ledgerDTO = new LedgerDTO();
+                    ledgerDTO.setDate(expenseAccountDetail.getExpense().getPaymentDate());
+                    ledgerDTO.setParticulars("by " + (expenseAccountDetail.getExpense().getPaymentMode() == null ? "expense" : expenseAccountDetail.getExpenseTypes().getType().toLowerCase()) + " a/c");
+                    ledgerDTO.setCreditAmount(expenseAccountDetail.getAmount());
+                    cashLedgerDtoList.add(ledgerDTO);
+                }
+
+                for (Payables payable : payables) {
+                    LedgerDTO ledgerDTO = new LedgerDTO();
+                    ledgerDTO.setDate(payable.getPaymentDate());
+                    ledgerDTO.setParticulars("by purchase a/c");
+                    ledgerDTO.setCreditAmount(payable.getAmount());
+                    cashLedgerDtoList.add(ledgerDTO);
+                }
+
+                for (PurchaseInvoice purchaseInvoice : purchaseInvoices) {
+                    LedgerDTO ledgerDTO = new LedgerDTO();
+                    ledgerDTO.setDate(purchaseInvoice.getPurchaseDate());
+                    ledgerDTO.setParticulars("by purchase a/c");
+                    ledgerDTO.setCreditAmount(purchaseInvoice.getPurchaseAmount());
+                    cashLedgerDtoList.add(ledgerDTO);
+                }
+
+                // Sort ledgers by date
+                cashLedgerDtoList.sort(Comparator.comparing(LedgerDTO::getDate));
+
+                if (!(sales.isEmpty() && receivables.isEmpty() && expenseAccountDetails.isEmpty() && payables.isEmpty() && purchaseInvoices.isEmpty())){
+                    createExcelForLedgers(cashLedgerDtoList, "Ledgers.xlsx", type.toUpperCase() + " Ledger");
+                }
+            }
 
 
 //            createPdfsForLedgers(saleLedgerDtoList,"sale_ledger.pdf");

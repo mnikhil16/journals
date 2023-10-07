@@ -10,10 +10,9 @@ import java.util.List;
 @Repository
 public interface SaleRepository extends JpaRepository<Sale,Integer> {
 
-    @Query(value = "FROM Sale WHERE EXTRACT(YEAR FROM invoiceDate) = :year AND EXTRACT(MONTH FROM invoiceDate) = :month")
+    @Query(value = "Select s FROM Sale s WHERE EXTRACT(YEAR FROM invoiceDate) = :year AND EXTRACT(MONTH FROM invoiceDate) = :month")
     List<Sale> findSalesByInvoiceDate(int year, int month);
 
-    @Query(value = "FROM Sale WHERE extData IS NOT NULL AND FUNCTION('JSON_EXTRACT', extData, '$.paymentData.paymentList[0].method') = :method AND EXTRACT(YEAR FROM invoiceDate) = :year AND EXTRACT(MONTH FROM invoiceDate) = :month")
-    List<Sale> findSalesByPaymentMethodAndInvoiceDate(String method, int month, int year);
-
+    @Query(value = "SELECT * FROM sales WHERE EXTRACT(YEAR FROM invoice_date) = :year AND EXTRACT(MONTH FROM invoice_date) = :month AND LOWER((ext_data->'paymentData'->'paymentList'->0->>'method')) = LOWER(:method)", nativeQuery = true)
+    List<Sale> findSalesByInvoiceDateAndPaymentMethod(int year, int month, String method);
 }

@@ -47,7 +47,7 @@ public class CreateJournalEntryService {
     @Autowired
     PurchaseInvoiceRepository purchaseInvoiceRepository;
 
-    @Scheduled(cron ="30 28 18 * * ?")
+//    @Scheduled(cron ="30 28 18 * * ?")
     public void executeAndSaveJournalEntries() {
 
         Date startDate = Date.valueOf("2022-04-01");
